@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand assets | Get Rural America Done</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+  .kit { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:48px; }
+  .tile { border-radius:4px; padding:48px 32px 20px; display:flex; flex-direction:column; gap:28px; min-height:260px; }
+  .tile.light { background:var(--paper); } .tile.dark { background:var(--ink); color:var(--paper); }
+  .tile .art { flex:1; display:flex; align-items:center; justify-content:center; }
+  .tile .art img { max-height:120px; width:auto; }
+  .tile .meta { display:flex; justify-content:space-between; font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; opacity:.75; }
+  .tile .meta a { text-decoration:underline; text-underline-offset:3px; margin-left:12px; }
+  .swatches { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; margin-top:48px; }
+  .sw { border-radius:4px; overflow:hidden; border:1px solid var(--rule); }
+  .sw div { height:120px; } .sw p { padding:12px 14px; font-family:var(--mono); font-size:12px; }
+  .type { margin-top:48px; display:grid; gap:24px; }
+  @media (max-width:760px){ .kit{grid-template-columns:1fr} .swatches{grid-template-columns:repeat(2,1fr)} }
+</style>
+</head>
+<body>
+<header class="nav is-scrolled"><div class="wrap nav__inner">
+  <a class="nav__logo" href="/"><img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26"></a>
+  <span></span>
+  <div class="nav__cta"><a class="btn btn--ghost" href="/"><span>Back to site</span><span>Back to site</span></a></div>
+</div></header>
+<main class="section"><div class="wrap">
+  <span class="eyebrow">Brand assets</span>
+  <h1 class="headline" style="margin-top:16px">The Furrow &amp; Star.</h1>
+  <p style="margin-top:18px;color:var(--muted);max-width:60ch">Five rows of a field rising toward a single star. Read it as crop furrows, as flag stripes, or as a bar chart climbing. Ink on paper by default; the star is the only red. Keep clear space equal to the star's height on all sides.</p>
+
+  <div class="kit">
+    <div class="tile light"><div class="art"><img src="/assets/brand/wordmark-horizontal-light.svg" alt=""></div><div class="meta"><span>Horizontal</span><span><a href="/assets/brand/wordmark-horizontal-light.svg" download>SVG</a></span></div></div>
+    <div class="tile dark"><div class="art"><img src="/assets/brand/wordmark-horizontal-dark.svg" alt=""></div><div class="meta"><span>Horizontal, reversed</span><span><a href="/assets/brand/wordmark-horizontal-dark.svg" download>SVG</a></span></div></div>
+    <div class="tile light"><div class="art"><img src="/assets/brand/wordmark-stacked-light.svg" alt=""></div><div class="meta"><span>Stacked</span><span><a href="/assets/brand/wordmark-stacked-light.svg" download>SVG</a></span></div></div>
+    <div class="tile dark"><div class="art"><img src="/assets/brand/wordmark-stacked-dark.svg" alt=""></div><div class="meta"><span>Stacked, reversed</span><span><a href="/assets/brand/wordmark-stacked-dark.svg" download>SVG</a></span></div></div>
+    <div class="tile light"><div class="art"><img src="/assets/brand/mark-light.svg" alt="" style="height:96px"></div><div class="meta"><span>Mark</span><span><a href="/assets/brand/mark-light.svg" download>SVG</a></span></div></div>
+    <div class="tile dark"><div class="art"><img src="/assets/brand/avatar-navy.png" alt="" style="height:140px;border-radius:50%"></div><div class="meta"><span>Social avatar</span><span><a href="/assets/brand/avatar-navy.png" download>PNG</a><a href="/assets/brand/avatar-paper.png" download>Light PNG</a></span></div></div>
+  </div>
+
+  <div class="swatches">
+    <div class="sw"><div style="background:#0E1A2B"></div><p>Ink Navy<br>#0E1A2B</p></div>
+    <div class="sw"><div style="background:#070D17"></div><p>Night<br>#070D17</p></div>
+    <div class="sw"><div style="background:#F6F4EF"></div><p>Paper<br>#F6F4EF</p></div>
+    <div class="sw"><div style="background:#B23A3A"></div><p>Flag Red<br>#B23A3A</p></div>
+    <div class="sw"><div style="background:#2B4C7E"></div><p>Field Blue<br>#2B4C7E</p></div>
+  </div>
+
+  <div class="type">
+    <p class="headline">Newsreader &mdash; headlines and wordmark</p>
+    <p class="lede">Geist &mdash; interface and body copy</p>
+    <p style="font-family:var(--mono);font-size:13px;letter-spacing:.06em">GEIST MONO &mdash; LABELS, DATA, EVIDENCE GRADES</p>
+  </div>
+</div></main>
+</body>
+</html>
