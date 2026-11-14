@@ -107,6 +107,24 @@
     cycle();
   });
 
+  /* Grid & Grain newsletter signup.
+     Set SUBSTACK to the publication's address once it exists, e.g. "https://gridandgrain.substack.com".
+     Until then the form opens an email to ruralamerica56@gmail.com with the subscriber's address. */
+  const SUBSTACK = "";
+  document.querySelectorAll("form[data-subscribe]").forEach(form => {
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      const email = form.querySelector('input[type="email"]').value.trim();
+      if (!email) return;
+      if (SUBSTACK) {
+        window.location.href = `${SUBSTACK.replace(/\/$/, "")}/subscribe?email=${encodeURIComponent(email)}`;
+      } else {
+        const body = `Please add ${email} to Grid & Grain.`;
+        window.location.href = `mailto:ruralamerica56@gmail.com?subject=${encodeURIComponent("Add me to Grid & Grain")}&body=${encodeURIComponent(body)}`;
+      }
+    });
+  });
+
   /* Reveal on scroll */
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
