@@ -108,9 +108,9 @@
   });
 
   /* Grid & Grain newsletter signup.
-     Set SUBSTACK to the publication's address once it exists, e.g. "https://gridandgrain.substack.com".
-     Until then the form opens an email to ruralamerica56@gmail.com with the subscriber's address. */
-  const SUBSTACK = "";
+     Sends the subscriber to the Substack publication with their email prefilled.
+     If SUBSTACK is emptied, the form falls back to opening an email to ruralamerica56@gmail.com. */
+  const SUBSTACK = "https://getrural56done.substack.com";
   document.querySelectorAll("form[data-subscribe]").forEach(form => {
     form.addEventListener("submit", e => {
       e.preventDefault();
