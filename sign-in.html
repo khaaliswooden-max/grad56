@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in | Grid &amp; Grain Field Guide</title>
+<meta name="description" content="Create a free Grid & Grain account to save your Field Guide progress and earn the Field Certificate. No password: we email you a sign-in link.">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://getruralamericadone.com/sign-in">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/guide.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="/" aria-label="Get Rural America Done, home">
+      <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/field-guide">Field Guide</a></li>
+      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/earl">Ask Earl</a></li>
+      <li><a href="/sign-in" aria-current="page">Sign in</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="/field-guide"><span>Field Guide</span><span>Field Guide</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="guide-hero" style="padding-bottom:clamp(64px,9vw,120px)">
+    <div class="wrap">
+      <span class="eyebrow">Grid &amp; Grain &middot; Free account</span>
+      <h1 class="headline">Save your progress. Earn the certificate.</h1>
+      <p class="body">No password. Enter your email and we&rsquo;ll send a link that signs you in. The Field Guide stays open to everyone; an account saves your self-check scores and issues the Field Certificate when you pass all twelve.</p>
+
+      <form class="form" data-signin novalidate>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+        </div>
+        <label class="check"><input type="checkbox" name="age" required> <span>I am 13 or older.</span></label>
+        <label class="check"><input type="checkbox" name="note"> <span>Send me one short note a month when a new module opens. Unsubscribe anytime.</span></label>
+        <div>
+          <button class="btn btn--solid btn--lg" type="submit"><span>Email me a sign-in link</span><span>Email me a sign-in link</span></button>
+        </div>
+        <p style="font-size:13px;color:var(--muted)">We store your email, your scores, and your choices above, nothing else. <a href="/privacy" style="text-decoration:underline">Privacy</a>.</p>
+      </form>
+
+      <p class="notice notice--err" data-error hidden role="alert"></p>
+      <div class="notice notice--ok" data-sent hidden role="status">
+        <b style="font-weight:500">Check your email.</b> We sent a sign-in link to <span data-sent-to></span>. It works once and expires within the hour. Nothing there? Check spam, or <button type="button" data-again style="all:unset;text-decoration:underline;cursor:pointer">send it again</button>.
+      </div>
+      <div class="notice notice--warn" data-off hidden>
+        <b style="font-weight:500">Accounts open with the Field Guide on January 5, 2027.</b> Until then you can read every published module and take the self-checks; scores just aren&rsquo;t saved yet. Want the monthly note now? <a data-substack href="https://getrural56done.substack.com" style="text-decoration:underline">Subscribe on Substack</a>.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__bottom" style="margin-top:0">
+      <span>&copy;2026 Get Rural America Done</span>
+      <span><a href="/privacy">Privacy</a></span>
+      <span>@GetRural56Done</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+<script type="module">
+  import { SUBSTACK_URL } from "/assets/js/config.js";
+  import { enabled, getUser, sendLink, safeNext } from "/assets/js/members.js";
+
+  const params = new URLSearchParams(location.search);
+  const next = safeNext(params.get("next"));
+  const form = document.querySelector("[data-signin]");
+  const err = document.querySelector("[data-error]");
+  const sent = document.querySelector("[data-sent]");
+  const off = document.querySelector("[data-off]");
+  if (params.get("email")) form.email.value = params.get("email");
+
+  if (enabled && await getUser()) location.replace(next === "/field-guide" ? "/account" : next);
+
+  const show = msg => { err.textContent = msg; err.hidden = !msg; };
+
+  async function submit() {
+    show("");
+    const email = form.email.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return show("Enter a valid email address.");
+    if (!form.age.checked) return show("Accounts are for people 13 or older. Please confirm your age.");
+
+    if (!enabled) {
+      off.hidden = false;
+      off.querySelector("[data-substack]").href = `${SUBSTACK_URL}/subscribe?email=${encodeURIComponent(email)}`;
+      return;
+    }
+    const btn = form.querySelector("button[type=submit]");
+    btn.disabled = true;
+    const { error } = await sendLink(email, { ageConfirmed: true, wantsNote: form.note.checked, next });
+    btn.disabled = false;
+    if (error) return show(/rate|seconds/i.test(error.message) ? "Too many tries. Wait a minute, then send it again." : "We couldn't send the link. Check the address and try again.");
+    sent.querySelector("[data-sent-to]").textContent = email;
+    sent.hidden = false;
+    form.hidden = true;
+  }
+
+  form.addEventListener("submit", e => { e.preventDefault(); submit(); });
+  sent.querySelector("[data-again]").addEventListener("click", () => { sent.hidden = true; form.hidden = false; });
+</script>
+</body>
+</html>

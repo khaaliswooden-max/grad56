@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Certificate | Grid &amp; Grain</title>
+<meta name="description" content="A Grid & Grain Field Certificate: completion of all twelve modules of the free Grid & Grain Field Guide on rural AI infrastructure.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/guide.css">
+</head>
+<body>
+
+<header class="nav no-print" id="top">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="/" aria-label="Get Rural America Done, home">
+      <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/field-guide">Field Guide</a></li>
+      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/earl">Ask Earl</a></li>
+      <li><a href="/sign-in" data-account-link>Sign in</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="/field-guide"><span>Field Guide</span><span>Field Guide</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main style="padding:0 var(--gutter) clamp(64px,9vw,120px)">
+  <p class="body" data-loading style="text-align:center;margin-top:64px;color:var(--muted)">Checking this certificate&hellip;</p>
+  <div class="notice notice--err" data-missing hidden style="margin:64px auto 0">We couldn&rsquo;t find a certificate at this address. Check the link, or ask the holder to share it again.</div>
+
+  <article class="cert" data-cert hidden>
+    <img class="cert__mark" src="/assets/brand/mark-light.svg" alt="" width="72" height="72">
+    <p class="cert__k">Grid &amp; Grain Field Certificate</p>
+    <h1 class="cert__name" data-name></h1>
+    <p class="cert__place" data-place hidden></p>
+    <p class="cert__body">completed all twelve modules of the Grid &amp; Grain Field Guide on rural power, computing, and data center infrastructure, passing each module&rsquo;s self-check.</p>
+    <ul class="cert__mods">
+      <li>1. The Wire to Your Porch</li><li>2. Who Pays for the Substation?</li><li>3. Why AI Eats Power</li>
+      <li>4. The Water Question</li><li>5. Noise, Light, and Land</li><li>6. The Rural Hospital Runs on Compute</li>
+      <li>7. Sun, Storage, and Flexible Load</li><li>8. The Jobs Question</li><li>9. AI on the Farm</li>
+      <li>10. Making the Deal</li><li>11. Small Is Possible</li><li>12. The Three Clocks</li>
+    </ul>
+    <div class="cert__foot">
+      <span>Issued <span data-date></span></span>
+      <span>Verify: <span data-url></span></span>
+    </div>
+    <p style="margin-top:14px;font-size:12px;color:var(--muted)">Records completion of a free, self-paced course from Get Rural America Done. Not a professional license or credential.</p>
+  </article>
+  <div class="btns no-print" data-actions hidden style="justify-content:center;margin-top:24px">
+    <button class="btn btn--solid btn--lg" type="button" data-print><span>Print or save as PDF</span><span>Print or save as PDF</span></button>
+    <button class="btn btn--ghost btn--lg" type="button" data-copy style="cursor:pointer"><span>Copy link</span><span>Copy link</span></button>
+  </div>
+</main>
+
+<script src="/assets/js/site.js" defer></script>
+<script type="module">
+  import { getCertificate, markNav } from "/assets/js/members.js";
+
+  const $ = s => document.querySelector(s);
+  const id = location.pathname.split("/").filter(Boolean)[1] || new URLSearchParams(location.search).get("id");
+  const cert = id && /^[a-f0-9]{18}$/.test(id) ? await getCertificate(id) : null;
+  $("[data-loading]").hidden = true;
+
+  if (!cert) {
+    $("[data-missing]").hidden = false;
+  } else {
+    $("[data-name]").textContent = cert.display_name;
+    const place = [cert.county, cert.state].filter(Boolean).join(", ");
+    if (place) { $("[data-place]").textContent = place; $("[data-place]").hidden = false; }
+    $("[data-date]").textContent = new Date(cert.issued_at).toLocaleDateString("en-US", { dateStyle: "long" });
+    $("[data-url]").textContent = `getruralamericadone.com/certificate/${id}`;
+    document.title = `${cert.display_name}: Field Certificate | Grid & Grain`;
+    $("[data-cert]").hidden = false;
+    $("[data-actions]").hidden = false;
+    $("[data-print]").addEventListener("click", () => window.print());
+    $("[data-copy]").addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(location.href); $("[data-copy] span").textContent = "Copied"; } catch {}
+    });
+  }
+  markNav();
+</script>
+</body>
+</html>
