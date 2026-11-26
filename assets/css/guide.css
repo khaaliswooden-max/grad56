@@ -46,6 +46,25 @@
 .read .verdict { margin-top: 0; }
 .next { margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
 
+  /* Module media: audio player, Field Test video slot, County Kit link (shared by every module page). */
+  .listen { margin-top: 16px; padding: 18px 20px; border-radius: 4px; background: var(--paper); }
+  .listen__head { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
+  .listen__k { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+  .listen__ai { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); border-radius: 3px; padding: 2px 7px; }
+  .listen audio { display: block; width: 100%; margin-top: 12px; min-height: 44px; }
+  .read .listen__foot { margin-top: 10px; font-size: 14px; color: var(--muted); }
+  .fieldtest-video { margin: 20px 0 0; }
+  .fieldtest-video__frame { position: relative; aspect-ratio: 16 / 9; background: var(--ink); border-radius: 4px; overflow: hidden; }
+  .fieldtest-video__frame iframe, .fieldtest-video__frame video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .fieldtest-video figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
+  .kit-cta { margin-top: 28px; padding: 22px 24px; border: 1px solid var(--rule); border-radius: 4px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: space-between; }
+  .kit-cta > div:first-child { flex: 1 1 320px; }
+  .kit-cta__k { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .read .kit-cta__t { margin-top: 6px; font-family: var(--serif); font-size: 26px; line-height: 1.15; color: var(--ink); }
+  .read .kit-cta__d { margin-top: 6px; font-size: 15px; }
+  .kit-cta__btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .kit-cta__btns .btn { min-height: 44px; }
+
 /* Self-check */
 .quiz { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 20px; max-width: 760px; }
 .q { border: 1px solid var(--rule); border-radius: 4px; padding: 22px 22px 18px; }

@@ -1,0 +1,107 @@
+Grid and Grain Field Guide. Module one: The Wire to Your Porch.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+Before anyone asks your county to vote on a data center, here's how power gets to your porch, and why that's the whole story.
+
+Carry this. Making electricity and delivering electricity are two different jobs, and the grid has to balance supply and demand every second.
+
+Rung one. Electricity is a delivery business.
+
+Most power plants make electricity by spinning a magnet inside coils of wire. Solar panels make it when sunlight knocks electrons loose. Either way, it then has to travel, sometimes hundreds of miles, to reach you. The poles and wires along your road are that delivery network.
+
+So there are two jobs, and often two businesses: one that makes power and one that delivers it.
+
+And one strange rule. Electricity is hard to store in bulk, so plants must make almost exactly as much as everyone uses, at every moment. When you flip on a light, somewhere a generator works a little harder.
+
+Here's a picture. Think of your town's water system: a pumping station, big mains, small pipes to each house, your faucet. Here's where that picture breaks. A water tower holds water for days. The grid's wires hold almost none. The grid is less like a water tower and more like a juggler who has to catch every ball the moment it drops.
+
+Rung two. Why the grid runs at five hundred thousand volts.
+
+Three words do most of the work. Voltage is the push. Current is the flow. Power is the two multiplied together: power equals voltage times current.
+
+Wires resist current and turn some energy into heat, and that heat grows with the current squared. Cut the current in half and the loss drops to a quarter.
+
+So the grid plays a trick. To move one hundred megawatts at one hundred thousand volts takes one thousand amps. At five hundred thousand volts it takes two hundred amps, one fifth as much, and the heat lost on the same wire falls to one twenty-fifth.
+
+That's why power is stepped up at the plant, carried on tall transmission lines, stepped down at a substation, and stepped down once more by the can on your pole or the green box in your yard. Even so, about five percent of U.S. electricity is lost along the way. That's the Energy Information Administration's average for twenty eighteen through twenty twenty-two. That's verified.
+
+Field Test. You can see this in your own kitchen. Plug a watt meter, the kind that costs about twenty-five dollars, into an outlet near your microwave and read the volts. Start the microwave and watch the reading drop a few volts. Volts lost, times amps flowing, equals watts turned into heat in the wires between your outlet and the transformer on the pole, most of it in the wires inside your walls. A typical twelve-hundred-watt microwave draws about ten amps, so a three-volt drop means about thirty watts warming the wiring. Same physics as the grid, on your counter. Plug-in meters only. Never open an outlet or a panel.
+
+Rung three. Built for the worst hour.
+
+The grid is planned to survive the hottest afternoon and the coldest morning of the year, and to keep running if its single largest piece fails. The result: much of it sits idle most of the time. Across U.S. balancing areas from twenty sixteen to twenty twenty-four, average demand was about fifty-three percent of peak, according to Duke University. That's verified.
+
+That empty half matters. A Duke study estimated that if large new customers agreed to cut back during the grid's few worst hours, about half of one percent of the year, the U.S. could absorb roughly ninety-eight gigawatts of new load without building for a new peak. That's verified, as a system-wide estimate. The catch, which the authors note too: room on the whole system isn't room at your local substation, and not every computer job can pause.
+
+Go deeper. The first three rungs explain how the grid works. The next two explain why it behaves the way it does when someone big asks to plug in. They get more technical, but every term is defined.
+
+Rung four. How utilities earn money.
+
+The company that delivers your power is usually a monopoly: one set of wires per road, because building two would waste money. A monopoly can't be left to set its own prices, so someone else sets them. Who that is depends on who owns the wires.
+
+First, investor-owned utilities. They're paid on what they build. An investor-owned utility is a company with shareholders. A state public utility commission sets its prices in a public proceeding called a rate case. The commission adds up two things the utility needs to collect from customers. One: operating costs, like fuel, crews, trucks, and billing. The utility gets these back, but makes no profit on them. Two: a return on its rate base. The rate base is the value of everything the utility has built and still owns, like poles, wires, substations, and power plants, minus wear. The commission lets the utility earn a set percentage on that value.
+
+In shorthand, the revenue it needs equals operating costs, plus the allowed return times the rate base. That's from the National Renewable Energy Laboratory, and it's verified.
+
+How big is that allowed return? In rate cases decided in the first half of twenty twenty-six, regulators let electric utilities earn an average of nine point eight four percent on the shareholders' share of the investment, the same average as in twenty twenty-five. That's from S and P Global Market Intelligence, and it's verified. That's a ceiling the utility is allowed to aim for, not a guaranteed paycheck.
+
+Look at what the formula rewards. A dollar spent on fuel comes back as a dollar. A dollar spent on a new substation comes back with a return on top, for as long as it's on the books. So an investor-owned utility has a built-in reason to favor building things. That's plausible. It isn't a scandal; it's how the system was designed to attract money for long-lived equipment. It's why the commission, and the public at rate-case hearings, have to ask whether each project is needed and who should pay for it.
+
+Next, co-ops. A co-op is owned by the people on the line. A rural electric co-op is a nonprofit owned by its members, who elect the board on a one-member, one-vote basis. When a co-op takes in more than it costs to run, those margins are credited back to members based on how much power each one bought. These are called capital credits, and the co-op holds the money for a period of years before paying it out. That's from the University of Wisconsin Center for Cooperatives, and it's verified.
+
+So a co-op has no shareholders to reward for building. But it still borrows to build, and the members still repay that debt through their bills. If a co-op builds a substation for one giant customer and that customer leaves early, the remaining members can be left holding the loan. That's plausible. That risk is the reason for large-load tariffs, the rules that make a big new customer pay up front, sign a long contract, or post collateral. Module two covers them line by line.
+
+Last, where the power itself is bought. Your utility or co-op may not make the electricity it delivers. In much of the country, power is bought in a regional wholesale market. The grid operator takes offers from power plants and runs the cheapest ones first, adding more expensive plants as demand climbs. The last plant needed to meet demand sets the price, and every plant running that hour gets paid that price. That's how I S O New England describes it, and it's verified.
+
+That's why a big new load matters most where supply is already tight: it can push demand up to a costlier plant, and that higher price applies to all the power bought in that hour. That's plausible. It's also why studies of data centers and power bills find the effects concentrated in tight markets such as P J M, a large regional grid operator in the East. That's verified.
+
+Here's a picture. An investor-owned utility is paid like the owner of a toll road who earns a fee on every mile of road built, not on every car that drives it. Building more road raises the owner's income, so someone has to check that the road is needed. Here's where that picture breaks. A toll-road owner sets the toll. A utility's return is set by a regulator in public, and you can testify. And a co-op is a road owned by the drivers: there's no outside owner to enrich, but the drivers pay off the road together.
+
+Rung five. Why connecting to the grid now takes years.
+
+Rung three showed that the grid has room most of the year. So why do new power plants and big new customers wait years to connect? Because room on average isn't the question the grid asks. It asks: on the worst hour, at this exact spot, with this new thing added, does anything overload? Answering that for every request takes engineering studies, and the line for those studies is long.
+
+First, the line for new power plants. Every new power plant or battery that wants to connect to the high-voltage grid files an interconnection request, and waits in an interconnection queue while the grid operator studies what upgrades it would trigger and who pays. At the end of twenty twenty-five, about two thousand and sixty-one gigawatts of generation and storage sat in those queues, down ten percent from a year earlier. Projects that came online in twenty twenty-five took a median of sixty-one months, about five years, from request to operation. Of everything that asked to connect from two thousand to twenty twenty, only thirteen percent of the capacity had been built by the end of twenty twenty-five. Seventy-five percent had withdrawn. That's from Lawrence Berkeley National Laboratory's Queued Up report, published in June twenty twenty-six. That's verified.
+
+Those numbers explain each other. Filing was cheap, so developers filed many speculative requests. Requests were studied one at a time, first come, first served. And when a project ahead in line dropped out, the upgrades and costs for everyone behind it could change, so studies had to be redone.
+
+On July twenty-eighth, twenty twenty-three, the Federal Energy Regulatory Commission issued Order Number twenty twenty-three to fix that. It replaced one-at-a-time studies with cluster studies that look at a batch of requests together, and changed the rule from first come, first served, to first ready, first served. Developers now pay study deposits, must show they control the land, and can owe a penalty for withdrawing late. Grid operators that miss study deadlines can owe penalties too. That's verified.
+
+Is it working? The queue shrank in twenty twenty-five, with more than seven hundred fifty gigawatts of requests withdrawn that year, according to Lawrence Berkeley National Laboratory. That's verified. Whether that means faster connections, or just a shorter line with the same slow studies, is not yet settled. That's plausible.
+
+Second, the line for hardware. Even an approved connection needs equipment, and transformers, the devices that step voltage up and down, are scarce. Wood Mackenzie projected that U.S. supply would fall short of demand in twenty twenty-five by thirty percent for large power transformers, and by ten percent for the distribution transformers like the one on your pole. That's verified. A project can clear the study line and still wait in the factory line.
+
+Third, the line for big new customers. Data centers and other large loads wait in a separate line that the national queue reports don't count. Texas shows how long it can get: its large-load queue held four hundred seventy-four gigawatts, more than five times the state grid's summer peak of a little over ninety gigawatts. That's from Utility Dive, in September twenty twenty-six, and it's verified. Much of that will never be built; some developers file the same project with several utilities to see who answers first. Texas now requires large-load applicants to show site control, cover much of their grid upgrade cost, disclose duplicate requests, and accept curtailment during emergencies. That's verified. One industry group puts typical large-load waits at one to five years with regulated utilities, and eight or more in parts of P J M. That's plausible, as an advocacy group's estimate.
+
+Why this matters at the county line. A long line is leverage. A developer who wants to connect sooner has reasons to accept terms: pay for its own upgrades, agree to cut back during the grid's worst hours, the flexibility from rung three, or bring its own batteries. When someone says a project must be approved quickly, it's fair to ask where it actually sits in the utility's line, what upgrades it triggers, and who pays for them.
+
+Here's a picture. The queue is the line of grain trucks at the elevator at harvest. Each truck has to be weighed and graded before it can unload, and the scale is the slow part. Here's where that picture breaks. At the elevator, a truck that pulls out of line just makes the line shorter. In an interconnection queue, a project that drops out can change the upgrades, and the bill, for every project behind it. That's why the new rules charge for leaving late.
+
+Still open, and this part is speculative. Will cluster studies shorten the wait, or just move the bottleneck to transformers and transmission lines? How much of the large-load line is real? And if large loads agreed to flex at peak, how much faster could a rural substation say yes? Nobody has settled these yet. They're questions for researchers, and for your utility.
+
+Straight Talk. Here's a claim we hear: "AI already uses most of America's electricity."
+
+The verdict: wrong nationally, right to watch locally.
+
+U.S. data centers used about four point four percent of U.S. electricity in twenty twenty-three, according to Lawrence Berkeley National Laboratory. The lab's range for twenty twenty-eight is six point seven to twelve percent. That range is nearly a factor of two because nobody knows how fast AI will grow. That's verified.
+
+Here's what matters for a rural county: nearly half of U.S. data center capacity sits in five regional clusters, according to the International Energy Agency. A few percent nationally can be a big share of one utility's system.
+
+Ask for it in writing: what share of your utility's or co-op's peak demand would a proposed project be?
+
+Your co-op is yours. If you're served by a rural electric co-op, you're an owner. Co-ops own about forty-two percent of U.S. distribution lines, covering about three-quarters of the land, and members elect the board. That's verified.
+
+That's the most wire per customer of any kind of utility, which is why one giant new customer can change a co-op's whole system. It's also why member-owners have real say. Some co-ops already require big loads to pay up front for the substations and lines they need.
+
+Annual meeting season starts in February. Find your co-op's date and put it on the calendar. Module two, Who Pays for the Substation, gives you the questions to bring.
+
+This module's County Kit is called Know Your Utility. It's a one-page sheet you fill in about your own co-op or utility: who owns it, when the board is elected, its rate classes, any large-load rule, the line to connect, and who to call. You'll find it on the module page.
+
+Ask Earl. Earl is Grid and Grain's AI character, a retired co-op lineman. He's not a real person, and he'll always tell you so. Here's a question he got. Why do my lights blink two or three times in a storm and then come back?
+
+Earl says: You just watched a recloser work. It's a switch out on the line that acts like a smart breaker. When a branch touches a wire, it opens, waits a moment, and tries again. Lots of faults clear themselves, so the power comes right back. If it tries a few times and the fault's still there, it stays open, and that's when a crew rolls. If you ever see a line down, stay well back and call your co-op.
+
+That's module one. Ready to test yourself? The self-check is five questions, and four right is a pass. You'll find it on the module page, along with every source we cited.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.
