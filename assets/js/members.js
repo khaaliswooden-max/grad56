@@ -45,6 +45,17 @@ export async function sendLink(email, { ageConfirmed, wantsNote, next }) {
   return { error };
 }
 
+/* Finish a sign-in from an emailed link of the form /account?token_hash=…&type=email.
+   Unlike the PKCE ?code= link, this works on any device (request on a laptop, open on a phone),
+   and because it runs only when the person presses a button, email scanners that open links can't use it up. */
+export async function finishSignIn(tokenHash, type) {
+  const sb = await client();
+  if (!sb) return { off: true };
+  const allowed = ["email", "magiclink", "signup"];
+  const { data, error } = await sb.auth.verifyOtp({ token_hash: tokenHash, type: allowed.includes(type) ? type : "email" });
+  return { user: data && data.user, error };
+}
+
 export async function signOut() {
   const sb = await client();
   if (sb) await sb.auth.signOut();
