@@ -1,0 +1,14 @@
+<!-- Paste into Supabase > Authentication > Emails > Templates, in BOTH "Magic link" and "Confirm signup".
+     A first-time sign-in sends "Confirm signup"; every later one sends "Magic link".
+     Subject for both: Your Grid & Grain sign-in link
+     The link goes to /account?token_hash=… (not {{ .ConfirmationURL }}), so it works on any device
+     and email scanners that open links can't use it up: /account finishes sign-in only on a button press.
+     {{ .RedirectTo }} is the /account?next=… address the site asked for, on whichever domain sent the request. -->
+<div style="font-family:Georgia,'Times New Roman',serif;max-width:520px;margin:0 auto;padding:24px;color:#0E1A2B;background:#F6F4EF">
+  <p style="font:12px/1.4 monospace;letter-spacing:.08em;text-transform:uppercase;color:#2B4C7E;margin:0 0 16px">Grid &amp; Grain Field Guide</p>
+  <h1 style="font-size:24px;font-weight:500;margin:0 0 16px">Here's your sign-in link.</h1>
+  <p style="font:16px/1.55 Arial,sans-serif;margin:0 0 24px">Tap the button, then press "Finish signing in." It works on any phone or computer. No password to remember. The link works once and expires in an hour.</p>
+  <p style="margin:0 0 24px"><a href="{{ .RedirectTo }}&token_hash={{ .TokenHash }}&type=email" style="display:inline-block;background:#0E1A2B;color:#F6F4EF;text-decoration:none;font:500 16px Arial,sans-serif;padding:14px 22px;border-radius:4px">Sign in to the Field Guide</a></p>
+  <p style="font:14px/1.55 Arial,sans-serif;color:#4a5566;margin:0 0 24px">Didn't ask for this? You can ignore it. Nobody gets in without this link.</p>
+  <p style="font:13px/1.5 Arial,sans-serif;color:#4a5566;margin:0;border-top:1px solid #d9d4c7;padding-top:16px">Grid &amp; Grain is the free public-education series of Get Rural America Done. No developer money.<br><a href="https://getruralamericadone.com" style="color:#2B4C7E">getruralamericadone.com</a></p>
+</div>

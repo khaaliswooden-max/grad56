@@ -49,6 +49,10 @@ grant update (wants_monthly_note, role) on public.members to authenticated;
 create or replace function public.handle_new_user() returns trigger
 language plpgsql security definer set search_path = public as $$
 begin
+  -- Accounts are 13+. The sign-in page asks; this refuses an account created without that answer.
+  if coalesce((new.raw_user_meta_data ->> 'age_13_confirmed')::boolean, false) is not true then
+    raise exception 'age_13_confirmed is required to create an account';
+  end if;
   insert into public.members (id, age_13_confirmed, wants_monthly_note)
   values (
     new.id,
@@ -136,5 +140,17 @@ grant execute on function public.delete_my_account() to authenticated;
 
 -- For the monthly note: run this and export the result as CSV for Resend.
 create or replace view public.monthly_note_list with (security_invoker = true) as
-  select u.email from auth.users u join public.members m on m.id = u.id where m.wants_monthly_note;
+  select u.email from auth.users u join public.members m on m.id = u.id
+  where m.wants_monthly_note
+    and u.email_confirmed_at is not null;  -- only addresses whose owner clicked a sign-in link
 revoke all on public.monthly_note_list from anon, authenticated;
+
+-- Table access for the website's roles, stated outright rather than left to project defaults.
+-- Row-level security above still decides which rows each member can see or write.
+grant usage on schema public to anon, authenticated;
+grant select on public.modules to anon, authenticated;
+grant select on public.members to authenticated;
+grant select, insert on public.check_attempts to authenticated;
+grant select on public.certificates to authenticated;
+-- Nothing on the website needs these; the Data API can't issue them, but don't leave them lying around.
+revoke truncate, trigger, references on public.modules, public.members, public.check_attempts, public.certificates from anon, authenticated;

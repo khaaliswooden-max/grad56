@@ -3,8 +3,8 @@
    The anon key is safe to publish: row-level security (supabase/schema.sql) is what protects data.
    Leave them empty and the site runs without accounts: modules and self-checks still work,
    scores just aren't saved, and sign-up falls back to the Substack newsletter. */
-export const SUPABASE_URL = "";
-export const SUPABASE_ANON_KEY = "";
+export const SUPABASE_URL = "https://pjxckmxgpwyqfshsqvrq.supabase.co";
+export const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBqeGNrbXhncHd5cWZzaHNxdnJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTU3MTc4MjAsImV4cCI6MjExMTI5MzgyMH0._ILVud2bhFVNY1wUGmn7-ZItIc5c3j09NsKJzMhBFTw";
 
 /* Fallback newsletter while accounts are off. */
 export const SUBSTACK_URL = "https://getrural56done.substack.com";

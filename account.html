@@ -37,6 +37,12 @@
       <h1 class="headline" data-hello>My account</h1>
       <p class="body" data-loading>Loading&hellip;</p>
 
+      <div data-finish hidden>
+        <p class="body">One more step: press the button to finish signing in on this device.</p>
+        <div class="btns" style="margin-top:20px"><button class="btn btn--solid btn--lg" type="button" data-finish-btn><span>Finish signing in</span><span>Finish signing in</span></button></div>
+        <p class="notice notice--err" data-finish-error hidden role="alert">This sign-in link has expired or was already used. <a href="/sign-in" style="text-decoration:underline">Send a new link</a>; it takes a few seconds.</p>
+      </div>
+
       <div data-signed-out hidden>
         <p class="body">You&rsquo;re not signed in. <a href="/sign-in?next=/account" style="text-decoration:underline">Sign in with your email</a>.</p>
       </div>
@@ -116,19 +122,34 @@
 <script src="/assets/js/site.js" defer></script>
 <script type="module">
   import { MODULES } from "/assets/js/config.js";
-  import { enabled, getUser, getMember, updateMember, loadProgress, getMyCertificate, issueCertificate, signOut, deleteAccount, safeNext } from "/assets/js/members.js";
+  import { enabled, getUser, getMember, updateMember, loadProgress, getMyCertificate, issueCertificate, signOut, deleteAccount, safeNext, finishSignIn } from "/assets/js/members.js";
 
   const $ = s => document.querySelector(s);
   const params = new URLSearchParams(location.search);
-  const user = enabled ? await getUser() : null;
+  const tokenHash = params.get("token_hash");
+  const user = enabled && !tokenHash ? await getUser() : null;
   $("[data-loading]").hidden = true;
+  const goNext = () => {
+    const next = safeNext(params.get("next"));
+    location.replace(next === "/field-guide" ? "/account" : next);
+  };
 
   /* Arrived from a sign-in link with somewhere to go back to. */
   if (user && params.has("next") && safeNext(params.get("next")) !== "/field-guide" && safeNext(params.get("next")) !== "/account") {
     location.replace(safeNext(params.get("next")));
   }
 
-  if (!user) {
+  if (tokenHash && enabled) {
+    /* Emailed link: finish only on a button press, so link scanners can't spend it. */
+    $("[data-finish]").hidden = false;
+    const btn = $("[data-finish-btn]");
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      const { error } = await finishSignIn(tokenHash, params.get("type"));
+      if (error) { $("[data-finish-error]").hidden = false; btn.hidden = true; return; }
+      goNext();
+    });
+  } else if (!user) {
     $("[data-signed-out]").hidden = false;
   } else {
     $("[data-signed-in]").hidden = false;
