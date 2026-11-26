@@ -50,11 +50,11 @@ Look at what the formula rewards. A dollar spent on fuel comes back as a dollar.
 
 Next, co-ops. A co-op is owned by the people on the line. A rural electric co-op is a nonprofit owned by its members, who elect the board on a one-member, one-vote basis. When a co-op takes in more than it costs to run, those margins are credited back to members based on how much power each one bought. These are called capital credits, and the co-op holds the money for a period of years before paying it out. That's from the University of Wisconsin Center for Cooperatives, and it's verified.
 
-So a co-op has no shareholders to reward for building. But it still borrows to build, and the members still repay that debt through their bills. If a co-op builds a substation for one giant customer and that customer leaves early, the remaining members can be left holding the loan. That's plausible. That risk is the reason for large-load tariffs, the rules that make a big new customer prepay, sign a long contract, or post collateral. Module two covers them line by line.
+So a co-op has no shareholders to reward for building. But it still borrows to build, and the members still repay that debt through their bills. If a co-op builds a substation for one giant customer and that customer leaves early, the remaining members can be left holding the loan. That's plausible. That risk is the reason for large-load tariffs, the rules that make a big new customer pay up front, sign a long contract, or post collateral. Module two covers them line by line.
 
 Last, where the power itself is bought. Your utility or co-op may not make the electricity it delivers. In much of the country, power is bought in a regional wholesale market. The grid operator takes offers from power plants and runs the cheapest ones first, adding more expensive plants as demand climbs. The last plant needed to meet demand sets the price, and every plant running that hour gets paid that price. That's how I S O New England describes it, and it's verified.
 
-That's why a big new load matters most where supply is already tight: it can push demand up to a costlier plant, and that higher price applies to every megawatt-hour in that hour. That's plausible. It's also why studies of data centers and power bills find the effects concentrated in tight markets such as P J M, a large regional grid operator in the East. That's verified.
+That's why a big new load matters most where supply is already tight: it can push demand up to a costlier plant, and that higher price applies to all the power bought in that hour. That's plausible. It's also why studies of data centers and power bills find the effects concentrated in tight markets such as P J M, a large regional grid operator in the East. That's verified.
 
 Here's a picture. An investor-owned utility is paid like the owner of a toll road who earns a fee on every mile of road built, not on every car that drives it. Building more road raises the owner's income, so someone has to check that the road is needed. Here's where that picture breaks. A toll-road owner sets the toll. A utility's return is set by a regulator in public, and you can testify. And a co-op is a road owned by the drivers: there's no outside owner to enrich, but the drivers pay off the road together.
 
@@ -80,11 +80,11 @@ Here's a picture. The queue is the line of grain trucks at the elevator at harve
 
 Still open, and this part is speculative. Will cluster studies shorten the wait, or just move the bottleneck to transformers and transmission lines? How much of the large-load line is real? And if large loads agreed to flex at peak, how much faster could a rural substation say yes? Nobody has settled these yet. They're questions for researchers, and for your utility.
 
-Straight Talk. Here's a claim we hear: "A I already uses most of America's electricity."
+Straight Talk. Here's a claim we hear: "AI already uses most of America's electricity."
 
 The verdict: wrong nationally, right to watch locally.
 
-U.S. data centers used about four point four percent of U.S. electricity in twenty twenty-three, according to Lawrence Berkeley National Laboratory. The lab's range for twenty twenty-eight is six point seven to twelve percent. That range is nearly a factor of two because nobody knows how fast A I will grow. That's verified.
+U.S. data centers used about four point four percent of U.S. electricity in twenty twenty-three, according to Lawrence Berkeley National Laboratory. The lab's range for twenty twenty-eight is six point seven to twelve percent. That range is nearly a factor of two because nobody knows how fast AI will grow. That's verified.
 
 Here's what matters for a rural county: nearly half of U.S. data center capacity sits in five regional clusters, according to the International Energy Agency. A few percent nationally can be a big share of one utility's system.
 
@@ -92,13 +92,13 @@ Ask for it in writing: what share of your utility's or co-op's peak demand would
 
 Your co-op is yours. If you're served by a rural electric co-op, you're an owner. Co-ops own about forty-two percent of U.S. distribution lines, covering about three-quarters of the land, and members elect the board. That's verified.
 
-That's the most wire per customer of any kind of utility, which is why one giant new customer can change a co-op's whole system. It's also why member-owners have real say. Some co-ops already require big loads to prepay for the substations and lines they need.
+That's the most wire per customer of any kind of utility, which is why one giant new customer can change a co-op's whole system. It's also why member-owners have real say. Some co-ops already require big loads to pay up front for the substations and lines they need.
 
 Annual meeting season starts in February. Find your co-op's date and put it on the calendar. Module two, Who Pays for the Substation, gives you the questions to bring.
 
 This module's County Kit is called Know Your Utility. It's a one-page sheet you fill in about your own co-op or utility: who owns it, when the board is elected, its rate classes, any large-load rule, the line to connect, and who to call. You'll find it on the module page.
 
-Ask Earl. Earl is Grid and Grain's A I character, a retired co-op lineman. He's not a real person, and he'll always tell you so. Here's a question he got. Why do my lights blink two or three times in a storm and then come back?
+Ask Earl. Earl is Grid and Grain's AI character, a retired co-op lineman. He's not a real person, and he'll always tell you so. Here's a question he got. Why do my lights blink two or three times in a storm and then come back?
 
 Earl says: You just watched a recloser work. It's a switch out on the line that acts like a smart breaker. When a branch touches a wire, it opens, waits a moment, and tries again. Lots of faults clear themselves, so the power comes right back. If it tries a few times and the fault's still there, it stays open, and that's when a crew rolls. If you ever see a line down, stay well back and call your co-op.
 
