@@ -1,0 +1,111 @@
+/* Straight Talk library and County Kits. Loads after site.css and guide.css. */
+
+.stlist { list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.stlist li { border-bottom: 1px solid var(--rule); }
+.stlist a { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 20px; align-items: start; padding: 22px 0; }
+.stlist a:hover .stlist__q { color: var(--red); }
+.stlist__n { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; color: var(--muted); padding-top: 6px; }
+.stlist__q { font-family: var(--serif); font-size: clamp(21px, 2.2vw, 26px); line-height: 1.2; letter-spacing: -0.01em; font-style: italic; transition: color .2s ease; }
+.stlist__s { margin-top: 8px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.stlist__v { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; padding-top: 4px; }
+.stlist .verdict { margin-top: 0; white-space: nowrap; }
+
+.claim { font-family: var(--serif); font-style: italic; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.025em; margin-top: 18px; max-width: 22ch; }
+.verdict-box { margin-top: 28px; padding: 20px 24px; background: var(--ink); color: var(--paper); border-radius: 4px; max-width: 720px; }
+.verdict-box span { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #D9A441; }
+.verdict-box p { margin-top: 6px; font-family: var(--serif); font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2; color: var(--paper); }
+
+.evidence { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 12px; }
+.evidence li { border: 1px solid var(--rule); border-radius: 4px; padding: 18px 20px; }
+.evidence p { font-size: 17px; line-height: 1.55; color: #2A3445; }
+.evidence .src { display: block; margin-top: 8px; font-size: 14px; color: var(--muted); }
+.evidence .src a { text-decoration: underline; text-underline-offset: 3px; }
+.read .evidence .tag { margin-left: 0; margin-right: 8px; }
+
+.critics { margin-top: 28px; padding: 18px 20px; border-radius: 4px; background: #F6E3E2; }
+.critics b { display: block; font-weight: 500; color: #8E2B2B; margin-bottom: 4px; font-size: 16px; }
+.critics p { font-size: 17px; color: #2A3445; }
+
+.asks { margin-top: 12px; padding: 0; list-style: none; display: grid; gap: 8px; }
+.asks li { position: relative; padding-left: 28px; font-size: 17px; line-height: 1.5; color: #2A3445; }
+.asks li::before { content: ""; position: absolute; left: 4px; top: 8px; width: 12px; height: 12px; border: 1.5px solid var(--ink); border-radius: 2px; }
+
+.related { margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.related a, .related div { display: block; padding: 18px 20px; border: 1px solid var(--rule); border-radius: 4px; }
+.related a:hover { border-color: var(--ink); }
+.related span { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.related b { display: block; margin-top: 6px; font-family: var(--serif); font-weight: 400; font-size: 21px; line-height: 1.2; }
+.related small { display: block; margin-top: 4px; color: var(--muted); font-size: 14px; }
+.correction { margin-top: 20px; padding: 14px 18px; border-left: 2px solid var(--blue); background: var(--paper); font-size: 15px; color: #2A3445; max-width: 720px; }
+.correction b { font-weight: 500; }
+
+/* County Kits */
+.kitlist { list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.kitlist li { display: grid; grid-template-columns: 90px minmax(0, 1fr) auto; gap: 20px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--rule); }
+.kitlist__m { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; color: var(--muted); text-transform: uppercase; }
+.kitlist__t { font-family: var(--serif); font-size: 23px; letter-spacing: -0.02em; line-height: 1.15; }
+.kitlist a.kitlist__t:hover { color: var(--red); }
+.kitlist__d { color: var(--muted); font-size: 15px; margin-top: 4px; }
+.kitlist__s { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.kitlist__s--open { color: #2F5D3A; }
+
+.checklist { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 10px; max-width: 760px; }
+.checklist li { border: 1px solid var(--rule); border-radius: 4px; }
+.checklist label { display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; cursor: pointer; min-height: 44px; }
+.checklist input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: #2F5D3A; flex: none; }
+.checklist input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.checklist .t { display: block; font-weight: 500; font-size: 17px; color: var(--ink); }
+.checklist .w { display: block; margin-top: 2px; font-size: 15px; color: #2A3445; }
+.checklist .write { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); font-family: var(--mono); letter-spacing: .02em; }
+.tally { margin-top: 24px; padding: 18px 22px; background: var(--ink); color: var(--paper); border-radius: 4px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; max-width: 760px; }
+.tally b { font-family: var(--serif); font-weight: 400; font-size: 28px; }
+.tally span { font-size: 15px; color: #C9CFD8; }
+
+@media (max-width: 760px) {
+  .stlist a { grid-template-columns: 36px minmax(0, 1fr); }
+  .stlist__v { grid-column: 2; align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+  .kitlist li { grid-template-columns: 64px minmax(0, 1fr); }
+  .kitlist__s { grid-column: 2; }
+}
+
+.print-only { display: none; }
+.guide-hero .eyebrow a { padding: 13px 0; margin: -13px 0; }
+
+@media print {
+  .print-only { display: block; margin-top: 8pt; font-size: 9pt; color: #000; }
+  .read .kit-note { font-size: 9pt; margin-top: 4pt !important; color: #000 !important; }
+  main section { padding-bottom: 0 !important; }
+  .read { margin-top: 8pt !important; }
+  .tag { border: 1px solid #000; }
+  @page { size: letter; margin: 0.5in; }
+  body { font-size: 11pt; }
+  .nav, .footer, .no-print, .disclose { display: none !important; }
+  .guide-hero { padding: 0 0 8pt; }
+  .guide-hero .headline { font-size: 22pt; }
+  .guide-hero .body, .guide-hero .lede { font-size: 11pt; margin-top: 6pt; }
+  .checklist { gap: 4pt; margin-top: 8pt; }
+  .checklist label { padding: 4pt 8pt; min-height: 0; }
+  .checklist .t { font-size: 11pt; }
+  .checklist .w { font-size: 10pt; }
+  .checklist .write { font-size: 9pt; margin-top: 2pt; }
+  .checklist li { break-inside: avoid; }
+  .tally { background: none; color: var(--ink); border: 1px solid var(--ink); padding: 6pt 10pt; margin-top: 8pt; }
+  .tally b { font-size: 14pt; }
+  .tally span { color: var(--ink); font-size: 10pt; }
+  .read h2 { font-size: 13pt; margin: 8pt 0 3pt; }
+  .read p, .read li { font-size: 10pt; }
+}
+
+/* Review pass: grade on the index, 44px targets, tags inside the critics box. */
+.stlist__g { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.stlist__g .tag { margin-left: 0; vertical-align: 0; }
+.stlist .verdict { white-space: normal; text-align: right; max-width: 30ch; line-height: 1.4; }
+.read .btns .btn, .btns .btn--lg { min-height: 44px; }
+.btns button.btn { cursor: pointer; }
+.related a { min-height: 44px; }
+.critics .tag { margin-left: 4px; }
+@media (max-width: 760px) {
+  .stlist__v { flex-direction: column; }
+  .stlist__g { justify-content: flex-start; }
+  .stlist .verdict { text-align: left; max-width: none; }
+}
