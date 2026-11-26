@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grid &amp; Grain | Rural AI Infrastructure, Explained | Get Rural America Done</title>
-<meta name="description" content="Grid & Grain is a free 2027 education series on rural AI infrastructure: power, chips, and data centers explained from the ground up, with every claim graded and the critics given their due.">
+<title>Grid &amp; Grain | What to Know Before the Data Center Vote | Get Rural America Done</title>
+<meta name="description" content="A data center wants to come to your county. Plain answers on power, chips, and data halls: look up a claim, start where you sit, and bring a checklist to the meeting. Every fact graded. No developer or utility money.">
 <meta name="theme-color" content="#0E1A2B">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/brand/avatar-navy.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Grid & Grain | Get Rural America Done">
-<meta property="og:description" content="Rural AI infrastructure, explained from the ground up. Know the wires. Set the terms.">
+<meta property="og:description" content="A data center wants to come to your county. Here's what to know before the vote. Know the wires. Set the terms.">
 <meta property="og:url" content="https://getruralamericadone.com/grid-and-grain">
 <meta property="og:image" content="https://getruralamericadone.com/assets/brand/og.png">
 <link rel="canonical" href="https://getruralamericadone.com/grid-and-grain">
@@ -19,8 +19,12 @@
 <link rel="preload" href="/assets/fonts/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/geist-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/guide.css">
+<link rel="stylesheet" href="/assets/css/hub.css">
 </head>
-<body>
+<body class="hub">
+
+<p class="hub-bar">Free public education &middot; No developer or utility money &middot; Earl is an AI character &middot; <a href="#who">Who funds this</a></p>
 
 <header class="nav" id="top">
   <div class="wrap nav__inner">
@@ -28,145 +32,292 @@
       <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
     </a>
     <ul class="nav__links" id="nav-links">
-      <li><a href="#formats">How it works</a></li>
       <li><a href="/field-guide">Field Guide</a></li>
-      <li><a href="#straight-talk">Straight Talk</a></li>
+      <li><a href="/straight-talk">Straight Talk</a></li>
+      <li><a href="/kits">County Kits</a></li>
       <li><a href="/earl">Ask Earl</a></li>
+      <li><a href="/sign-in" data-account-link>Sign in</a></li>
     </ul>
     <div class="nav__cta">
-      <a class="btn btn--solid" href="#subscribe"><span>Get the first issue</span><span>Get the first issue</span></a>
+      <a class="btn btn--solid" href="#subscribe"><span>Get the monthly note</span><span>Get the monthly note</span></a>
       <button class="nav__toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
 
 <main>
-  <section class="page-hero">
+  <section class="hub-hero">
     <div class="wrap">
-      <span class="eyebrow">Field Notes &middot; Grid &amp; Grain &middot; 2027</span>
-      <h1 class="display" style="margin-top:18px;max-width:16ch">Know the wires.<br><em style="color:var(--blue)">Set the terms.</em></h1>
-      <p class="lede">Power, chips, and data centers, explained from the ground up for rural America.</p>
-      <p class="body">Data centers are heading for rural counties. Some of the fears about them are overstated, and some are exactly right. Grid &amp; Grain tells the difference out loud, with sources, then shows your community what to ask for, whether it decides yes or no. For county leaders, co-op members, farmers, and rural hospital teams.</p>
-      <form class="subscribe" id="subscribe" data-subscribe>
-        <label class="sr-only" for="email-hero">Email address</label>
-        <input id="email-hero" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        <button class="btn btn--solid" type="submit"><span>Subscribe free</span><span>Subscribe free</span></button>
-        <span class="subscribe__note">One issue a month, starting January 5, 2027. Unsubscribe anytime.</span>
+      <span class="eyebrow">Grid &amp; Grain &middot; Know the wires. Set the terms.</span>
+      <h1 class="headline">A data center wants to come to your county. Here&rsquo;s what to know before the vote.</h1>
+      <p class="body">Plain answers on power, chips, and data halls. Every fact carries its evidence grade, and we tell you when the critics are right.</p>
+
+      <form class="hub-search" role="search" action="#straight-talk" data-claim-search>
+        <label for="claim">Heard a claim? Look it up.</label>
+        <div class="hub-search__field">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="claim" type="search" name="q" placeholder="&ldquo;It will raise my power bill&rdquo;" autocomplete="off" enterkeyhint="search">
+        </div>
+        <button class="btn btn--solid" type="submit"><span>Check it</span><span>Check it</span></button>
       </form>
-      <p class="disclose"><b>Who's behind this.</b> Grid &amp; Grain is the free education series of Get Rural America Done, a rural health and Critical Access Hospital modernization practice founded by Aldrich K. Wooden, Sr., U.S. Army veteran. Grid &amp; Grain takes no money from data center developers or utilities. It never sells you anything. Earl, our explainer, is an AI character.</p>
+      <ul class="hub-chips" aria-label="Most asked">
+        <li>Most asked:</li>
+        <li><a href="/straight-talk/power-bills">Power bills</a></li>
+        <li><a href="/straight-talk/water">Water</a></li>
+        <li><a href="/straight-talk/jobs">Jobs</a></li>
+        <li><a href="/straight-talk/noise">Noise</a></li>
+        <li><a href="/straight-talk/schools-and-taxes">Tax revenue</a></li>
+      </ul>
     </div>
   </section>
 
-  <section class="section section--paper" id="formats">
+  <section class="hub-band hub-band--paper" aria-labelledby="start-h">
     <div class="wrap">
-      <div class="notes-head reveal">
-        <div class="intro">
-          <span class="eyebrow">How it works</span>
-          <h2 class="lede">Five pieces a week. One module a month.</h2>
-          <p class="body">Every week on LinkedIn, Facebook, YouTube, and X, and every month in your inbox.</p>
+      <h2 class="hub-h" id="start-h">Start where you sit</h2>
+      <p class="hub-sub">Pick your seat at the table. Each path is three things to read first.</p>
+
+      <div class="hub-paths" data-paths>
+        <section class="hub-path" id="path-official" data-label="County official or planner" aria-labelledby="path-official-h">
+          <h3 class="hub-path__t" id="path-official-h">County official or planner</h3>
+          <ol class="hub-steps">
+            <li class="hub-step"><span class="hub-step__n">Step 1</span><span class="hub-step__t">Refuse the NDA before you read the plans</span><p>Secrecy is a leading driver of opposition.<span class="tag tag--v">VERIFIED</span> Ask for a named end user and a public hearing before any vote.</p><a class="hub-more" href="/straight-talk/secret-deals">Straight Talk #10 &rarr;</a></li>
+            <li class="hub-step"><span class="hub-step__n">Step 2</span><span class="hub-step__t">Write the limits at the property line</span><p>dBA limits, setbacks, generator test hours, and third-party monitoring belong in the ordinance, not the press release.</p><a class="hub-more" href="/kits">Model ordinance terms, opens May 4 &rarr;</a></li>
+            <li class="hub-step"><span class="hub-step__n">Step 3</span><span class="hub-step__t">Check the revenue after the abatement</span><p>Abatements can erase much of the promised tax revenue.<span class="tag tag--v">VERIFIED</span> Publish the net revenue to each taxing district, school board first.</p><a class="hub-more" href="/straight-talk/schools-and-taxes">Straight Talk #4 &rarr;</a></li>
+          </ol>
+        </section>
+
+        <section class="hub-path" id="path-coop" data-label="Co-op member" aria-labelledby="path-coop-h">
+          <h3 class="hub-path__t" id="path-coop-h">Co-op member</h3>
+          <ol class="hub-steps">
+            <li class="hub-step"><span class="hub-step__n">Step 1</span><span class="hub-step__t">Learn who pays for the substation</span><p>A large-load tariff decides whether members carry someone else&rsquo;s upgrade. Module 1 explains the wires it rides on.</p><a class="hub-more" href="/field-guide">Field Guide, Module 2, opens Feb 2 &rarr;</a></li>
+            <li class="hub-step"><span class="hub-step__n">Step 2</span><span class="hub-step__t">Bring the tariff checklist to your annual meeting</span><p>Minimum bills, collateral, exit fees, contract length. Members elect the board that decides.</p><a class="hub-more" href="/kits/large-load-tariff">Large-load tariff checklist &rarr;</a></li>
+            <li class="hub-step"><span class="hub-step__n">Step 3</span><span class="hub-step__t">Ask what share of peak the project would be</span><p>Nationally, data centers used 4.4% of U.S. electricity in 2023.<span class="tag tag--v">VERIFIED</span> Your co-op&rsquo;s share is the number that matters.</p><a class="hub-more" href="/straight-talk/share-of-electricity">Straight Talk #6 &rarr;</a></li>
+          </ol>
+        </section>
+
+        <section class="hub-path" id="path-resident" data-label="Resident or landowner" aria-labelledby="path-resident-h">
+          <h3 class="hub-path__t" id="path-resident-h">Resident or landowner</h3>
+          <ol class="hub-steps">
+            <li class="hub-step"><span class="hub-step__n">Step 1</span><span class="hub-step__t">Ask which kind of cooling</span><p>Cooling design, not size, decides water use.<span class="tag tag--v">VERIFIED</span> Ask before you argue.</p><a class="hub-more" href="/straight-talk/water">Straight Talk #2 &rarr;</a></li>
+            <li class="hub-step"><span class="hub-step__n">Step 2</span><span class="hub-step__t">Know what will reach your fence line</span><p>A reading next to a machine is not a reading at your house.<span class="tag tag--v">VERIFIED</span> Ask for a limit at the property line.</p><a class="hub-more" href="/straight-talk/noise">Straight Talk #5 &rarr;</a></li>
+            <li class="hub-step"><span class="hub-step__n">Step 3</span><span class="hub-step__t">Learn the levers you actually have</span><p>Zoning, tariffs, benefit agreements, and co-op board elections. Communities have used every one.<span class="tag tag--v">VERIFIED</span></p><a class="hub-more" href="/straight-talk/nothing-we-can-do">Straight Talk #7 &rarr;</a></li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="hub-band" id="straight-talk" aria-labelledby="st-h">
+    <div class="wrap">
+      <dl class="hub-legend">
+        <dt>How to read our grades</dt>
+        <dd><span class="tag tag--v">VERIFIED</span>A cited source directly supports it</dd>
+        <dd><span class="tag tag--p">PLAUSIBLE</span>Reasoned from evidence, not measured</dd>
+        <dd><span class="tag tag--s">SPECULATIVE</span>An idea worth testing, not a fact</dd>
+      </dl>
+
+      <div class="hub-head" style="margin-top:48px">
+        <h2 class="hub-h" id="st-h">Straight Talk: what people say, graded</h2>
+        <a class="hub-more" href="/straight-talk">All 10 entries &rarr;</a>
+      </div>
+      <p class="hub-sub">We grade the claim, never the person. Each entry&rsquo;s page links every source with its date. Figures last reviewed November 2026.</p>
+
+      <p class="hub-status" data-talk-status role="status" tabindex="-1" hidden></p>
+      <div class="hub-none" data-talk-none hidden>
+        <p><b style="font-weight:500">We don&rsquo;t have a graded entry on that yet.</b></p>
+        <p>Try one plain word, like &ldquo;water&rdquo; or &ldquo;taxes.&rdquo; Or <a href="mailto:ruralamerica56@gmail.com?subject=A%20claim%20for%20Straight%20Talk">send us the claim</a>: we add one entry a month, and we won&rsquo;t guess at an answer before it&rsquo;s sourced. All ten entries are below.</p>
+      </div>
+
+      <ul class="hub-cards" data-talks>
+        <li data-talk data-keys="bill bills rate rates price prices electric electricity power cost costs expensive utility ratepayer tariff raise higher">
+          <article class="hub-card">
+            <span class="hub-card__n">#01 &middot; Rates</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/power-bills">&ldquo;Data centers are why my power bill went up.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">Overstated, with a real local risk</span><span class="tag tag--v">VERIFIED</span><span class="tag tag--p">PLAUSIBLE for the future</span></div>
+            <p class="hub-card__e">An EPRI-led study of 2015&ndash;2024 found that doubling data center capacity lowered residential prices about 4%. The risk concentrates where supply is tight, such as the PJM region. <cite>Source: EPRI; E&amp;E News.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> a large-load tariff: separate rate class, minimum bills, long contracts, exit fees, prepaid upgrades.</p>
+          </article>
+        </li>
+        <li data-talk data-keys="water aquifer well wells drought cooling gallons river lake drain dry evaporative">
+          <article class="hub-card">
+            <span class="hub-card__n">#02 &middot; Water</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/water">&ldquo;A data center will drain our water.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">It depends on the cooling</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">Evaporative designs can use up to 5 million gallons a day. A closed-loop campus in Port Washington, Wisconsin, plans a peak near 22,000 gallons a day, about 65 homes. <cite>Source: Vantage Data Centers.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> a water disclosure: cooling type, peak and average gallons, source, and a drought curtailment clause.</p>
+          </article>
+        </li>
+        <li data-talk data-keys="job jobs work workers employment employ hire hiring careers construction">
+          <article class="hub-card">
+            <span class="hub-card__n">#03 &middot; Jobs</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/jobs">&ldquo;It&rsquo;ll bring hundreds of jobs.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">Wrong for permanent jobs</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">Rural facilities often employ fewer than 100 permanent workers, and specialized services come from outside the county. Construction jobs are real but temporary. <cite>Source: Georgia Tech, via Futurity.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> local-hire targets, apprenticeships, and a community college partnership, in writing.</p>
+          </article>
+        </li>
+        <li data-talk data-keys="school schools tax taxes revenue abatement abatements property budget money county">
+          <article class="hub-card">
+            <span class="hub-card__n">#04 &middot; Taxes</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/schools-and-taxes">&ldquo;It will pay for our schools.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict verdict--right">Partly right</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">Loudoun County, Virginia, reports the industry generates nearly half its property tax revenue. Abatements can erase much of it: El Paso granted 80% over 35 years. <cite>Source: Straight Arrow News; Brookings.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> the abatement terms and the net revenue to each taxing district, school board first.</p>
+          </article>
+        </li>
+        <li data-talk data-keys="noise noisy loud decibel decibels dba sound hum humming generator generators quiet">
+          <article class="hub-card">
+            <span class="hub-card__n">#05 &middot; Noise</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/noise">&ldquo;They&rsquo;re 96 decibels, 24 hours a day.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">Overstated; complaints are real</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">Readings next to machines aren&rsquo;t levels at a home. Neighbors in Vineland, New Jersey, have sued over round-the-clock noise. Sanford, North Carolina, caps data centers at 65 dBA at the property line. <cite>Source: Linn Valley FAQ; NC Newsline, July 15, 2026.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> a dBA limit at the property line, low-frequency measurement, setbacks, generator test hours, and third-party monitoring.</p>
+          </article>
+        </li>
+        <li data-talk data-more data-keys="electricity share grid percent usage uses using most national peak ai power energy">
+          <article class="hub-card">
+            <span class="hub-card__n">#06 &middot; Scale</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/share-of-electricity">&ldquo;AI already uses most of America&rsquo;s electricity.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">Wrong nationally; local share matters</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">U.S. data centers used 4.4% of U.S. electricity in 2023, with a 2028 range of 6.7% to 12%. Nearly half of U.S. capacity sits in five regional clusters. <cite>Source: Lawrence Berkeley National Laboratory, 2024; International Energy Agency, 2025.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> the share of your utility&rsquo;s or co-op&rsquo;s peak the project would be.</p>
+          </article>
+        </li>
+        <li data-talk data-keys="stop block fight zoning nothing vote ordinance moratorium leverage negotiate benefit agreement say choice anyway">
+          <article class="hub-card">
+            <span class="hub-card__n">#07 &middot; Leverage</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/nothing-we-can-do">&ldquo;There&rsquo;s nothing we can do; they&rsquo;ll build anyway.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">Wrong</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">As of May 2026, 23 states had approved at least one large-load tariff. Frederick County, Maryland, negotiated more than $110 million in developer-funded benefits. <cite>Source: Columbia Sabin Center, June 2, 2026; Maryland Association of Counties, Sept. 2, 2026.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> a seat at the table before the vote. The levers: zoning, tariffs, benefit agreements, co-op board elections.</p>
+          </article>
+        </li>
+        <li data-talk data-more data-keys="hospital hospitals health rural benefit benefits clinic doctor doctors telehealth help good broadband">
+          <article class="hub-card">
+            <span class="hub-card__n">#08 &middot; Health</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/rural-benefits">&ldquo;AI does nothing for rural people.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">Wrong, but adoption is thin</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">At Central Montana Medical Center, a 25-bed critical access hospital, AI scribing cut after-hours charting. Only 8% of critical access and rural community hospitals use AI-driven predictive analytics. <cite>Source: Becker&rsquo;s Hospital Review.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> broadband and AI-readiness funding for the hospital and schools, tied to any local deal.</p>
+          </article>
+        </li>
+        <li data-talk data-more data-keys="forecast forecasts double doubling demand growth future projection projections grow power energy">
+          <article class="hub-card">
+            <span class="hub-card__n">#09 &middot; Forecasts</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/power-use-forecasts">&ldquo;Data center power use will double forever.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict">Plan in ranges</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">From 2010 to 2018, global data center electricity rose about 6% while computing grew about 6.5 times. AI broke that balance after 2017, and forecasts now span nearly a factor of two. <cite>Source: Masanet et al., 2020; Shehabi et al., 2024.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> low, base, and high scenarios in any utility plan.</p>
+          </article>
+        </li>
+        <li data-talk data-more data-keys="secret secrecy nda ndas nondisclosure transparency transparent hidden closed door doors hearing who company">
+          <article class="hub-card">
+            <span class="hub-card__n">#10 &middot; Transparency</span>
+            <h3 class="hub-card__q"><a href="/straight-talk/secret-deals">&ldquo;These deals are done in secret.&rdquo;</a></h3>
+            <div class="hub-card__meta"><span class="verdict verdict--right">Often right</span><span class="tag tag--v">VERIFIED</span></div>
+            <p class="hub-card__e">Local officials have been asked to sign nondisclosure agreements, and secrecy is a leading driver of opposition. <cite>Source: Iowa Public Radio, Sept. 2, 2026.</cite></p>
+            <p class="hub-card__ask"><b>Ask for:</b> a transparency clause: named end user, public hearing before any vote, no NDAs for elected officials.</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hub-band hub-kits on-dark" id="kits" aria-labelledby="kits-h">
+    <div class="wrap">
+      <span class="eyebrow">For the meeting</span>
+      <div class="hub-head">
+        <h2 class="hub-h" id="kits-h">County Kits</h2>
+        <a class="hub-more" href="/kits">All twelve kits &rarr;</a>
+      </div>
+      <p class="hub-sub">One-page checklists for a real decision. Print one, hand it to your board, and check off what the draft already covers.</p>
+      <ul class="hub-kitgrid">
+        <li><div class="hub-kit hub-kit--open"><span class="hub-kit__m">Module 1 &middot; Jan</span><h3 class="hub-kit__t"><a href="/field-guide/01-wire-to-your-porch/kit">Know Your Utility</a></h3><p>A fact sheet you fill in about your own co-op or utility: who owns it, board elections, rate classes.</p><span class="hub-kit__s"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>Open the fact sheet &middot; 1 page</span></div></li>
+        <li><div class="hub-kit hub-kit--open"><span class="hub-kit__m">Module 2 &middot; Feb</span><h3 class="hub-kit__t"><a href="/kits/large-load-tariff">Large-load tariff checklist</a></h3><p>Minimum bills, collateral, exit fees, contract length.</p><span class="hub-kit__s"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>Open the checklist &middot; 1 page</span></div></li>
+        <li><div class="hub-kit"><span class="hub-kit__m">Module 4 &middot; Apr</span><h3 class="hub-kit__t">Water disclosure checklist</h3><p>Cooling type, peak and average gallons, source, drought clause.</p><span class="hub-kit__s">Opens Apr 6</span></div></li>
+        <li><div class="hub-kit"><span class="hub-kit__m">Module 5 &middot; May</span><h3 class="hub-kit__t">Model ordinance terms</h3><p>dBA at the property line, setbacks, generator test hours, monitoring.</p><span class="hub-kit__s">Opens May 4</span></div></li>
+        <li><div class="hub-kit"><span class="hub-kit__m">Module 8 &middot; Aug</span><h3 class="hub-kit__t">Workforce clause</h3><p>Local-hire targets, apprenticeships, a community college partnership.</p><span class="hub-kit__s">Opens Aug 3</span></div></li>
+        <li><div class="hub-kit"><span class="hub-kit__m">Module 10 &middot; Oct</span><h3 class="hub-kit__t">Benefit agreement term sheet</h3><p>Enforceability, payment schedule, security, reporting.</p><span class="hub-kit__s">Opens Oct 5</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="hub-band" id="field-guide" aria-labelledby="fg-h">
+    <div class="wrap hub-guide">
+      <div>
+        <h2 class="hub-h" id="fg-h">The Field Guide</h2>
+        <p class="hub-sub">Twelve monthly modules, one decision each. Read it at your level: every module climbs from plain English to graduate depth. Reading is open to everyone. A free account saves your scores, and passing all twelve self-checks earns the Grid &amp; Grain Field Certificate.</p>
+        <div class="progress" data-progress hidden>
+          <p class="progress__t"><b data-progress-count>0 of 12</b> self-checks passed</p>
+          <div class="progress__bar" role="img" data-progress-label aria-label="0 of 12 self-checks passed"><i data-progress-bar></i></div>
         </div>
-        <div class="grades" style="margin-top:0;border-top:0;padding-top:0">
-          <span class="grades__lead">Every claim carries its grade.</span>
-          <span class="grade grade--v"><i></i>VERIFIED</span>
-          <span class="grade grade--p"><i></i>PLAUSIBLE</span>
-          <span class="grade grade--s"><i></i>SPECULATIVE</span>
+        <div class="btns">
+          <a class="btn btn--solid" href="/field-guide"><span>Open the Field Guide</span><span>Open the Field Guide</span></a>
+          <a class="btn btn--ghost" href="/field-guide/01-wire-to-your-porch"><span>Start Module 1</span><span>Start Module 1</span></a>
         </div>
+      </div>
+      <ol class="hub-mods">
+          <li class="hub-mod" data-module="1"><span class="hub-mod__n">01 &middot; <span data-status>Opens Jan 5</span></span><a class="hub-mod__t" href="/field-guide/01-wire-to-your-porch">The Wire to Your Porch</a></li>
+          <li class="hub-mod" data-module="2"><span class="hub-mod__n">02 &middot; <span data-status>Opens Feb 2</span></span><span class="hub-mod__t">Who Pays for the Substation?</span></li>
+          <li class="hub-mod" data-module="3"><span class="hub-mod__n">03 &middot; <span data-status>Opens Mar 2</span></span><span class="hub-mod__t">Why AI Eats Power</span></li>
+          <li class="hub-mod" data-module="4"><span class="hub-mod__n">04 &middot; <span data-status>Opens Apr 6</span></span><span class="hub-mod__t">The Water Question</span></li>
+          <li class="hub-mod" data-module="5"><span class="hub-mod__n">05 &middot; <span data-status>Opens May 4</span></span><span class="hub-mod__t">Noise, Light, and Land</span></li>
+          <li class="hub-mod" data-module="6"><span class="hub-mod__n">06 &middot; <span data-status>Opens Jun 1</span></span><span class="hub-mod__t">The Rural Hospital Runs on Compute</span></li>
+          <li class="hub-mod" data-module="7"><span class="hub-mod__n">07 &middot; <span data-status>Opens Jul 6</span></span><span class="hub-mod__t">Sun, Storage, and Flexible Load</span></li>
+          <li class="hub-mod" data-module="8"><span class="hub-mod__n">08 &middot; <span data-status>Opens Aug 3</span></span><span class="hub-mod__t">The Jobs Question</span></li>
+          <li class="hub-mod" data-module="9"><span class="hub-mod__n">09 &middot; <span data-status>Opens Sep 7</span></span><span class="hub-mod__t">AI on the Farm</span></li>
+          <li class="hub-mod" data-module="10"><span class="hub-mod__n">10 &middot; <span data-status>Opens Oct 5</span></span><span class="hub-mod__t">Making the Deal</span></li>
+          <li class="hub-mod" data-module="11"><span class="hub-mod__n">11 &middot; <span data-status>Opens Nov 2</span></span><span class="hub-mod__t">Small Is Possible</span></li>
+          <li class="hub-mod" data-module="12"><span class="hub-mod__n">12 &middot; <span data-status>Opens Dec 7</span></span><span class="hub-mod__t">The Three Clocks</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="hub-band" style="padding-top:0" aria-labelledby="earl-h">
+    <div class="wrap">
+      <div class="hub-earl">
+        <div>
+          <div class="hub-earl__h"><h2 class="hub-h" id="earl-h">Ask Earl</h2><span class="listen__ai">AI character</span></div>
+          <p>A retired co-op lineman, made by Grid &amp; Grain. He answers only from our graded library, says when he doesn&rsquo;t know, and never takes a side on a project or a vote.</p>
+        </div>
+        <a class="hub-earl__go" href="/earl"><span>Take him a question about your bill, water, noise, or jobs</span><i aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper" id="formats" style="padding:clamp(56px,7vw,88px) 0">
+    <div class="wrap">
+      <div class="intro">
+        <span class="eyebrow">Every week</span>
+        <h2 class="lede" style="max-width:26ch">Five pieces a week. One module a month.</h2>
+        <p class="body">Every weekday on LinkedIn, Facebook, YouTube, and X. Each one points back to the module it came from.</p>
       </div>
       <div class="formats">
-        <article class="format reveal"><span class="format__d">Monday</span><h3 class="format__t">Carry This</h3><p>One sentence worth memorizing.</p></article>
-        <article class="format reveal"><span class="format__d">Tuesday</span><h3 class="format__t">Straight Talk</h3><p>A claim people make, its verdict, the evidence, and what to ask for.</p></article>
-        <article class="format reveal"><span class="format__d">Wednesday</span><h3 class="format__t">The Ladder</h3><p>One idea at five levels, sixth grade to Ph.D.</p></article>
-        <article class="format reveal"><span class="format__d">Thursday</span><h3 class="format__t">Ask Earl</h3><p>Our AI lineman answers a real question.</p></article>
-        <article class="format reveal"><span class="format__d">Friday</span><h3 class="format__t">Field Test</h3><p>A measurement anyone can repeat with an off-the-shelf meter or public data, or a rural AI story.</p></article>
+        <article class="format"><span class="format__d">Monday</span><h3 class="format__t">Carry This</h3><p>One sentence worth memorizing.</p></article>
+        <article class="format"><span class="format__d">Tuesday</span><h3 class="format__t">Straight Talk</h3><p>A claim people make, its verdict, the evidence, and what to ask for.</p></article>
+        <article class="format"><span class="format__d">Wednesday</span><h3 class="format__t">The Ladder</h3><p>One idea at five levels, sixth grade to Ph.D.</p></article>
+        <article class="format"><span class="format__d">Thursday</span><h3 class="format__t">Ask Earl</h3><p>Our AI lineman answers a real question.</p></article>
+        <article class="format"><span class="format__d">Friday</span><h3 class="format__t">Field Test</h3><p>A measurement you can repeat with a plug-in or handheld meter, a phone app, or public data. Or a rural AI story.</p></article>
       </div>
-      <div class="grades reveal">
-        <span class="grades__lead"><b style="font-weight:500">VERIFIED</b> <span style="color:var(--muted)">a cited source directly supports it.</span> &nbsp; <b style="font-weight:500">PLAUSIBLE</b> <span style="color:var(--muted)">reasoned from evidence, not measured.</span> &nbsp; <b style="font-weight:500">SPECULATIVE</b> <span style="color:var(--muted)">an idea worth testing, not a fact.</span></span>
-      </div>
+      <p class="hub-sub" style="margin-top:24px"><b style="font-weight:500;color:var(--ink)">Field Test rules.</b> Plug-in meters only: we never open an outlet, a panel, or utility equipment. We name the meter, the device, and the day. A phone-app reading is graded PLAUSIBLE, and one home reading never stands in for a national figure.</p>
     </div>
   </section>
 
-  <section class="section" id="field-guide">
+  <section class="hub-band hub-band--paper hub-band--rule" id="subscribe" aria-labelledby="join-h">
     <div class="wrap">
-      <div class="intro reveal">
-        <span class="eyebrow">The Field Guide</span>
-        <h2 class="lede">Twelve modules. Each one answers a decision your community may face.</h2>
-        <p class="body">Every module ships with a long read, an audio version, a five-question self-check, a Field Test video, and a one-page County Kit. Pass all twelve self-checks to earn the free Grid &amp; Grain Field Certificate.</p>
-        <div class="btns"><a class="btn btn--solid" href="/field-guide"><span>Open the Field Guide</span><span>Open the Field Guide</span></a></div>
+      <div class="hub-join">
+        <div>
+          <h2 class="hub-h" id="join-h">One note a month. No spin.</h2>
+          <p class="hub-sub">The module that just opened, its County Kit, and any corrections, on the first Tuesday of every month.</p>
+        </div>
+        <form class="subscribe" data-subscribe>
+          <label for="email-hub">Email address</label>
+          <input id="email-hub" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn btn--solid" type="submit"><span>Sign up free</span><span>Sign up free</span></button>
+          <span class="subscribe__note">Starts January 5, 2027. Unsubscribe anytime. <a href="/privacy" style="text-decoration:underline;text-underline-offset:3px">What we keep</a>.</span>
+        </form>
       </div>
-      <div class="modules">
-        <div class="module reveal"><span class="module__m">Jan</span><h3 class="module__t"><a href="/field-guide/01-wire-to-your-porch">The Wire to Your Porch</a></h3><p class="module__d">How power gets to you, and why your co-op is yours. <b>Kit:</b> Know Your Utility fact sheet.</p></div>
-        <div class="module reveal"><span class="module__m">Feb</span><h3 class="module__t">Who Pays for the Substation?</h3><p class="module__d">Large-load tariffs and co-op annual meetings. <b>Kit:</b> large-load tariff checklist.</p></div>
-        <div class="module reveal"><span class="module__m">Mar</span><h3 class="module__t">Why AI Eats Power</h3><p class="module__d">Chips, heat, and reading an energy claim critically. <b>Kit:</b> questions to ask about a power estimate.</p></div>
-        <div class="module reveal"><span class="module__m">Apr</span><h3 class="module__t">The Water Question</h3><p class="module__d">Cooling design, not size, decides water use. <b>Kit:</b> water disclosure checklist.</p></div>
-        <div class="module reveal"><span class="module__m">May</span><h3 class="module__t">Noise, Light, and Land</h3><p class="module__d">Writing or reviewing a zoning ordinance. <b>Kit:</b> model ordinance terms.</p></div>
-        <div class="module reveal"><span class="module__m">Jun</span><h3 class="module__t">The Rural Hospital Runs on Compute</h3><p class="module__d">AI tools a Critical Access Hospital can use, and what they need. <b>Kit:</b> CAH AI readiness checklist.</p></div>
-        <div class="module reveal"><span class="module__m">Jul</span><h3 class="module__t">Sun, Storage, and Flexible Load</h3><p class="module__d">Batteries, solar, and the grid's worst hour. <b>Kit:</b> flexibility terms to require.</p></div>
-        <div class="module reveal"><span class="module__m">Aug</span><h3 class="module__t">The Jobs Question</h3><p class="module__d">Few jobs, good jobs, and who gets them. <b>Kit:</b> workforce clause.</p></div>
-        <div class="module reveal"><span class="module__m">Sep</span><h3 class="module__t">AI on the Farm</h3><p class="module__d">Precision ag, farm data, and edge computing. <b>Kit:</b> farm data and connectivity checklist.</p></div>
-        <div class="module reveal"><span class="module__m">Oct</span><h3 class="module__t">Making the Deal</h3><p class="module__d">Community benefit agreements, for National Co-op Month. <b>Kit:</b> benefit agreement term sheet.</p></div>
-        <div class="module reveal"><span class="module__m">Nov</span><h3 class="module__t">Small Is Possible</h3><p class="module__d">Shared regional computing for public services. <b>Kit:</b> regional compute co-op concept sheet.</p></div>
-        <div class="module reveal"><span class="module__m">Dec</span><h3 class="module__t">The Three Clocks</h3><p class="module__d">Putting it together into a 12-month county plan. <b>Kit:</b> County AI Infrastructure Plan template.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--paper" id="straight-talk">
-    <div class="wrap">
-      <div class="intro reveal">
-        <span class="eyebrow">Straight Talk library</span>
-        <h2 class="lede">What people say, what the evidence shows, and what to ask for.</h2>
-        <p class="body">We grade the claim, never the person. Figures are dated to their sources and rechecked before reuse. Last reviewed November 2026.</p>
-      </div>
-      <div class="talk">
-
-        <article class="talk__item reveal"><div><span class="talk__n">01 / Rates</span><h3 class="talk__q">&ldquo;Data centers are why my power bill went up.&rdquo;</h3><span class="verdict">Overstated, with a real local risk</span></div>
-          <div class="talk__body"><p>An EPRI-led causal study (2015&ndash;2024) found a doubling of data center capacity lowered residential prices about 4% (<a href="https://restservice.epri.com/publicattachment/98650" target="_blank" rel="noopener">EPRI</a>). A Wharton and Harvard Business School paper attributes about 4% of the 2020&ndash;2025 residential price rise to data centers, and 15% of the industrial rise. Effects concentrate in tight markets such as PJM (<a href="https://www.eenews.net/articles/what-ai-data-centers-do-and-dont-do-to-electricity-prices" target="_blank" rel="noopener">E&amp;E News</a>).</p><p><b>Ask for:</b> a large-load tariff with a separate rate class, minimum bills, long contracts, exit fees, and prepaid upgrades.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span><span class="grade grade--p"><i></i>PLAUSIBLE for the future</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">02 / Water</span><h3 class="talk__q">&ldquo;A data center will drain our water.&rdquo;</h3><span class="verdict">It depends on the cooling</span></div>
-          <div class="talk__body"><p>Evaporative designs can use up to 5 million gallons a day. A closed-loop campus in Port Washington, Wisconsin, plans a peak near 22,000 gallons a day, about 65 homes (<a href="https://blog.vantage-dc.com/?p=4474" target="_blank" rel="noopener">Vantage</a>). About three-quarters of the U.S. data center water footprint sits upstream at power plants (Siddik et al., 2021).</p><p><b>Ask for:</b> cooling type, peak and average gallons, water source, and a drought curtailment clause.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">03 / Jobs</span><h3 class="talk__q">&ldquo;It&rsquo;ll bring hundreds of jobs.&rdquo;</h3><span class="verdict">Wrong for permanent jobs</span></div>
-          <div class="talk__body"><p>Rural facilities often employ fewer than 100 permanent workers, and specialized services come from outside the county (<a href="https://www.futurity.org/ai-data-centers-economic-benefits-3341202/" target="_blank" rel="noopener">Georgia Tech via Futurity</a>). Construction jobs are real but temporary.</p><p><b>Ask for:</b> local-hire targets, apprenticeships, and a community college partnership, in writing.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">04 / Taxes</span><h3 class="talk__q">&ldquo;It will pay for our schools.&rdquo;</h3><span class="verdict verdict--right">Partly right</span></div>
-          <div class="talk__body"><p>It can: Loudoun County, Virginia, reports the industry generates nearly half its property tax revenue. Abatements can erase much of it: El Paso granted an 80% property tax abatement over 35 years (<a href="https://www.brookings.edu/articles/why-community-benefit-agreements-are-necessary-for-data-centers/" target="_blank" rel="noopener">Brookings</a>).</p><p><b>Ask for:</b> the abatement terms and the net revenue to each taxing district, school board first.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">05 / Noise</span><h3 class="talk__q">&ldquo;They&rsquo;re 96 decibels, 24 hours a day.&rdquo;</h3><span class="verdict">Overstated as a blanket claim</span></div>
-          <div class="talk__body"><p>Readings next to machines don&rsquo;t equal levels at a home (<a href="https://tai.linnvalley.gov/faq/noise/" target="_blank" rel="noopener">Linn Valley FAQ</a>). But noise complaints are real: neighbors in Vineland, New Jersey, have sued over round-the-clock noise. Sanford, North Carolina, caps data centers at 65 dBA at the property line (<a href="https://ncnewsline.com/2026/07/15/lee-county-residents-demand-pause-on-data-center-claiming-deception/" target="_blank" rel="noopener">NC Newsline</a>).</p><p><b>Ask for:</b> a dBA limit at the property line, low-frequency measurement, setbacks, generator test hours, and third-party monitoring.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">06 / Scale</span><h3 class="talk__q">&ldquo;AI already uses most of America&rsquo;s electricity.&rdquo;</h3><span class="verdict">Wrong nationally</span></div>
-          <div class="talk__body"><p>U.S. data centers used 4.4% of U.S. electricity in 2023, with a 2028 range of 6.7% to 12% (Lawrence Berkeley National Laboratory, 2024). Nearly half of U.S. capacity sits in five regional clusters (International Energy Agency, 2025), so the local share is what matters.</p><p><b>Ask for:</b> the share of your utility&rsquo;s or co-op&rsquo;s peak demand a project would be.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">07 / Leverage</span><h3 class="talk__q">&ldquo;There&rsquo;s nothing we can do. They&rsquo;ll build anyway.&rdquo;</h3><span class="verdict">Wrong</span></div>
-          <div class="talk__body"><p>As of May 2026, 23 states had approved at least one large-load tariff (<a href="https://blogs.law.columbia.edu/climatechange/2026/06/02/data-center-regulation-what-local-governments-should-know-about-large-load-tariffs-and-clean-transition-tariffs/" target="_blank" rel="noopener">Columbia Sabin Center</a>). Frederick County, Maryland, negotiated more than $110 million in developer-funded benefits (<a href="https://conduitstreet.mdcounties.org/2026/09/02/frederick-secures-110m-community-benefits-agreement-for-data-center-campus/" target="_blank" rel="noopener">MACo</a>). Arizona&rsquo;s co-ops won a framework that keeps large-load costs off existing members (<a href="https://azcc.gov/news/home/2026/08/13/acc-approves-measure-to-ensure-electric-cooperative-customers-don-t-pay-for-large-load-growth" target="_blank" rel="noopener">ACC</a>).</p><p><b>Learn the levers:</b> zoning, utility tariffs, benefit agreements, and co-op board elections.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">08 / Health</span><h3 class="talk__q">&ldquo;AI does nothing for rural people.&rdquo;</h3><span class="verdict">Wrong, but adoption is thin</span></div>
-          <div class="talk__body"><p>At Central Montana Medical Center, a 25-bed Critical Access Hospital, ambient AI scribing cut after-hours charting so much that some physicians said they&rsquo;d consider leaving without it. Only about 8% of critical access and rural community hospitals use AI-driven predictive analytics (<a href="https://www.beckershospitalreview.com/rural-health/innovation-under-pressure-7-ways-rural-leaders-are-turning-constraint-into-tech-driven-advantage/" target="_blank" rel="noopener">Becker&rsquo;s</a>).</p><p><b>Ask for:</b> any local data center deal to include broadband and AI-readiness support for the hospital and schools.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">09 / Forecasts</span><h3 class="talk__q">&ldquo;Data center power use will double forever.&rdquo;</h3><span class="verdict">Plan in ranges</span></div>
-          <div class="talk__body"><p>From 2010 to 2018, global data center electricity rose only about 6% while computing grew about 6.5 times (Masanet et al., 2020, <i>Science</i>). AI broke that balance after 2017, and forecasts now span nearly a factor of two.</p><p><b>Ask for:</b> low, base, and high scenarios in any utility plan, and who pays if demand lands low.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-        <article class="talk__item reveal"><div><span class="talk__n">10 / Transparency</span><h3 class="talk__q">&ldquo;These deals are done in secret.&rdquo;</h3><span class="verdict verdict--right">Often right</span></div>
-          <div class="talk__body"><p>Local officials have been asked to sign nondisclosure agreements, and secrecy is a leading driver of opposition (<a href="https://www.iowapublicradio.org/2026-09-02/data-center-backlash-missouri-kansas" target="_blank" rel="noopener">Iowa Public Radio</a>).</p><p><b>Ask for:</b> a transparency clause: a named end user, a public hearing before any vote, and no NDAs for elected officials.</p><div class="talk__meta"><span class="grade grade--v"><i></i>VERIFIED</span></div></div></article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="closing on-dark" aria-labelledby="closing-title">
-    <div class="hero__scene" aria-hidden="true">
-      <canvas class="hero__stars" data-stars="56"></canvas>
-      <svg class="hero__field" data-field viewBox="0 0 1600 500" preserveAspectRatio="none"></svg>
-      <div class="hero__grain"></div>
-    </div>
-    <div class="wrap closing__inner reveal">
-      <h2 class="display" id="closing-title">The opportunity isn&rsquo;t the building. It&rsquo;s the leverage.</h2>
-      <form class="subscribe" data-subscribe style="margin:36px auto 0;justify-content:center">
-        <label class="sr-only" for="email-close">Email address</label>
-        <input id="email-close" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        <button class="btn btn--solid" type="submit"><span>Subscribe free</span><span>Subscribe free</span></button>
-      </form>
-      <div class="btns" style="margin-top:16px"><a class="btn btn--ghost" href="/earl"><span>Meet Earl</span><span>Meet Earl</span></a></div>
+      <p class="disclose" id="who"><b>Who&rsquo;s behind this.</b> Grid &amp; Grain is the free public-education series of Get Rural America Done, a rural health and Critical Access Hospital modernization practice founded by Aldrich K. Wooden, Sr., U.S. Army veteran. Grid &amp; Grain takes no money from data center developers or utilities, and it never sells you anything. It takes no position on any specific project, candidate, or vote. Earl is an AI character. Nothing here is legal, financial, or medical advice. When we get something wrong, we fix it within 48 hours and list it in the <a href="/corrections">corrections log</a>.</p>
     </div>
   </section>
 </main>
@@ -184,7 +335,11 @@
           <li><a href="/">Home</a></li>
           <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
           <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/straight-talk">Straight Talk</a></li>
+          <li><a href="/kits">County Kits</a></li>
           <li><a href="/earl">Ask Earl</a></li>
+          <li><a href="/corrections">Corrections</a></li>
+          <li><a href="/privacy">Privacy</a></li>
           <li><a href="/#about">About</a></li>
         </ul>
       </div>
@@ -219,5 +374,133 @@
 </footer>
 
 <script src="/assets/js/site.js" defer></script>
+<script>
+/* Hub enhancements. The page reads in full without this script:
+   all three reading paths show, and all ten Straight Talk entries show. */
+(() => {
+  /* Start where you sit: turn the three sections into tabs */
+  const wrap = document.querySelector("[data-paths]");
+  if (wrap) {
+    const panels = [...wrap.querySelectorAll(".hub-path")];
+    const list = document.createElement("div");
+    list.className = "hub-tabs";
+    list.setAttribute("role", "tablist");
+    list.setAttribute("aria-label", "I am a");
+    let saved = null;
+    try { saved = localStorage.getItem("gg-seat"); } catch (e) {}
+    const tabs = panels.map(p => {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "hub-tab"; b.id = `tab-${p.id}`;
+      b.setAttribute("role", "tab"); b.setAttribute("aria-controls", p.id);
+      b.textContent = p.dataset.label;
+      p.setAttribute("role", "tabpanel"); p.setAttribute("aria-labelledby", b.id);
+      list.appendChild(b);
+      return b;
+    });
+    const pick = (i, focus) => {
+      tabs.forEach((t, j) => { t.setAttribute("aria-selected", String(j === i)); t.tabIndex = j === i ? 0 : -1; });
+      panels.forEach((p, j) => { p.hidden = j !== i; });
+      if (focus) tabs[i].focus();
+      try { localStorage.setItem("gg-seat", panels[i].id); } catch (e) {}
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener("click", () => pick(i));
+      t.addEventListener("keydown", e => {
+        const n = tabs.length;
+        const to = { ArrowRight: (i + 1) % n, ArrowDown: (i + 1) % n, ArrowLeft: (i + n - 1) % n, ArrowUp: (i + n - 1) % n, Home: 0, End: n - 1 }[e.key];
+        if (to === undefined) return;
+        e.preventDefault(); pick(to, true);
+      });
+    });
+    wrap.insertBefore(list, panels[0]);
+    wrap.classList.add("is-tabs");
+    pick(Math.max(0, panels.findIndex(p => p.id === saved)));
+  }
+
+  /* Claim search: filters the Straight Talk entries already in the page */
+  const form = document.querySelector("[data-claim-search]");
+  const items = [...document.querySelectorAll("[data-talk]")];
+  const status = document.querySelector("[data-talk-status]");
+  const none = document.querySelector("[data-talk-none]");
+  if (!form || !items.length) return;
+  const input = form.querySelector("input");
+  const STOP = new Set("a an and are as at be but by can data center centers do does for from has have how i if in is it its me my of on or our that the their them they this to us was we what will with you your about going really just".split(" "));
+  const words = s => s.toLowerCase().replace(/[’']/g, "").split(/[^a-z0-9%$]+/).filter(Boolean);
+  const stem = w => w.length > 4 ? w.replace(/(ies|es|s|ing|ed)$/, "") : w;
+  const index = items.map(li => [...new Set(words(li.textContent + " " + li.dataset.keys).map(stem))]);
+
+  const showDefault = () => {
+    items.forEach(li => { li.hidden = li.hasAttribute("data-more"); });
+    status.hidden = true; none.hidden = true;
+  };
+  const run = raw => {
+    const q = raw.trim();
+    const terms = [...new Set(words(q).filter(w => w.length > 1 && !STOP.has(w)).map(stem))];
+    if (!q) return showDefault();
+    const scores = index.map(ws => terms.filter(t => ws.some(w => w === t || (t.length > 2 && w.startsWith(t) && w.length - t.length <= 2))).length);
+    const best = Math.max(0, ...scores);
+    status.hidden = false;
+    status.textContent = "";
+    if (!best) {
+      items.forEach(li => { li.hidden = false; });
+      none.hidden = false;
+      status.append("No match for “" + q + "”.");
+    } else {
+      let n = 0;
+      items.forEach((li, i) => { li.hidden = scores[i] !== best; if (!li.hidden) n++; });
+      none.hidden = true;
+      const b = document.createElement("b");
+      b.textContent = `${n} of ${items.length} ${n === 1 ? "entry matches" : "entries match"}`;
+      status.append(b, " “" + q + "”.");
+    }
+    const clear = document.createElement("button");
+    clear.type = "button"; clear.textContent = "Clear search";
+    clear.addEventListener("click", () => { input.value = ""; showDefault(); input.focus(); });
+    status.append(clear);
+  };
+
+  showDefault();
+  input.addEventListener("input", () => run(input.value));
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    run(input.value);
+    if (!input.value.trim()) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.getElementById("st-h").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    status.focus({ preventScroll: true });
+  });
+  const q = new URLSearchParams(location.search).get("q");
+  if (q) { input.value = q.slice(0, 120); run(input.value); }
+})();
+</script>
+<script type="module">
+  import { MODULES, PUBLISHED } from "/assets/js/config.js";
+  import { enabled, getUser, loadProgress, markNav } from "/assets/js/members.js";
+
+  const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/Chicago" });
+  const short = d => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+
+  const user = enabled ? await getUser() : null;
+  const progress = await loadProgress();
+
+  for (const m of MODULES) {
+    const tile = document.querySelector(`.hub-mod[data-module="${m.n}"]`);
+    if (!tile) continue;
+    const s = tile.querySelector("[data-status]");
+    const open = today >= m.opens && PUBLISHED.includes(m.n);
+    if (progress.passed.has(m.n)) { s.textContent = `Passed ${progress.best.get(m.n)}/5`; tile.classList.add("hub-mod--passed"); }
+    else if (open) { s.textContent = "Open now"; tile.classList.add("hub-mod--open"); }
+    else s.textContent = `Opens ${short(m.opens)}`;
+  }
+
+  if (user) {
+    const n = progress.passed.size;
+    document.querySelector("[data-progress]").hidden = false;
+    document.querySelector("[data-progress-count]").textContent = `${n} of 12`;
+    document.querySelector("[data-progress-label]").setAttribute("aria-label", `${n} of 12 self-checks passed`);
+    document.querySelector("[data-progress-bar]").style.width = `${(n / 12) * 100}%`;
+  }
+  markNav();
+</script>
 </body>
 </html>
