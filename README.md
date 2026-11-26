@@ -16,12 +16,16 @@ Static site for **Get Rural America Done** (@GetRural56Done): rural health and C
 
 ### Turning accounts on
 
-1. Create a Supabase project (a paid plan, so the project never pauses). In **SQL Editor**, run `supabase/schema.sql` once.
-2. **Authentication > URL Configuration:** Site URL `https://getruralamericadone.com`; add `https://getruralamericadone.com/account` and your preview domain's `/account` to Redirect URLs.
-3. **Authentication > Emails > SMTP Settings:** turn on custom SMTP with your Resend credentials, sender `fieldguide@getruralamericadone.com`. In Resend, verify the domain (SPF, DKIM, DMARC records in DNS).
-4. **Authentication > Email Templates > Magic Link:** subject "Your Grid & Grain sign-in link"; keep the `{{ .ConfirmationURL }}` link.
-5. Copy **Project Settings > API** URL and anon key into `assets/js/config.js`. The anon key is meant to be public; row-level security protects the data.
-6. Monthly note list: in the SQL editor, `select * from monthly_note_list;` and export as CSV to a Resend audience.
+1. **Supabase project** on the Pro plan (paid projects never pause for inactivity). Region: US East or US Central. In **SQL Editor > New query**, paste `supabase/schema.sql` and run it. It is safe to run again after a change.
+2. **Authentication > URL Configuration:** Site URL `https://getruralamericadone.com`. Redirect URLs (sign-in links carry `?next=`, so use wildcards):
+   - `https://getruralamericadone.com/account**`
+   - `https://grad56-*-khaaliswooden-maxs-projects.vercel.app/account**` (Vercel previews)
+3. **Resend:** add the domain `getruralamericadone.com` and put its SPF, DKIM, and MX records at the DNS host; add a DMARC record (`_dmarc`, start with `v=DMARC1; p=none; rua=mailto:<your inbox>`). Wait for **Verified**. Create an API key with **Sending access** for that domain only.
+4. **Authentication > Emails > SMTP Settings:** enable custom SMTP. Host `smtp.resend.com`, port `465`, username `resend`, password = the Resend API key (typed in the dashboard, never committed). Sender email `fieldguide@getruralamericadone.com`, sender name `Grid & Grain`. Then raise **Authentication > Rate Limits > emails sent per hour** to suit (30 is the starting value).
+5. **Authentication > Emails > Templates:** paste `supabase/templates/sign-in-link.html` into both **Magic link** and **Confirm signup** (a first sign-in sends "Confirm signup"). Subject for both: `Your Grid & Grain sign-in link`.
+6. **Project Settings > API Keys:** copy the Project URL and the anon (public) key into `assets/js/config.js`. Never commit the service-role or secret key. The anon key is meant to be public; row-level security protects the data.
+7. Test on the Vercel preview: sign up, land on `/account`, check the `members` row, take a self-check, delete the account, confirm the rows are gone.
+8. Monthly note list: in the SQL editor, `select * from monthly_note_list;` (confirmed addresses only) and export as CSV to a Resend audience.
 
 ### Adding a module
 
