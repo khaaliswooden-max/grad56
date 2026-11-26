@@ -46,7 +46,7 @@
       <span class="eyebrow"><a href="/field-guide">Field Guide</a> &middot; Module 1 of 12 &middot; January 2027</span>
       <h1 class="headline">The Wire to Your Porch</h1>
       <p class="lede">Before anyone asks your county to vote on a data center, here&rsquo;s how power gets to your porch, and why that&rsquo;s the whole story.</p>
-      <p class="body"><b>The decision it serves:</b> understanding your co-op or utility before anyone asks you to vote. About 15 minutes to read.</p>
+      <p class="body"><b>The decision it serves:</b> understanding your co-op or utility before anyone asks you to vote. About 15 minutes to read, plus 10 for the Go deeper rungs.</p>
     </div>
   </section>
 
@@ -54,7 +54,16 @@
     <div class="wrap">
       <article class="read">
 
-        <div class="media-note"><b>Listen:</b> audio version of this module (added at launch). <b>Watch:</b> the Field Test video, outlet voltage dip when the microwave starts (added when filmed).</div>
+        <div class="listen" id="listen">
+          <div class="listen__head">
+            <span class="listen__k">Listen to this module</span>
+            <span class="listen__ai">Narration: AI voice</span>
+          </div>
+          <audio controls preload="none" src="/assets/media/01/module-01-narration.mp3">
+            Your browser can&rsquo;t play this audio. <a href="/assets/media/01/module-01-narration.mp3">Download the MP3</a>.
+          </audio>
+          <p class="listen__foot">The whole module, rungs 1 to 5, read aloud. About <span data-listen-min>19</span> minutes. <a href="/assets/media/01/module-01-narration.txt">Read the script</a> &middot; <a href="/assets/media/01/module-01-narration.mp3" download>Download MP3</a></p>
+        </div>
 
         <div class="carry">
           <span>Carry this</span>
@@ -74,13 +83,62 @@
         <p>So the grid plays a trick. To move 100 megawatts at 100,000 volts takes 1,000 amps. At 500,000 volts it takes 200 amps, one fifth as much, and the heat lost on the same wire falls to one twenty-fifth.</p>
         <p>That&rsquo;s why power is stepped up at the plant, carried on tall transmission lines, stepped down at a substation, and stepped down once more by the can on your pole or the green box in your yard. Even so, about 5% of U.S. electricity is lost along the way (EIA, 2018&ndash;2022 average). <span class="tag tag--v">VERIFIED</span></p>
         <div class="try"><b>Field Test: see it in your kitchen</b>Plug a $25 watt meter into an outlet near your microwave and read the volts. Start the microwave and watch the reading drop a few volts. Volts lost times amps flowing equals watts turned into heat in the wires between your outlet and the transformer on the pole, most of it in the wires inside your walls. A typical 1,200-watt microwave draws about 10 amps, so a 3-volt drop means about 30 watts warming the wiring. Same physics as the grid, on your counter. <b style="display:inline;text-transform:none;letter-spacing:0;font-family:var(--sans);font-weight:500;color:var(--ink)">Plug-in meters only. Never open an outlet or a panel.</b></div>
+        <!-- Field Test video slot. Stays hidden until data-video-url is set to a YouTube link or an .mp4 path. -->
+        <figure class="fieldtest-video" data-video-slot data-video-url="" data-video-title="Field Test: outlet voltage dip when the microwave starts" hidden>
+          <div class="fieldtest-video__frame" data-video-frame></div>
+          <figcaption>Field Test video. One outlet, one circuit, one day; readings reported as measured. Plug-in meters only.</figcaption>
+        </figure>
 
         <h2>Rung 3. Built for the worst hour</h2>
         <p>The grid is planned to survive the hottest afternoon and the coldest morning of the year, and to keep running if its single largest piece fails. The result: much of it sits idle most of the time. Across U.S. balancing areas from 2016 to 2024, average demand was about 53% of peak (Duke University). <span class="tag tag--v">VERIFIED</span></p>
         <p>That empty half matters. A Duke study estimated that if large new customers agreed to cut back during the grid&rsquo;s few worst hours, about 0.5% of the year, the U.S. could absorb roughly 98 gigawatts of new load without building for a new peak. <span class="tag tag--v">VERIFIED</span> as a system-wide estimate. The catch, which the authors note too: room on the whole system isn&rsquo;t room at your local substation, and not every computer job can pause.</p>
 
-        <h2>Go deeper</h2>
-        <div class="media-note"><b>Rungs 4 and 5</b> (how utilities earn money, and why connecting to the grid now takes years) are added here before launch.</div>
+        <h2 id="go-deeper">Go deeper</h2>
+        <p>The first three rungs explain how the grid works. The next two explain why it behaves the way it does when someone big asks to plug in. They get more technical, but every term is defined. Skip them and you can still pass the self-check; read them and you&rsquo;ll follow the conversation at your co-op&rsquo;s annual meeting.</p>
+
+        <h2>Rung 4. How utilities earn money</h2>
+        <p>The company that delivers your power is usually a <b>monopoly</b>: one set of wires per road, because building two would waste money. A monopoly can&rsquo;t be left to set its own prices, so someone else sets them. Who that is depends on who owns the wires.</p>
+
+        <h3>Investor-owned utilities: paid on what they build</h3>
+        <p>An investor-owned utility is a company with shareholders. A state <b>public utility commission</b> sets its prices in a public proceeding called a <b>rate case</b>. The commission adds up two things the utility needs to collect from customers:</p>
+        <ul>
+          <li><b>Operating costs</b>: fuel, crews, trucks, billing. The utility gets these back, but makes no profit on them.</li>
+          <li><b>A return on its rate base.</b> The <b>rate base</b> is the value of everything the utility has built and still owns (poles, wires, substations, power plants), minus wear. The commission lets the utility earn a set percentage on that value.</li>
+        </ul>
+        <p>In shorthand, revenue needed = operating costs + (allowed return &times; rate base) (National Renewable Energy Laboratory, Sept. 2015). <span class="tag tag--v">VERIFIED</span></p>
+        <p>How big is that allowed return? In rate cases decided in the first half of 2026, regulators let electric utilities earn an average of 9.84% on the shareholders&rsquo; share of the investment, the same average as in 2025 (S&amp;P Global Market Intelligence, Aug. 2026). <span class="tag tag--v">VERIFIED</span> That&rsquo;s a ceiling the utility is allowed to aim for, not a guaranteed paycheck.</p>
+        <p>Look at what the formula rewards. A dollar spent on fuel comes back as a dollar. A dollar spent on a new substation comes back with a return on top, for as long as it&rsquo;s on the books. So an investor-owned utility has a built-in reason to favor building things. <span class="tag tag--p">PLAUSIBLE</span> That isn&rsquo;t a scandal; it&rsquo;s how the system was designed to attract money for long-lived equipment. It&rsquo;s why the commission, and the public at rate-case hearings, have to ask whether each project is needed and who should pay for it.</p>
+
+        <h3>Co-ops: owned by the people on the line</h3>
+        <p>A rural electric co-op works differently. It&rsquo;s a nonprofit owned by its members, who elect the board on a one-member, one-vote basis. When a co-op takes in more than it costs to run, those margins are credited back to members based on how much power each one bought. These are called <b>capital credits</b>, and the co-op holds the money for a period of years before paying it out (University of Wisconsin Center for Cooperatives). <span class="tag tag--v">VERIFIED</span></p>
+        <p>So a co-op has no shareholders to reward for building. But it still borrows to build, and the members still repay that debt through their bills. If a co-op builds a substation for one giant customer and that customer leaves early, the remaining members can be left holding the loan. <span class="tag tag--p">PLAUSIBLE</span> That risk is the reason for <b>large-load tariffs</b>, the rules that make a big new customer prepay, sign a long contract, or post collateral. Module 2 covers them line by line.</p>
+
+        <h3>Where the power itself is bought</h3>
+        <p>Your utility or co-op may not make the electricity it delivers. In much of the country, power is bought in a regional <b>wholesale market</b>. The grid operator takes offers from power plants and runs the cheapest ones first, adding more expensive plants as demand climbs. The last plant needed to meet demand sets the price, and every plant running that hour gets paid that price (ISO New England). <span class="tag tag--v">VERIFIED</span></p>
+        <p>That&rsquo;s why a big new load matters most where supply is already tight: it can push demand up to a costlier plant, and that higher price applies to every megawatt-hour in that hour. <span class="tag tag--p">PLAUSIBLE</span> It&rsquo;s also why studies of data centers and power bills find the effects concentrated in tight markets such as PJM, a large regional grid operator in the East (E&amp;E News, in the <a href="/grid-and-grain#straight-talk">Straight Talk library</a>). <span class="tag tag--v">VERIFIED</span></p>
+        <div class="analogy"><b>Analogy</b>An investor-owned utility is paid like the owner of a toll road who earns a fee on every mile of road built, not on every car that drives it. Building more road raises the owner&rsquo;s income, so someone has to check that the road is needed.</div>
+        <div class="breaks"><b>Where it breaks</b>A toll-road owner sets the toll. A utility&rsquo;s return is set by a regulator in public, and you can testify. And a co-op is a road owned by the drivers: there&rsquo;s no outside owner to enrich, but the drivers pay off the road together.</div>
+
+        <h2>Rung 5. Why connecting to the grid now takes years</h2>
+        <p>Rung 3 showed that the grid has room most of the year. So why do new power plants and big new customers wait years to connect? Because &ldquo;room on average&rdquo; isn&rsquo;t the question the grid asks. It asks: on the worst hour, at this exact spot, with this new thing added, does anything overload? Answering that for every request takes engineering studies, and the line for those studies is long.</p>
+
+        <h3>The line for new power plants</h3>
+        <p>Every new power plant or battery that wants to connect to the high-voltage grid files an <b>interconnection request</b> and waits in an <b>interconnection queue</b> while the grid operator studies what upgrades it would trigger and who pays. At the end of 2025, about 2,061 gigawatts of generation and storage sat in those queues, down 10% from a year earlier. Projects that came online in 2025 took a median of 61 months, about five years, from request to operation. Of everything that asked to connect from 2000 to 2020, only 13% of the capacity had been built by the end of 2025; 75% had withdrawn (Lawrence Berkeley National Laboratory, <em>Queued Up</em>, 2026 edition, June 2026). <span class="tag tag--v">VERIFIED</span></p>
+        <p>Those numbers explain each other. Filing was cheap, so developers filed many speculative requests. Requests were studied one at a time, first come, first served. And when a project ahead in line dropped out, the upgrades and costs for everyone behind it could change, so studies had to be redone.</p>
+        <p>On July 28, 2023, the Federal Energy Regulatory Commission (FERC) issued <b>Order No. 2023</b> to fix that. It replaced one-at-a-time studies with <b>cluster studies</b> that look at a batch of requests together, and changed the rule from &ldquo;first come, first served&rdquo; to &ldquo;first ready, first served.&rdquo; Developers now pay study deposits, must show they control the land, and can owe a penalty for withdrawing late. Grid operators that miss study deadlines can owe penalties too (FERC). <span class="tag tag--v">VERIFIED</span></p>
+        <p>Is it working? The queue shrank in 2025, with more than 750 gigawatts of requests withdrawn that year (Lawrence Berkeley National Laboratory, July 2026). <span class="tag tag--v">VERIFIED</span> Whether that means faster connections, or just a shorter line with the same slow studies, is not yet settled. <span class="tag tag--p">PLAUSIBLE</span></p>
+
+        <h3>The line for hardware</h3>
+        <p>Even an approved connection needs equipment, and transformers, the devices that step voltage up and down, are scarce. Wood Mackenzie projected that U.S. supply would fall short of demand in 2025 by 30% for large power transformers and 10% for the distribution transformers like the one on your pole (Wood Mackenzie, Aug. 2025). <span class="tag tag--v">VERIFIED</span> A project can clear the study line and still wait in the factory line.</p>
+
+        <h3>The line for big new customers</h3>
+        <p>Data centers and other large loads wait in a separate line that the national queue reports don&rsquo;t count. Texas shows how long it can get: its large-load queue held 474 gigawatts, more than five times the state grid&rsquo;s summer peak of a little over 90 gigawatts (Utility Dive, Sept. 2026). <span class="tag tag--v">VERIFIED</span> Much of that will never be built; some developers file the same project with several utilities to see who answers first. Texas now requires large-load applicants to show site control, cover much of their grid upgrade cost, disclose duplicate requests, and accept curtailment during emergencies (Texas Senate Bill 6, as reported by Utility Dive, Sept. 2026). <span class="tag tag--v">VERIFIED</span> One industry group puts typical large-load waits at one to five years with regulated utilities and eight or more in parts of PJM (Power for Tomorrow, as reported by Utility Dive). <span class="tag tag--p">PLAUSIBLE</span> as an advocacy group&rsquo;s estimate.</p>
+
+        <h3>Why this matters at the county line</h3>
+        <p>A long line is leverage. A developer who wants to connect sooner has reasons to accept terms: pay for its own upgrades, agree to cut back during the grid&rsquo;s worst hours (the flexibility from Rung 3), or bring its own batteries. When someone says a project must be approved quickly, it&rsquo;s fair to ask where it actually sits in the utility&rsquo;s line, what upgrades it triggers, and who pays for them.</p>
+        <div class="analogy"><b>Analogy</b>The queue is the line of grain trucks at the elevator at harvest. Each truck has to be weighed and graded before it can unload, and the scale is the slow part.</div>
+        <div class="breaks"><b>Where it breaks</b>At the elevator, a truck that pulls out of line just makes the line shorter. In an interconnection queue, a project that drops out can change the upgrades, and the bill, for every project behind it. That&rsquo;s why the new rules charge for leaving late.</div>
+        <div class="analogy" style="border-left:2px solid var(--blue)"><b>Still open <span class="tag tag--s">SPECULATIVE</span></b>Will cluster studies shorten the wait, or just move the bottleneck to transformers and transmission lines? How much of the large-load line is real? And if large loads agreed to flex at peak, how much faster could a rural substation say yes? Nobody has settled these yet. Questions for researchers, and for your utility.</div>
 
         <h2>Straight Talk</h2>
         <p style="font-family:var(--serif);font-size:24px;line-height:1.25;color:var(--ink)">&ldquo;AI already uses most of America&rsquo;s electricity.&rdquo;</p>
@@ -93,6 +151,18 @@
         <p>If you&rsquo;re served by a rural electric co-op, you&rsquo;re an owner. Co-ops own about 42% of U.S. distribution lines, covering about three-quarters of the land, and members elect the board. <span class="tag tag--v">VERIFIED</span></p>
         <p>That&rsquo;s the most wire per customer of any kind of utility, which is why one giant new customer can change a co-op&rsquo;s whole system. It&rsquo;s also why member-owners have real say. Some co-ops already require big loads to prepay for the substations and lines they need.</p>
         <p>Annual meeting season starts in February. Find your co-op&rsquo;s date and put it on the calendar. Module 2, <em>Who Pays for the Substation?</em>, gives you the questions to bring.</p>
+
+        <div class="kit-cta">
+          <div>
+            <span class="kit-cta__k">County Kit &middot; Module 1</span>
+            <p class="kit-cta__t">Know Your Utility</p>
+            <p class="kit-cta__d">A one-page fact sheet you fill in about your own co-op or utility: who owns it, when the board is elected, its rate classes, any large-load rule, the connection line, and who to call.</p>
+          </div>
+          <div class="kit-cta__btns">
+            <a class="btn btn--solid" href="/field-guide/01-wire-to-your-porch/kit"><span>Open the kit</span><span>Open the kit</span></a>
+            <a class="btn btn--ghost" href="/assets/media/01/know-your-utility-kit.pdf" download><span>Download PDF</span><span>Download PDF</span></a>
+          </div>
+        </div>
 
         <h2>Ask Earl</h2>
         <p><span class="ai-badge" style="color:var(--ink);border-color:var(--rule)">AI character</span></p>
@@ -115,6 +185,18 @@
           <li>Norris et al. (2025a, 2025b), Duke University Nicholas Institute, load factor and curtailment-enabled headroom.</li>
           <li>NRECA (2023) and University of Wisconsin Center for Cooperatives, co-op line miles and land area.</li>
           <li>Kirschen &amp; Strbac (2019), <em>Fundamentals of Power System Economics</em>.</li>
+        </ul>
+        <h3 style="font-size:16px;margin-top:24px">Go deeper (rungs 4 and 5), opened Nov. 26, 2026</h3>
+        <ul style="font-size:15px">
+          <li>National Renewable Energy Laboratory (Sept. 16, 2015), <a href="https://www.nrel.gov/state-local-tribal/blog/posts/phrase-of-the-day-rate-base.html">&ldquo;Phrase of the Day: Rate Base&rdquo;</a>: rate base and the revenue requirement formula.</li>
+          <li>S&amp;P Global Market Intelligence (Aug. 2026), <a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/09/average-gas-roe-edges-down-as-electric-holds-firm-in-h1-2026">&ldquo;Average gas ROE edges down as electric holds firm in H1 2026&rdquo;</a>: 9.84% average authorized return on equity, H1 2026 and 2025.</li>
+          <li>University of Wisconsin Center for Cooperatives, <a href="https://reic.uwcc.wisc.edu/electric/">&ldquo;Rural Electric&rdquo;</a>: nonprofit status, capital credits, one-member one-vote.</li>
+          <li>ISO New England, <a href="https://iso-ne.com/about/what-we-do/how-resources-are-selected-and-prices-are-set">&ldquo;How Resources Are Selected and Prices Are Set in the Wholesale Energy Markets&rdquo;</a>.</li>
+          <li>Rand et al. (June 2026), <a href="https://eta-publications.lbl.gov/sites/default/files/2026-06/queued_up_2026_edition.pdf"><em>Queued Up: 2026 Edition</em></a>, Lawrence Berkeley National Laboratory: 2,061 GW in queues, 61-month median, 13% built and 75% withdrawn.</li>
+          <li>Lawrence Berkeley National Laboratory (July 1, 2026), <a href="https://emp.lbl.gov/news/backlog-power-plants-seeking-transmission-grid-connection-eased-somewhat-2025-amidst">&ldquo;Backlog of power plants seeking transmission grid connection eased somewhat in 2025&rdquo;</a>: 10% decline, more than 750 GW withdrawn in 2025.</li>
+          <li>Federal Energy Regulatory Commission, <a href="https://www.ferc.gov/explainer-interconnection-final-rule">&ldquo;Explainer on the Interconnection Final Rule&rdquo;</a> (Order No. 2023, July 28, 2023).</li>
+          <li>Wood Mackenzie (Aug. 14, 2025), <a href="https://www.woodmac.com/es/press-releases/power-transformers-and-distribution-transformers-will-face-supply-deficits-of-30-and-10-in-2025/">transformer supply deficits of 30% and 10% in 2025</a>.</li>
+          <li>Martucci, B. (Sept. 23, 2026), <a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/">&ldquo;A fraction of proposed data centers will get built. Utilities are wising up.&rdquo;</a>, Utility Dive: Texas large-load queue, SB 6, Power for Tomorrow estimate.</li>
         </ul>
         <p style="font-size:14px;color:var(--muted);margin-top:16px">Spot an error? Email <a href="mailto:ruralamerica56@gmail.com">ruralamerica56@gmail.com</a>. We correct within 48 hours, in public.</p>
       </article>
@@ -166,6 +248,38 @@
 <script type="module">
   import { markNav } from "/assets/js/members.js";
   markNav();
+</script>
+<script>
+  // Field Test video: shows nothing until data-video-url is set. Accepts a YouTube link or an .mp4/.webm path.
+  (function () {
+    var slot = document.querySelector("[data-video-slot]");
+    if (!slot) return;
+    var url = (slot.getAttribute("data-video-url") || "").trim();
+    if (!url) return;
+    var frame = slot.querySelector("[data-video-frame]");
+    var title = slot.getAttribute("data-video-title") || "Field Test video";
+    var yt = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+    var el;
+    if (yt) {
+      el = document.createElement("iframe");
+      el.src = "https://www.youtube-nocookie.com/embed/" + yt[1] + "?rel=0";
+      el.title = title;
+      el.loading = "lazy";
+      el.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture";
+      el.allowFullscreen = true;
+    } else if (/\.(mp4|webm)(\?|$)/i.test(url)) {
+      el = document.createElement("video");
+      el.src = url;
+      el.controls = true;
+      el.preload = "metadata";
+      el.setAttribute("playsinline", "");
+      el.setAttribute("aria-label", title);
+    } else {
+      return;
+    }
+    frame.appendChild(el);
+    slot.hidden = false;
+  })();
 </script>
 </body>
 </html>
