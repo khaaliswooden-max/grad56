@@ -152,3 +152,5 @@ grant select on public.modules to anon, authenticated;
 grant select on public.members to authenticated;
 grant select, insert on public.check_attempts to authenticated;
 grant select on public.certificates to authenticated;
+-- Nothing on the website needs these; the Data API can't issue them, but don't leave them lying around.
+revoke truncate, trigger, references on public.modules, public.members, public.check_attempts, public.certificates from anon, authenticated;
