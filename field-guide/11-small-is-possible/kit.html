@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regional Compute Co-op Concept Sheet: County Kit, Module 11 | Grid &amp; Grain Field Guide</title>
+<meta name="description" content="A one-page concept sheet for a regional compute co-op: members, the services that belong close to home, what gets pooled, governance, and the replacement reserve. Free County Kit from the Grid & Grain Field Guide.">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/avatar-navy.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Regional Compute Co-op Concept Sheet | Grid & Grain County Kit">
+<meta property="og:description" content="Test the idea of pooled public computing on one page before anyone spends money.">
+<meta property="og:url" content="https://getruralamericadone.com/field-guide/11-small-is-possible/kit">
+<meta property="og:image" content="https://getruralamericadone.com/assets/brand/og.png">
+<link rel="canonical" href="https://getruralamericadone.com/field-guide/11-small-is-possible/kit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@GetRural56Done">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/guide.css">
+<style>
+  /* County Kit sheet. Screen: fill-in form (nothing is saved). Print: one Letter page. */
+  .kit { max-width: 860px; margin-top: 8px; }
+  .kit__intro { font-size: 17px; color: #2A3445; max-width: 62ch; }
+  .kit__tools { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .kit__tools .btn { min-height: 44px; cursor: pointer; }
+  .kit__tools small { color: var(--muted); font-size: 13px; }
+  .sheet { margin-top: 28px; border: 1px solid var(--rule); border-radius: 4px; padding: clamp(18px, 3vw, 32px); background: var(--white); }
+  .sheet__top { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 10px; }
+  .sheet__k { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .sheet__h { font-family: var(--serif); font-size: clamp(28px, 3.4vw, 38px); letter-spacing: -0.02em; line-height: 1.05; }
+  .sheet__how { margin-top: 10px; font-size: 14px; color: #2A3445; }
+  .sec { margin-top: 18px; break-inside: avoid; }
+  .sec h2 { font-family: var(--mono); font-size: 12px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+  .sec h2 i { font-style: normal; color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 20px; margin-top: 8px; }
+  .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .f { display: flex; flex-direction: column; gap: 2px; }
+  .f--wide { grid-column: 1 / -1; }
+  .f label, .f .lbl { font-size: 13px; font-weight: 500; color: var(--ink); }
+  .f input[type="text"], .f textarea { width: 100%; min-height: 40px; padding: 6px 2px; border: 0; border-bottom: 1px solid #8E8A80; border-radius: 0; background: transparent; font: 400 15px/1.3 var(--sans); color: var(--ink); }
+  .f textarea { min-height: 52px; resize: vertical; }
+  .f input:focus-visible, .f textarea:focus-visible, .opts input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .f small { font-size: 12px; color: var(--muted); }
+  .opts { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 2px; }
+  .opts label { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 400; min-height: 32px; cursor: pointer; }
+  .opts input { width: 18px; height: 18px; accent-color: var(--ink); margin: 0; }
+  .ask { margin-top: 8px; padding-left: 20px; font-size: 14px; color: #2A3445; }
+  .ask li + li { margin-top: 4px; }
+  .sheet__foot { margin-top: 18px; padding-top: 10px; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; font-size: 12px; color: var(--muted); }
+  .kit__why { margin-top: 40px; max-width: 720px; }
+  .kit__why h2 { font-family: var(--serif); font-size: clamp(26px, 3vw, 32px); letter-spacing: -0.02em; }
+  .kit__why p, .kit__why li { margin-top: 10px; font-size: 17px; line-height: 1.6; color: #2A3445; }
+  .kit__why ul { padding-left: 22px; }
+  .kit__why a { text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 640px) {
+    .grid, .grid--3 { grid-template-columns: minmax(0, 1fr); }
+  }
+  @page { size: letter; margin: 0.4in 0.5in; }
+  @media print {
+    html, body { background: #fff; }
+    .nav, .footer, .no-print, .guide-hero, .kit__intro, .kit__tools, .kit__why { display: none !important; }
+    main section { padding: 0 !important; }
+    .wrap { padding: 0 !important; max-width: none; }
+    .sheet { margin: 0; border: 0; padding: 0; }
+    .sheet__h { font-size: 21pt; }
+    .kit { margin-top: 0; }
+    .sheet__how { font-size: 9.5pt; margin-top: 6px; }
+    .sec { margin-top: 7px; break-inside: auto; }
+    .sec h2 { font-size: 8.5pt; padding-bottom: 2px; }
+    .grid { gap: 2px 18px; margin-top: 3px; }
+    .f label, .f .lbl { font-size: 9pt; }
+    .f small { font-size: 7.5pt; line-height: 1.2; }
+    .f { gap: 1px; }
+    .f input[type="text"], .f textarea { min-height: 0; height: 15px; padding: 0; font-size: 10pt; }
+    .f textarea { height: 15px; resize: none; }
+    .opts label { font-size: 9.5pt; min-height: 18px; gap: 4px; }
+    .opts input { width: 11px; height: 11px; }
+    .ask { font-size: 9.5pt; margin-top: 3px; }
+    .ask li + li { margin-top: 1px; }
+    .sheet__foot { margin-top: 10px; font-size: 8pt; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="/" aria-label="Get Rural America Done, home">
+      <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/field-guide">Field Guide</a></li>
+      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/earl">Ask Earl</a></li>
+      <li><a href="/sign-in" data-account-link>Sign in</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="/field-guide/11-small-is-possible"><span>Back to the module</span><span>Back to the module</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="guide-hero" style="padding-bottom:0">
+    <div class="wrap">
+      <span class="eyebrow"><a href="/field-guide">Field Guide</a> &middot; <a href="/field-guide/11-small-is-possible">Module 11</a> &middot; County Kit</span>
+      <h1 class="headline">Regional Compute Co-op Concept Sheet</h1>
+      <p class="lede">One page to test the idea before anyone spends money. If you can&rsquo;t fill in the members and the uses, you don&rsquo;t need the hardware.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom:clamp(64px,9vw,120px)">
+    <div class="wrap">
+      <div class="kit">
+        <p class="kit__intro">Type straight into the sheet, then print it or save it as a PDF. Nothing you type is stored or sent anywhere; closing the page clears it. Prefer pen and paper? Print it blank. This is a concept sheet for discussion, not a business plan or legal advice.</p>
+        <div class="kit__tools no-print">
+          <button class="btn btn--solid" type="button" data-print><span>Print or save as PDF</span><span>Print or save as PDF</span></button>
+          <a class="btn btn--ghost" href="/assets/media/11/regional-compute-co-op-concept-sheet.pdf" download><span>Blank PDF</span><span>Blank PDF</span></a>
+          <button class="btn btn--ghost" type="button" data-clear><span>Clear the sheet</span><span>Clear the sheet</span></button>
+        </div>
+
+        <form class="sheet" aria-labelledby="sheet-title" onsubmit="return false">
+          <div class="sheet__top">
+            <h2 class="sheet__h" id="sheet-title">Regional Compute Co-op Concept Sheet</h2>
+            <span class="sheet__k">Grid &amp; Grain County Kit &middot; Module 11</span>
+          </div>
+          <p class="sheet__how">Start with section 2. A service with no check marks belongs in the cloud. If nothing earns a check, keep renting and stop here.</p>
+
+          <div class="sec">
+            <h2>1. Who would be at the table <i>&middot; Rung 3</i></h2>
+            <div class="grid">
+              <div class="f"><label for="k1">Region (counties and towns)</label><input type="text" id="k1"></div>
+              <div class="f"><label for="k2">Filled in by, and date</label><input type="text" id="k2"></div>
+              <div class="f f--wide"><span class="lbl" id="k3-l">Possible members:</span>
+                <div class="opts" role="group" aria-labelledby="k3-l">
+                  <label><input type="checkbox"> County</label>
+                  <label><input type="checkbox"> Cities and towns</label>
+                  <label><input type="checkbox"> School districts</label>
+                  <label><input type="checkbox"> Hospital or clinics</label>
+                  <label><input type="checkbox"> Electric co-op</label>
+                  <label><input type="checkbox"> Library</label>
+                  <label><input type="checkbox"> 911</label>
+                </div>
+              </div>
+              <div class="f f--wide"><label for="k4">Anchor member (the one with the most at stake)</label><input type="text" id="k4"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>2. Which services belong close <i>&middot; Rungs 2 and 4</i></h2>
+            <div class="grid">
+              <div class="f"><label for="k5">Service 1 (for example, 911 dispatch fallback)</label><input type="text" id="k5"></div>
+              <div class="f f--wide"><span class="lbl" id="k6-l">Service 1 needs:</span>
+                <div class="opts" role="group" aria-labelledby="k6-l">
+                  <label><input type="checkbox"> Split-second response</label>
+                  <label><input type="checkbox"> Too much data to send</label>
+                  <label><input type="checkbox"> Sensitive records</label>
+                  <label><input type="checkbox"> Must run when the link is down</label>
+                </div>
+              </div>
+              <div class="f"><label for="k7">Service 2 (for example, records backup)</label><input type="text" id="k7"></div>
+              <div class="f f--wide"><span class="lbl" id="k8-l">Service 2 needs:</span>
+                <div class="opts" role="group" aria-labelledby="k8-l">
+                  <label><input type="checkbox"> Split-second response</label>
+                  <label><input type="checkbox"> Too much data to send</label>
+                  <label><input type="checkbox"> Sensitive records</label>
+                  <label><input type="checkbox"> Must run when the link is down</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>3. What gets pooled <i>&middot; Rung 4</i></h2>
+            <div class="grid">
+              <div class="f f--wide"><span class="lbl" id="k9-l">Shared:</span>
+                <div class="opts" role="group" aria-labelledby="k9-l">
+                  <label><input type="checkbox"> Technicians</label>
+                  <label><input type="checkbox"> A secure room</label>
+                  <label><input type="checkbox"> Servers and storage</label>
+                  <label><input type="checkbox"> Cloud contracts</label>
+                  <label><input type="checkbox"> Backups</label>
+                </div>
+              </div>
+              <div class="f"><label for="k10">Where would the sites be? (two towns, two power lines)</label><input type="text" id="k10"></div>
+              <div class="f"><label for="k11">Jobs that can wait for off-peak hours</label><input type="text" id="k11"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>4. Who owns it and who votes <i>&middot; Rung 5</i></h2>
+            <div class="grid">
+              <div class="f f--wide"><span class="lbl" id="k12-l">Legal form to ask the attorneys about:</span>
+                <div class="opts" role="group" aria-labelledby="k12-l">
+                  <label><input type="checkbox"> Cooperative</label>
+                  <label><input type="checkbox"> Council of governments</label>
+                  <label><input type="checkbox"> Interlocal agreement</label>
+                  <label><input type="checkbox"> Hosted by one member</label>
+                </div>
+              </div>
+              <div class="f f--wide"><span class="lbl" id="k13-l">Voting:</span>
+                <div class="opts" role="group" aria-labelledby="k13-l">
+                  <label><input type="checkbox"> One member, one vote</label>
+                  <label><input type="checkbox"> By share of use</label>
+                  <label><input type="checkbox"> Mixed</label>
+                </div>
+              </div>
+              <div class="f f--wide"><label for="k14">Who owns each member&rsquo;s data, and how does a member leave?</label><input type="text" id="k14"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>5. Money <i>&middot; Rung 5</i></h2>
+            <div class="grid">
+              <div class="f"><label for="k15">Start-up source (grant, benefit agreement, dues)</label><input type="text" id="k15"></div>
+              <div class="f"><label for="k16">How yearly costs are split (use, population, equal)</label><input type="text" id="k16"></div>
+              <div class="f f--wide"><label for="k17">Yearly replacement reserve, and who holds it</label><input type="text" id="k17"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>Ask before anyone buys hardware</h2>
+            <ol class="ask">
+              <li>Which services must keep running when the outside link is down? How do they today?</li>
+              <li>Who would run it, at what pay, and who covers nights and vacations?</li>
+              <li>What do we pay now for the same services, in total, across every member?</li>
+            </ol>
+          </div>
+
+          <div class="sheet__foot">
+            <span>Grid &amp; Grain &middot; getruralamericadone.com/field-guide/11-small-is-possible/kit</span>
+            <span>Free. No developer money. Not legal advice. Sources in Module 11.</span>
+          </div>
+        </form>
+
+        <div class="kit__why">
+          <h2>Why these questions</h2>
+          <ul>
+            <li><b>Members first</b>, because pooling is the whole idea. Users with thin, scattered demand end up in computing&rsquo;s slow lane (Thompson &amp; Spanuth, 2021). <span class="tag tag--v">VERIFIED</span> Farm co-ops solved the same problem for electricity: about nine in ten rural homes lacked service in the mid-1930s, and more than 90% of farms had it by 1953 (NRECA). <span class="tag tag--v">VERIFIED</span></li>
+            <li><b>The four check boxes</b> are the four advantages of computing close to home: fast response, less data to send, privacy, and riding through an outage (Satyanarayanan, 2017). <span class="tag tag--v">VERIFIED</span> A service that needs none of them is cheaper in the cloud.</li>
+            <li><b>Technicians</b> lead the pooled list because managing scattered sites is the first obstacle the research names (Satyanarayanan, 2017). <span class="tag tag--v">VERIFIED</span></li>
+            <li><b>Two sites</b> because copies aren&rsquo;t independence (<a href="/field-guide/10-making-the-deal">Module 10, Rung 3</a>).</li>
+            <li><b>Voting and exit</b> follow the cooperative principles, including democratic member control (NRECA). <span class="tag tag--v">VERIFIED</span> Ohio law keeps its school technology centers honest by letting any district buy services elsewhere (Ohio Revised Code 3301.075). <span class="tag tag--v">VERIFIED</span></li>
+            <li><b>The replacement reserve</b> is our own suggestion. <span class="tag tag--p">PLAUSIBLE</span></li>
+          </ul>
+          <p style="font-size:14px;color:var(--muted)">Spot an error? Email <a href="mailto:ruralamerica56@gmail.com">ruralamerica56@gmail.com</a>. We correct within 48 hours, in public.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="340" height="30">
+        <p>Grid &amp; Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities.</p>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
+          <li><a href="/earl">Ask Earl</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="/sign-in">Sign in</a></li>
+          <li><a href="/account">My account</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ruralamerica56@gmail.com">ruralamerica56@gmail.com</a></li>
+          <li><a href="https://getrural56done.substack.com" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="/">Get Rural America Done</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy;2026 Get Rural America Done</span>
+      <span class="footer__stripes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span>@GetRural56Done</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+<script type="module">
+  import { markNav } from "/assets/js/members.js";
+  markNav();
+</script>
+<script>
+  document.querySelector("[data-print]").addEventListener("click", function () { window.print(); });
+  document.querySelector("[data-clear]").addEventListener("click", function () { document.querySelector(".sheet").reset(); });
+</script>
+</body>
+</html>
