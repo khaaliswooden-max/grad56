@@ -39,7 +39,7 @@ Who makes your power, who delivers it, and who decides what you pay. Know your u
 
 ### Corrections
 
-One so far. On Nov. 21, 2026, we replaced our "Bench Tests" with Field Tests anyone can repeat with a store-bought meter. [Read the corrections log](https://getruralamericadone.com/corrections?utm_source=substack&utm_medium=post&utm_campaign=2027-01).
+Two so far: our "Bench Tests" became Field Tests you can repeat with a store-bought meter, and Frederick County, Md., rejected the $110 million deal we'd cited. [Read the corrections log](https://getruralamericadone.com/corrections?utm_source=substack&utm_medium=post&utm_campaign=2027-01).
 
 Question about your own utility? Reply to this post. A person reads every reply.
 
