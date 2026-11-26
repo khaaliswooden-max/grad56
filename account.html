@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My account | Grid &amp; Grain Field Guide</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/guide.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="/" aria-label="Get Rural America Done, home">
+      <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/field-guide">Field Guide</a></li>
+      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/earl">Ask Earl</a></li>
+      <li><a href="/account" aria-current="page">My account</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="/field-guide"><span>Field Guide</span><span>Field Guide</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="guide-hero" style="padding-bottom:clamp(64px,9vw,120px)">
+    <div class="wrap">
+      <span class="eyebrow">Grid &amp; Grain &middot; My account</span>
+      <h1 class="headline" data-hello>My account</h1>
+      <p class="body" data-loading>Loading&hellip;</p>
+
+      <div data-finish hidden>
+        <p class="body">One more step: press the button to finish signing in on this device.</p>
+        <div class="btns" style="margin-top:20px"><button class="btn btn--solid btn--lg" type="button" data-finish-btn><span>Finish signing in</span><span>Finish signing in</span></button></div>
+        <p class="notice notice--err" data-finish-error hidden role="alert">This sign-in link has expired or was already used. <a href="/sign-in" style="text-decoration:underline">Send a new link</a>; it takes a few seconds.</p>
+      </div>
+
+      <div data-signed-out hidden>
+        <p class="body">You&rsquo;re not signed in. <a href="/sign-in?next=/account" style="text-decoration:underline">Sign in with your email</a>.</p>
+      </div>
+
+      <div data-signed-in hidden>
+        <p class="body">Signed in as <b data-email style="font-weight:500;color:var(--ink)"></b>.</p>
+
+        <div class="panel">
+          <h2>Your progress</h2>
+          <p><span data-count>0 of 12</span> self-checks passed. Your best score counts.</p>
+          <div class="progress__bar" role="img" data-bar-label aria-label="0 of 12 passed"><i data-bar></i></div>
+          <ol class="mlist" style="margin-top:20px" data-mods></ol>
+        </div>
+
+        <div class="panel" data-cert-panel>
+          <h2>Field Certificate</h2>
+          <p data-cert-locked>Pass all twelve self-checks to earn it. The certificate shows your name and, if you choose, your county and state.</p>
+          <div data-cert-have hidden>
+            <p>Issued <span data-cert-date></span>. Anyone with the link can confirm it.</p>
+            <div class="btns" style="margin-top:14px"><a class="btn btn--solid" data-cert-link href="#"><span>View certificate</span><span>View certificate</span></a></div>
+          </div>
+          <form class="form" data-cert-form hidden>
+            <div class="field"><label for="cname">Name as it should appear</label><input id="cname" name="name" type="text" maxlength="80" required></div>
+            <div class="field"><label for="ccounty">County (optional)</label><input id="ccounty" name="county" type="text" maxlength="60" placeholder="Guadalupe County"><small>Shown as text on your certificate.</small></div>
+            <div class="field"><label for="cstate">State or territory (optional)</label><input id="cstate" name="state" type="text" maxlength="40" placeholder="Texas"></div>
+            <div><button class="btn btn--solid btn--lg" type="submit"><span>Issue my certificate</span><span>Issue my certificate</span></button></div>
+          </form>
+          <p class="notice notice--err" data-cert-error hidden role="alert"></p>
+        </div>
+
+        <div class="panel">
+          <h2>Email and profile</h2>
+          <form class="form" data-prefs>
+            <label class="check"><input type="checkbox" name="note"> <span>Send me one short note a month when a new module opens.</span></label>
+            <div class="field">
+              <label for="role">Which best describes you? (optional)</label>
+              <select id="role" name="role">
+                <option value="">Prefer not to say</option>
+                <option value="official">County or city official, planner, or staff</option>
+                <option value="coop">Electric co-op member, board, or staff</option>
+                <option value="resident">Resident or landowner</option>
+                <option value="farm">Farmer or rancher</option>
+                <option value="hospital">Rural hospital, school, or business leader</option>
+                <option value="student">Student, career changer, or veteran</option>
+                <option value="other">Something else</option>
+              </select>
+              <small>Only used to count which audiences the Field Guide reaches.</small>
+            </div>
+            <div><button class="btn btn--ghost" type="submit" style="cursor:pointer"><span>Save</span><span>Save</span></button> <span data-prefs-saved hidden style="font-size:14px;color:#2F5D3A;margin-left:8px">Saved.</span></div>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h2>Sign out or delete</h2>
+          <p>Deleting removes your account, every score, and your certificate. It can&rsquo;t be undone.</p>
+          <div class="btns" style="margin-top:16px">
+            <button class="btn btn--ghost" type="button" data-signout style="cursor:pointer"><span>Sign out</span><span>Sign out</span></button>
+            <button class="btn btn--danger" type="button" data-delete><span>Delete my account</span><span>Delete my account</span></button>
+          </div>
+          <p class="notice notice--warn" data-confirm hidden>Delete your account and everything in it? <button type="button" class="btn btn--danger" data-delete-yes style="margin-left:8px"><span>Yes, delete it</span><span>Yes, delete it</span></button></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__bottom" style="margin-top:0">
+      <span>&copy;2026 Get Rural America Done</span>
+      <span><a href="/privacy">Privacy</a></span>
+      <span>@GetRural56Done</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+<script type="module">
+  import { MODULES } from "/assets/js/config.js";
+  import { enabled, getUser, getMember, updateMember, loadProgress, getMyCertificate, issueCertificate, signOut, deleteAccount, safeNext, finishSignIn } from "/assets/js/members.js";
+
+  const $ = s => document.querySelector(s);
+  const params = new URLSearchParams(location.search);
+  const tokenHash = params.get("token_hash");
+  const user = enabled && !tokenHash ? await getUser() : null;
+  $("[data-loading]").hidden = true;
+  const goNext = () => {
+    const next = safeNext(params.get("next"));
+    location.replace(next === "/field-guide" ? "/account" : next);
+  };
+
+  /* Arrived from a sign-in link with somewhere to go back to. */
+  if (user && params.has("next") && safeNext(params.get("next")) !== "/field-guide" && safeNext(params.get("next")) !== "/account") {
+    location.replace(safeNext(params.get("next")));
+  }
+
+  if (tokenHash && enabled) {
+    /* Emailed link: finish only on a button press, so link scanners can't spend it. */
+    $("[data-finish]").hidden = false;
+    const btn = $("[data-finish-btn]");
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      const { error } = await finishSignIn(tokenHash, params.get("type"));
+      if (error) { $("[data-finish-error]").hidden = false; btn.hidden = true; return; }
+      goNext();
+    });
+  } else if (!user) {
+    $("[data-signed-out]").hidden = false;
+  } else {
+    $("[data-signed-in]").hidden = false;
+    $("[data-email]").textContent = user.email;
+    history.replaceState(null, "", "/account");
+
+    const [member, progress, cert] = await Promise.all([getMember(), loadProgress(), getMyCertificate()]);
+    const n = progress.passed.size;
+    $("[data-count]").textContent = `${n} of 12`;
+    $("[data-bar-label]").setAttribute("aria-label", `${n} of 12 passed`);
+    $("[data-bar]").style.width = `${(n / 12) * 100}%`;
+
+    const list = $("[data-mods]");
+    for (const m of MODULES) {
+      const li = document.createElement("li");
+      const best = progress.best.get(m.n);
+      const status = progress.passed.has(m.n) ? `Passed · ${best}/5` : best != null ? `Best ${best}/5` : "Not taken";
+      li.innerHTML = `<span class="mlist__n">${String(m.n).padStart(2, "0")}</span><span class="mlist__t" style="font-size:19px"></span><span class="mlist__s${progress.passed.has(m.n) ? " mlist__s--passed" : ""}">${status}</span>`;
+      li.querySelector(".mlist__t").textContent = m.title;
+      list.append(li);
+    }
+
+    if (cert) {
+      $("[data-cert-locked]").hidden = true;
+      $("[data-cert-have]").hidden = false;
+      $("[data-cert-date]").textContent = new Date(cert.issued_at).toLocaleDateString("en-US", { dateStyle: "long" });
+      $("[data-cert-link]").href = `/certificate/${cert.id}`;
+    } else if (n === 12) {
+      $("[data-cert-locked]").textContent = "You passed all twelve. Tell us how your certificate should read.";
+      $("[data-cert-form]").hidden = false;
+    }
+
+    $("[data-cert-form]").addEventListener("submit", async e => {
+      e.preventDefault();
+      const f = e.target;
+      const displayName = f.name.value.trim();
+      if (displayName.length < 2) return;
+      const { id, error } = await issueCertificate({ displayName, county: f.county.value, state: f.state.value });
+      const errEl = $("[data-cert-error]");
+      if (error) { errEl.textContent = "We couldn't issue the certificate. Please try again."; errEl.hidden = false; return; }
+      location.href = `/certificate/${id}`;
+    });
+
+    const prefs = $("[data-prefs]");
+    prefs.note.checked = Boolean(member && member.wants_monthly_note);
+    prefs.role.value = (member && member.role) || "";
+    prefs.addEventListener("submit", async e => {
+      e.preventDefault();
+      const { error } = await updateMember({ wants_monthly_note: prefs.note.checked, role: prefs.role.value || null });
+      const saved = $("[data-prefs-saved]");
+      saved.textContent = error ? "Couldn't save. Try again." : "Saved.";
+      saved.hidden = false;
+    });
+
+    $("[data-signout]").addEventListener("click", async () => { await signOut(); location.href = "/field-guide"; });
+    $("[data-delete]").addEventListener("click", () => { $("[data-confirm]").hidden = false; });
+    $("[data-delete-yes]").addEventListener("click", async () => {
+      const { error } = await deleteAccount();
+      if (!error) location.href = "/field-guide?deleted=1";
+    });
+  }
+</script>
+</body>
+</html>

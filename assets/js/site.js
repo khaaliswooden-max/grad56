@@ -108,15 +108,21 @@
   });
 
   /* Grid & Grain newsletter signup.
-     Sends the subscriber to the Substack publication with their email prefilled.
+     Sends the subscriber to /sign-in (Field Guide account) with their email prefilled;
+     /sign-in falls back to Substack while accounts are off.
      If SUBSTACK is emptied, the form falls back to opening an email to ruralamerica56@gmail.com. */
   const SUBSTACK = "https://getrural56done.substack.com";
+  /* Sign-ups now go to the site's own Field Guide sign-in, which falls back to Substack while accounts are off.
+     Set SIGNIN to "" to send forms straight to Substack again. */
+  const SIGNIN = "/sign-in";
   document.querySelectorAll("form[data-subscribe]").forEach(form => {
     form.addEventListener("submit", e => {
       e.preventDefault();
       const email = form.querySelector('input[type="email"]').value.trim();
       if (!email) return;
-      if (SUBSTACK) {
+      if (SIGNIN) {
+        window.location.href = `${SIGNIN}?email=${encodeURIComponent(email)}&next=${encodeURIComponent("/field-guide")}`;
+      } else if (SUBSTACK) {
         window.location.href = `${SUBSTACK.replace(/\/$/, "")}/subscribe?email=${encodeURIComponent(email)}`;
       } else {
         const body = `Please add ${email} to Grid & Grain.`;
