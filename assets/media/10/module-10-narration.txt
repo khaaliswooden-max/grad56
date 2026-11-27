@@ -156,7 +156,7 @@ Module one showed that the grid is built for its worst hour and has spare room m
 
 The flexibility chain, as contract language.
 
-Texas shows what the promise looks like when it's written as a rule. Under Senate Bill six, large customers of seventy-five megawatts or more that connect to the high-voltage grid after December thirty-one, twenty twenty-five, must be set up so the utility can cut their power during an emergency, when the grid operator is already ordering rotating outages. They must also disclose their backup generators, which the grid operator can direct them to run. A separate program pays large customers to reduce demand with at least twenty-four hours' notice (Texas Legislature, bill analysis, August twenty twenty-five). That's verified.
+Texas shows what the promise looks like when it's written as a rule. Under Senate Bill six, customers that connect to the high-voltage grid after December thirty-one, twenty twenty-five, must be set up so the utility can cut their power during an emergency, when the grid operator is already ordering rotating outages. They must also disclose their backup generators, which the grid operator can direct them to run. A separate program pays large customers to reduce demand with at least twenty-four hours' notice (Texas Legislature, bill analysis, August twenty twenty-five). That's verified.
 
 Look at what makes those terms enforceable. There's a size threshold. There's a named trigger. The switching equipment has to be installed before the customer connects. Nobody has to take the company's word for it.
 
