@@ -1,0 +1,119 @@
+Grid and Grain Field Guide. Module six: The Rural Hospital Runs on Compute.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+Your hospital is being offered AI tools. Here's what they do, where the computing actually happens, and what has to be in place before anyone signs.
+
+Carry this. The clinic is valuable because it is close. Its AI tools are only as good as the connection, the contract, and the people checking the work.
+
+Rung one. The clinic is close, and its computer is far.
+
+A Critical Access Hospital is small on purpose. To earn the name it has twenty-five or fewer inpatient beds, sits more than thirty-five miles from the next hospital in most cases, keeps the average stay to ninety-six hours or less, and runs an emergency room around the clock. As of October twenty twenty-six there were one thousand three hundred eighty-six of them. That's from the Rural Health Information Hub, and it's verified.
+
+What a hospital like that sells is distance. It's the emergency room you can reach in time.
+
+Now the hospital is being offered AI tools. The most common is an AI scribe: software that listens to a visit, with the patient's permission, and drafts the doctor's note. The doctor reads the draft, fixes it, and signs it.
+
+Here is the part most people miss. The scribe almost never runs in the hospital. The sound leaves the exam room, travels over the internet to a data hall that may be several states away, and the draft note travels back. The clinic is close. Its computer is far.
+
+So a rural hospital that buys an AI tool is really buying three things: a connection to reach it, a contract that says what happens to the recording, and a habit of checking the answers.
+
+Here's a picture. The regional medical center two hours away has every specialist. The clinic in town has one thing the big hospital can't offer: it's here. Computing splits the same way. A giant data hall is the regional center. A computer in the building is the clinic. Here's where that picture breaks. You can't move a patient in a millisecond, which is a thousandth of a second, but you can move a question. So a hospital doesn't have to choose one or the other. The real choice, tool by tool, is which jobs go down the road and which stay in the building.
+
+Rung two. What a scribe saves, and what it gets wrong.
+
+Start with what is working. At Central Montana Medical Center, a twenty-five bed critical access hospital in Lewistown, an AI scribe cut after-hours charting so much that some physicians said they would consider leaving if it were taken away. That's from Becker's Hospital Review, August twenty twenty-six, and it's verified. At Patterson Health Center, a sixteen bed critical access hospital in Kansas, documentation time fell from twenty minutes to twelve for each patient. That's verified as the hospital's own report, not an independent study.
+
+For a hospital that struggles to recruit one doctor, time back is the whole case.
+
+Now what goes wrong. The same federally funded rural health toolkit lists the reported problems: notes that include things nobody said, missed clinical details, words pinned on the wrong speaker, and lower accuracy for patients with regional accents or who speak a language other than English. Its conclusion is plain. Human review is a necessity, and that review takes back some of the time saved. That's verified.
+
+Two words explain how these tools use power. Training is building the AI model, done once in a giant data hall. Inference is using it, once for every question. A scribe is inference: every visit sends a new job to a computer somewhere. Module three covered why that takes energy. This module asks where that computer should sit.
+
+Here's a Field Test you can run at home. A small AI model can run on an ordinary laptop with no internet at all. Plug the laptop into a twenty-five dollar watt meter with its battery full, and read the watts while it sits idle. Then ask a free, small language model to write three hundred words, and time it. Watts times seconds is joules, the unit of energy. Words divided by joules is the score. You'll see two things: the laptop draws power even when it's doing nothing, and a small model on a modest machine is slow but real. Plug-in meters only. Never open the laptop or its charger.
+
+Rung three. No broadband, no AI.
+
+If the computer is far, the wire to it decides everything. Two numbers describe a connection. Speed is how much data fits through each second. Latency is how long one round trip takes: the delay between asking and hearing back. A scribe can live with a little delay. A video visit with a specialist can't live with much.
+
+On the federal map, rural broadband has improved. As of June twenty twenty-five, about ninety-seven percent of Americans could get wired or fixed-wireless service at one hundred megabits down and twenty up. In rural areas the figure was about eighty-seven percent, and about seventy-five percent for wired service alone. More than nine million rural Americans still had no such option. That's from the Federal Communications Commission's twenty twenty-six broadband report, and it's verified.
+
+Read that number carefully. It counts homes where a provider says service is available. It doesn't tell you what the hospital actually receives at seven on a Monday morning, or whether the building has a second line for the day the first one is cut. That part is plausible, and it's a question for the hospital's own speed tests and its own contract.
+
+Adoption is thin so far. Becker's reports that just eight percent of critical access and rural community hospitals have put AI predictive analytics to work. Grade that one plausible. The article doesn't name the survey behind the figure, so treat it as a rough size, not a measurement.
+
+That gap is the opening for a county. When a data center developer asks for something, the fiber it brings, and whether that fiber reaches the hospital and the school, is a thing to ask for in writing.
+
+Go deeper.
+
+The first three rungs explain what a rural hospital is buying when it buys AI. The next two explain the engineering underneath: what one answer costs in energy, and how to decide which computing belongs in the building. They get more technical, but every term is defined.
+
+Rung four. What one answer costs.
+
+An AI language model is a very large table of numbers, called parameters, learned during training. To answer, the computer runs your words through that table one piece at a time. Each piece of output is called a token: a word or a piece of a word. Bigger models have more parameters, need more memory to hold them, and do more arithmetic for each token.
+
+Energy is power times time. The energy for one answer is the power the machine draws, multiplied by how long the answer takes. A watt is a rate. A joule is one watt for one second. A watt-hour is three thousand six hundred joules.
+
+Here is a worked example, not a measurement. Suppose a laptop draws forty watts while a small model writes three hundred words in thirty seconds. Forty watts times thirty seconds is twelve hundred joules, or a third of a watt-hour. The score is three hundred words divided by twelve hundred joules: a quarter of a word for each joule. The Field Test gives you the real numbers for your own machine.
+
+Now subtract the idle draw. If that laptop pulls ten watts just sitting there, only thirty of the forty watts were the model's doing. A computer that is switched on spends energy whether or not it is working. In a hospital, a server that waits all night for the morning's first patient is paying that idle bill the whole time. That's plausible.
+
+What do the big halls report? For comparison, Google measured its own service. In twenty twenty-five it reported that the typical text question to its Gemini apps used about a quarter of a watt-hour, counting the AI chips, the rest of the server, machines kept idle in reserve, and the data center's cooling and power overhead. It also reported that the figure had fallen thirty-three fold in one year through better software and hardware. That's verified as the company's own measurement of its own product. No outside party has audited it.
+
+A quarter of a watt-hour would run a nine watt light bulb for about a minute and a half. One answer is small. A hospital's worth of visits, every day, across thousands of hospitals, is how small numbers become a power plant.
+
+Don't set your laptop number beside Google's and call a winner. They are different models doing different work, and the measurements draw their lines in different places. What the pair of numbers does show is the trade a hospital faces.
+
+When is smaller the better buy? A large model in a large hall is usually more capable and, for each answer, often more efficient, because thousands of customers share the same machines and keep them busy. A small model in the building is less capable, but the data never leaves, the delay is short, and it keeps working when the internet is down.
+
+For a narrow job, such as drafting a discharge summary from a fixed template or sorting faxes, a small model may be enough. For open-ended medical reasoning it probably isn't. That's plausible. Where exactly the line falls, in useful work for each joule and each dollar, is not settled.
+
+Here's a picture. The hall is the county's big combine: enormously productive, shared, and somewhere else when you need it. The small model is the tractor in your own shed. It does less each hour, but it's there at five in the morning, and nobody else has the keys. Here's where that picture breaks. A tractor does the same work every year. AI models improve fast, so a machine bought for the building can be outclassed in two years, while a cloud service upgrades itself. Owning the tractor means owning the job of replacing it.
+
+Rung five. Close or far: where the computing should live.
+
+Engineers call the two choices hyperscale, meaning a few enormous data halls, and edge, meaning many small computers near the people they serve. Each wins on something real.
+
+Far wins on cost. Big halls spread the cost of staff, cooling, and power equipment across far more computers. They are also more efficient. Power usage effectiveness is a hall's total energy divided by the energy that reaches the computers, so a score of one would be perfect. In Uptime Institute's twenty twenty-three survey, the average data center reported one point five eight. Weighted by size, so that big halls count for more, the figure was one point four seven. That's verified. Larger sites waste less. A closet of servers in a hospital basement will not match them, and that part is plausible.
+
+Close wins on physics. Distance is delay, and no budget buys it back. One study cited in the standard paper on edge computing measured the round trip from two hundred sixty points around the world to the nearest Amazon data center at an average of seventy-four milliseconds, before adding the wireless hop at either end. Applications that must react as fast as a person does need the whole trip done in a few tens of milliseconds. That's verified. The measurement is an older one and networks have added sites since. The physics hasn't changed.
+
+The same paper names four things a nearby computer does that a distant one can't, and each has a hospital version. One: it answers fast. A tool that watches a heart monitor or guides an ultrasound probe can't wait on a round trip. Two: it sends only the result upstream. Process the video in the building, send a short finding, and a thin rural connection is enough. Three: it enforces privacy at the door. What never leaves the building can't leak from someone else's. Four: it hides outages. When the fiber is cut, the local machine keeps working.
+
+And three reasons it's hard. Scattered machines are costly to manage. A server closet is easier to walk into than a guarded data hall. And nobody builds the tools until the machines exist, or the machines until the tools exist. Those are verified from the same paper. A twenty-five bed hospital with one technology employee feels the first of those hardest, and that part is plausible.
+
+So the contract is the infrastructure. Because most hospital AI runs in a vendor's hall today, the hospital's protection is paper. Federal privacy law lets a hospital use a cloud company to store or process patient records only if the two sign a business associate agreement that binds the company to the same rules. That holds even if the company only ever sees encrypted data and has no key. That's from the Department of Health and Human Services, and it's verified.
+
+The agreement is the floor. Above it sit the questions the County Kit walks through: where recordings are kept and for how long, whether the vendor may use them to train its models, who is responsible when a note is wrong, and what the hospital gets back if it cancels.
+
+Where does the money come from? The federal Rural Health Transformation Program puts fifty billion dollars into rural health over five years, ten billion a year from twenty twenty-six through twenty thirty. Half is split equally among approved states. The rest follows how rural each state is and the strength of its plan. First-year awards ran from one hundred forty-seven million dollars to two hundred eighty-one million for each state. Approved uses include telehealth, cybersecurity, connecting record systems, and AI scribes. That's from the Centers for Medicare and Medicaid Services, December twenty twenty-five, and it's verified.
+
+The money goes to states, not straight to hospitals. Each state decides how to pass it down. A hospital board's first question is who in the state capital runs the program, and when the next application window opens.
+
+Here's a picture. Think of the county's ambulance plan. The trauma center is far and has everything. The volunteer squad is close and has less. Nobody argues about which one to keep. The plan says which calls go where, and what the squad must be able to do alone when the road is closed. Here's where that picture breaks. An ambulance plan is written by people who answer to the county. Where a hospital's AI runs is usually decided by the vendor, unless the hospital writes it into the contract.
+
+Still open, and these are speculative. How much useful work does a small model deliver on ordinary hardware for each joule, and at what point does it become the better investment for a small hospital? Could several rural hospitals share one nearby computer the way they share a helicopter? Would a data hall in the county ever shorten the hospital's round trip, or does its traffic leave on fiber the hospital can't touch? Nobody has settled these. They're questions for researchers, and for your vendor.
+
+Straight Talk. Here's a claim people make: AI does nothing for rural people.
+
+The verdict: wrong, but adoption is thin.
+
+At a twenty-five bed hospital in Lewistown, Montana, an AI scribe cut after-hours charting so much that some physicians said they'd consider leaving without it. That's verified. It is a recruiting tool for a hospital that can't afford to lose one doctor.
+
+They're right about this part. Most rural hospitals aren't there yet, the tools make mistakes that a clinician has to catch, and a hospital on a weak connection can't use them at all.
+
+Ask for it in writing. If a data center deal comes to your county, tie it to broadband and readiness funding for the hospital and the schools.
+
+What this means for your family. The question to carry out of this module is short: does this tool keep care in town?
+
+A scribe that gives a doctor an hour back each day is one more reason for that doctor to stay. A video link to a stroke specialist can mean treatment starts before the helicopter lands. Neither works without a connection the hospital can count on and a contract somebody actually read.
+
+If you sit on a hospital board, a county commission, or a co-op board, the County Kit for this module is the page to bring. It's a one-page readiness checklist. If you're a patient, you have one question that is always fair: is anything recording this visit, and where does the recording go?
+
+Ask Earl. Earl is an AI character, a retired co-op lineman made by Grid and Grain. He's not a real person, and he'll always tell you so. Here's a question he got. Is my patient data safe with one of these AI scribes?
+
+Earl says: Depends on the paperwork and the plumbing, same as anything. Let's trace the wire. The recording leaves the exam room and goes to somebody else's computer. Federal rules say the hospital needs a signed agreement with that company before it handles your records. That's verified, it's on the Health and Human Services site. What I'd ask the front desk is three things: is that agreement signed, how long do they keep the recording, and can the company use it to train its software. I'm an AI character and no lawyer, so for anything past that, the hospital's privacy officer is the one to call. And you can always say no to the recording.
+
+That's module six. Ready to test yourself? The self-check is five questions, and four right is a pass. You'll find it on the module page, along with every source we cited.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.
