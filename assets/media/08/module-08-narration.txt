@@ -1,0 +1,111 @@
+Grid and Grain Field Guide. Module eight: The Jobs Question.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+Every data center proposal arrives with a jobs number. Here's how to take it apart, what the research says, and how to make sure some of those jobs go to people who live here.
+
+Carry this. Construction jobs are many and temporary. Operating jobs are few and good. Plan for both, and put the hiring in writing.
+
+Rung one. Two kinds of jobs.
+
+When a data center is proposed, the first number in the room is usually a jobs number. Before you weigh it, split it in two.
+
+Construction jobs build the place: site crews, ironworkers, concrete, electricians, pipefitters. There are a lot of them, and they end when the building is finished. Many of the workers travel from job to job and go home when it's done.
+
+Operating jobs run the place afterward: technicians who keep the power and cooling going, people who swap failed parts, security, and managers. There are far fewer of these, and they tend to pay well and last.
+
+Both kinds are real. They are not the same kind of promise. A job that lasts eighteen months and a job that lasts twenty years shouldn't be added together into one number, and when they are, it's fair to ask for them back apart.
+
+Here's a picture. Building a grain elevator takes a big crew for a season. Running it takes a manager and a few hands. Nobody in town confuses the two, and nobody thinks the elevator is worthless because it only employs five. Here's where that picture breaks. The elevator buys what the county grows, so its money circulates here. A data hall's customers and most of its suppliers are somewhere else. Its value to the county has to be arranged on purpose: taxes, training, fiber, and the terms in this module.
+
+Rung two. What the studies find.
+
+Two research teams looked at what happened in counties that got data centers, and they agree on more than they disagree.
+
+Georgia Tech researchers matched individual facilities to county economic records. They found that rural facilities typically employ few permanent workers, often fewer than one hundred, and that many specialized services are brought in from outside the county. Counties in metro areas saw gains in jobs and new businesses. Counties outside metro areas saw few measurable gains beyond a small drop in unemployment. Across all host counties, employment rose a little under one percent and wages a little over one percent in the first three years. That's from Georgia Tech, reported in July twenty twenty-six, and it's verified.
+
+Brookings researchers compared about fifteen hundred built facilities with fifty-two that were announced and then canceled. That comparison matters, because counties that attract data centers were already growing faster than their neighbors. They found large percentage gains in two narrow industries over the first ten years: data processing up fifty-six percent, and telecommunications up forty-three percent. That works out to roughly one hundred to two hundred jobs in a typical county. Wages didn't change. Home prices rose two to five percent. That's from the Brookings Institution, updated August twenty twenty-six, and it's verified. Brookings discloses that it receives unrestricted donations from Amazon, Google, Meta, and Microsoft, and says the findings are the authors' own.
+
+So the honest summary is this. The jobs are real, they number in the dozens to low hundreds, and in a rural county they don't automatically go to people who live there.
+
+Here's a Field Test you can run at the kitchen table. Much of an operating job is finding the one bad part in a long chain. Put eight double-A batteries in an eight-cell holder, with one used-up battery hidden among them. Checking them one at a time takes up to eight readings. A technician uses the half-split method instead. Measure across the first four with a twenty dollar multimeter. The half that reads low holds the bad one. Split that half, then split again. Three readings, every time. Small batteries only. A multimeter never goes near a wall outlet, a panel, or a car battery in this test.
+
+Rung three. Who gets the good jobs.
+
+The operating jobs go to people with a trade: electricians, heating and cooling mechanics, controls technicians. Whether those people come from your county depends on whether your county trains them.
+
+Take electricians. The typical way in is a high school diploma and a four or five year apprenticeship, which is a paid job with classroom instruction alongside it. Median pay was a little over sixty-three thousand dollars a year in May twenty twenty-five. The Bureau of Labor Statistics expects the trade to grow nine percent from twenty twenty-five to twenty thirty-five, with about seventy-three thousand openings a year. That's verified. It is a national figure for all electricians, not a data center wage.
+
+Veterans have a head start and a benefit. Someone who qualifies for the G I Bill can use it during an apprenticeship or on-the-job training, receiving a monthly payment for living expenses, and under the Post Nine Eleven G I Bill, money for books and supplies. That's from the Department of Veterans Affairs, and it's verified.
+
+And the industry needs the help. In Uptime Institute's twenty twenty-six survey of data center operators, more than half said they had difficulty finding qualified candidates for open positions. That's verified.
+
+That shortage is the county's leverage. An operator that can't find technicians has its own reason to pay for a training program at the community college. The time to ask is before the permit, and the place to put the answer is the agreement.
+
+Go deeper.
+
+The first three rungs explain which jobs are real and who gets them. The next two explain how a jobs number is built, and how to write a hiring commitment that holds up. They get more technical, but every term is defined.
+
+Rung four. How a jobs number is built.
+
+The figure in a press release usually comes from an economic impact study paid for by the developer or an economic development agency. These studies follow standard methods, and the methods leave room. Four questions take most of the air out of a large number. Grade this description plausible. It's standard practice, not one source's finding.
+
+First question. Is it jobs, or job-years? A job-year is one person working for one year. A project that employs five hundred people for two years of construction can be described as one thousand job-years, and somewhere between the study and the headline, the word years tends to fall off.
+
+Second question. Direct, indirect, or induced? Direct jobs are on the project's own payroll. Indirect jobs are at its suppliers. Induced jobs come from workers spending their pay at the diner and the hardware store. The second and third are estimated with a multiplier, and a multiplier built for a metro area overstates what happens in a county where the suppliers and the big stores are somewhere else. The Georgia Tech finding that specialized services come from outside the county is that same leak, measured. That's plausible.
+
+Third question. Compared with what? A county that lands a data center was often growing already. Comparing it with a county that never had a chance credits the data center with growth that was coming anyway. That is why the Brookings team compared built projects with canceled ones, and why they warn that a simple before-and-after comparison overstates the job effect. That's verified.
+
+Fourth question. What did each job cost? Divide the tax breaks by the permanent jobs. The Brookings study found state incentives worth about two percent of construction investment in counties with the largest, company-owned facilities, and about sixty-two percent in counties whose facilities lease space to others. That's verified. The same word, incentive, covers a rounding error and most of the building.
+
+None of this means the study is dishonest. It means the headline is the top of a range, and the county is entitled to see the range.
+
+Here's a picture. A seed dealer's yield number comes from a test plot: good ground, perfect rain, every input on time. It's a real number. It isn't your field. Here's where that picture breaks. You can plant a strip and check the dealer's number in one season. A county can't run the project twice. The only check it gets is the one it writes into the agreement: report the hires every year, and pay something back if they fall short.
+
+Rung five. Writing a workforce clause that holds.
+
+A hiring promise in a slide deck binds no one. A term in a signed agreement can. Reasoned from how these agreements are built, a workforce clause holds when it does five things. Grade this list plausible.
+
+One: it defines local. Residents of the county, or of named neighboring counties, on the day they're hired. Without a definition, a worker who rents a room for the job counts.
+
+Two: it sets separate targets for construction and for operations, as a share of hours worked or of positions filled.
+
+Three: it funds the pipeline early. Money and equipment for the community college or the high school career center, starting before construction, so graduates exist when hiring begins.
+
+Four: it requires apprentices. A share of construction hours worked by registered apprentices, so the project leaves trained people behind.
+
+Five: it reports and enforces. A yearly public report of hires by home county, and a consequence, such as a reduced tax break, if a target is missed.
+
+Here's what one county's offer looked like. In September twenty twenty-six a developer offered Frederick County, Maryland, one hundred ten million dollars in community benefits for a data center campus of twenty-one hundred acres. The package included fourteen and a half million dollars for a workforce training center and career and technical education. It did not include a local hiring requirement. In return the developer asked the county not to change zoning in ways that could hurt the project for eight years. After hundreds of public comments, the county executive rejected the agreement two weeks later and extended a pause on data center applications to July first, twenty twenty-seven. That's from public radio station W Y P R and the Maryland Association of Counties, and it's verified.
+
+Two lessons sit in that story, whichever side you'd have taken. Money for a training center is not a commitment to hire the people it trains. And every benefit has a price on the other side of the page. Read what the county is asked to give up.
+
+Can a county require local hiring? It depends on the state, and on whether the term is a condition of a permit or part of a negotiated agreement tied to an incentive. A county can usually attach conditions to money it's giving up. What it can impose outright is narrower. That's plausible. This is a question for the county attorney before the first meeting, not after the last one.
+
+Tie it to the tax break. Most of a county's leverage is the abatement, which is a reduction in property taxes. If the project is getting one, the hiring targets belong in the same document, on the same schedule, with the break shrinking if the targets are missed. The Straight Talk library has both ends of what abatements can do. Loudoun County, Virginia, reports the industry generates nearly half its property tax revenue, while El Paso granted an eighty percent abatement over thirty-five years. That's verified.
+
+Still open, and these are speculative. Does a training program paid for by one operator keep its graduates in the county, or train them for jobs two states away? As halls automate more of their own maintenance, do the operating jobs shrink further? Could a rural county do better by training its people for the regional construction circuit than by counting on one building? Nobody has settled these. They're questions for researchers, and for your community college.
+
+Straight Talk. Here's a claim people make: it'll bring hundreds of jobs.
+
+The verdict: wrong for permanent jobs.
+
+Rural facilities often employ fewer than one hundred permanent workers, and specialized services come from outside the county. That's verified. Construction jobs are real but temporary.
+
+They're right about this part. The permanent jobs that do exist are skilled, and operators say they can't find enough people to fill them.
+
+Ask for it in writing: local-hire targets, apprenticeships, and a community college partnership, in the agreement itself.
+
+What this means for your family. The question to carry is whether a kid from your county can get one of these jobs without leaving, and whether someone in the middle of a career can retrain into one.
+
+That depends less on the data center than on what is in place around it: a program at the community college, an apprenticeship with open seats, a counselor who knows the path exists. A veteran with a logistics or electrical specialty is closer to these jobs than most, and has a benefit that pays during the training.
+
+A trade learned on one project doesn't expire when the project does. Electricians, mechanics, and controls technicians are needed at the hospital, the co-op, the water plant, and the school. Training is the one benefit that stays if the building doesn't. The County Kit for this module is a one-page workforce clause sheet to bring to the table.
+
+Ask Earl. Earl is an AI character, a retired co-op lineman made by Grid and Grain. He's not a real person, and he'll always tell you so. Here's a question he got. How do I get into this kind of work without a college degree?
+
+Earl says: Same way I got on the line crew: an apprenticeship. You get hired, you get paid, and you learn the trade from people who know it, with class time on the side. For electricians it runs four or five years, and the Bureau of Labor Statistics puts the middle of the pay scale a little over sixty-three thousand dollars a year. That's verified. If you served, ask the V A about using your G I Bill while you train. They'll pay you something toward living expenses. Start by calling your community college and the nearest electrical apprenticeship program, and ask what's open. I can't promise you a job, nobody honest can. But the trade will be worth something wherever you take it.
+
+That's module eight. Ready to test yourself? The self-check is five questions, and four right is a pass. You'll find it on the module page, along with every source we cited.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.
