@@ -1,0 +1,109 @@
+Grid and Grain Field Guide. Module nine: AI on the Farm.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+Precision farming tools are computers making decisions about your ground. Here's where those computers sit, what they need from your signal, and what to read before you sign.
+
+Carry this. Some decisions can't wait for a round trip to the cloud. Before you buy, ask what the tool does with no signal, and who ends up holding your data.
+
+Rung one. A decision that can't wait.
+
+Precision agriculture means treating each part of a field according to what that part needs, instead of treating the whole field the same. A planter that changes its seeding rate as the soil changes. A sprayer that sprays the weed and skips the bare ground. A yield monitor that maps where the crop came in heavy and where it didn't.
+
+Every one of those is a computer making a decision. The question this module asks is where that computer sits.
+
+Some decisions are slow. Which hybrid to plant next spring can be worked out over the winter, on a big computer a thousand miles away. Call that the cloud: somebody else's data hall, reached over the internet.
+
+Some decisions are fast. A sprayer rolling across a field has a fraction of a second to decide whether the green thing under its boom is a weed. That decision has to be made on the machine. Engineers call a computer that sits where the work happens the edge.
+
+Here's a picture. You'd mail a soil sample to the lab and wait a week for the report. You wouldn't mail the lab a question about whether to swerve around a rock. Here's where that picture breaks. The lab and the tractor seat aren't really separate. The fast decision on the machine is made by a model that was built, slowly, in a data hall, from other people's fields, and the machine sends its own records back afterward. Edge and cloud are two ends of one system.
+
+Rung two. What the tools do, and who is using them.
+
+Start with a tool that works. One manufacturer's camera-guided sprayer carries cameras and processors on the boom, identifies weeds as it passes, and opens individual nozzles only over them. The company reports its customers ran it on more than five million acres in twenty twenty-five and cut their use of one class of herbicide by nearly half on average, at speeds up to fifteen miles an hour. That's verified as the company's own report of its own product. No independent audit is cited.
+
+Now the wider picture, which is thinner. In a twenty twenty-five federal survey, twenty-two percent of U.S. farms used precision agriculture practices, down from twenty-seven percent in twenty twenty-three. That's from the Department of Agriculture, and it's verified. The survey counts farms of every size.
+
+Congress's auditors looked at why. The benefits they list are real: the same yield with less fertilizer, herbicide, fuel, and water, and less runoff. The obstacles are real too: equipment that costs more than a smaller farm can justify, brands that won't work together, and farmers who don't trust what happens to their data. That's from the Government Accountability Office, January twenty twenty-four, and it's verified.
+
+They're right to be cautious. A tool that pays on five thousand acres may never pay on three hundred, and a subscription is a cost every year whether or not the crop comes in.
+
+Rung three. Coverage on the map, signal in the field.
+
+Whatever a tool decides on the machine, it still needs a connection sooner or later: to download its maps, upload its records, and get its updates.
+
+Here is how farms connect. In the same twenty twenty-five survey, eighty-five percent of U.S. farms had internet access. Counting every type a farm uses, seventy-four percent connected through a cellular data plan, fifty-five percent through a wired broadband line, and twenty-four percent by satellite. That's verified.
+
+Two cautions about numbers like that. First, they describe the farm, which usually means the house and the shop. They say nothing about the far corner of the back forty. Second, the federal broadband maps count where a provider says service is available. The map can show coverage where a tractor cab shows no bars. That's plausible. The only reading that counts is one you take yourself, in the place the machine will be working.
+
+Two things to measure. Speed is how much data moves each second. Latency is the delay for one round trip, measured in milliseconds. A thousand milliseconds make one second. A tool that uploads a yield map overnight cares about speed. A tool that expects an answer back while the machine is moving cares about latency.
+
+Here's a Field Test for your own ground. Put a free speed-test app on your phone. Stand at the house and run it three times. Write down download, upload, and latency. Do the same at the edge of a field, and again at the fence farthest from the road. Note the carrier and the number of bars each time. Now you have a coverage map nobody can argue with, made by the person who farms the ground. Phone readings are plausible, not lab measurements, and they change with weather and time of day. Phone only. Walk or drive the field as you normally would, and never run the test from a moving tractor seat.
+
+Go deeper.
+
+The first three rungs explain what these tools do and what they need. The next two explain the arithmetic that forces some computing onto the machine, and the question of who holds the data it produces. They get more technical, but every term is defined.
+
+Rung four. The arithmetic of a round trip.
+
+How far does the machine move while it waits? Take the sprayer at fifteen miles an hour. That is twenty-two feet every second.
+
+Now suppose it had to ask a distant data hall whether to spray. One widely cited measurement put the average round trip from two hundred sixty points around the world to the nearest large cloud site at seventy-four milliseconds, before adding the wireless hop at either end. That's verified. The measurement is an older one, and a rural cellular link adds delay of its own.
+
+In seventy-four milliseconds, at twenty-two feet a second, the sprayer travels about a foot and a half. That's verified as arithmetic on those two figures. The weed is behind the nozzle before the answer arrives. And that is the best case, with a signal. With no signal there is no answer at all.
+
+So the decision is made on the boom. Not because the cloud is weak, but because distance is delay, and a moving machine can't spend it.
+
+Next: send the answer, not the pictures. The same paper names a second reason to compute at the edge. A nearby computer can boil a flood of raw data down to a small result and send only that. That's verified. By the company's account, that sprayer's cameras scan more than twenty-five hundred square feet of ground every second. No rural connection carries that much video. What the machine can send, later, from the shop, is the summary: where it sprayed and how much. That part is plausible.
+
+Now a latency budget. Engineers sort jobs by how long they can wait. You can do the same with any tool you're offered. This is a way of sorting, graded plausible, not a standard.
+
+First row: milliseconds. Steering, spraying, anything tied to a moving machine. This has to run on the machine.
+
+Second row: seconds to minutes. A grain cart finding the combine, an alert that a pivot has stopped. A local link is enough, and the cloud is optional.
+
+Third row: hours to seasons. Yield analysis, seed selection, marketing. The cloud is fine, and a slow connection overnight will do.
+
+A tool that puts a first-row job on a third-row connection will fail in the field, and the field is where you'll find out.
+
+Here's a picture. A combine operator and a grain cart driver work by hand signals and a glance, because that's fast enough. The elevator's price comes by phone, because that can wait a minute. Nobody runs the hand signals through the elevator. Here's where that picture breaks. Two people in a field can always see each other. A machine at the edge only knows what it was taught before it left the shop. If the weeds changed this year, it finds out when someone updates it, and that update comes down the same thin connection.
+
+Rung five. Who holds the harvest of data.
+
+Ownership is a principle. Control is a contract. Every pass across a field now produces a record: what was planted, sprayed, and harvested, where, and when. Whose is it?
+
+The farm groups and equipment companies that wrote the industry's privacy and security principles for farm data put it plainly: farmers own the information generated on their operations. But that is a principle the industry agreed to, not a rule of law. The same extension guide that explains it says what actually governs is the written agreement between the farmer and the technology company. It also says ownership gets murky when a landlord, a tenant, and a custom applicator all have a hand in the same field. That's from Ohio State University Extension, and it's verified.
+
+That guide lists what to look for in the agreement. Who may collect and see the data, and why. Whether you can opt out of pieces. Whether you can take your data to another company. Whether it can be sold or shared. How long it's kept. What happens when you cancel. And whether the company is barred from using it to trade in commodity markets. That's verified. The County Kit turns that list into a one-page sheet.
+
+Why does this matter more with AI? An AI model is built from data. The sprayer that knows a weed from a soybean learned it from pictures of many farmers' fields. That is a fair trade if the terms say so. Congress's auditors found that concerns over data sharing and ownership are themselves an obstacle to using AI in agriculture. Farmers worry about losing a competitive edge, about security, and about drawing regulatory attention. That's verified.
+
+The same report names the other lock. Without common standards, one brand's equipment and records may not work with another's. That's verified. Data you can't move is data you don't control, whatever the contract calls it. That last part is plausible.
+
+What does a county have to do with it? Module six made the case that a hospital's AI is only as good as its connection. A farm's is the same. When fiber or a tower comes to a county as part of a larger project, where it runs decides which farms can use these tools. That's plausible. A route that passes the school, the clinic, and the farm-to-market roads is worth asking for by name.
+
+Still open, and these are speculative. Could farmers pool their data in a cooperative they own, the way they pooled grain, and license it on their own terms? Would a small shared computer at the co-op or the elevator serve a neighborhood of farms better than a signal to a distant hall? Does precision equipment ever pay on a small farm if it's shared or hired by the acre? Nobody has settled these. They're questions for researchers, and for your extension office.
+
+Straight Talk. Here's a claim people make: my farm data is mine automatically.
+
+The verdict: it depends on what you signed.
+
+The industry's own principles say farmers own the information generated on their operations. Those are principles, not law. The written agreement decides who can collect, use, share, and keep the data. That's verified.
+
+They're right about this part. Farmers' distrust of how their data is handled is well founded enough that federal auditors list it as a barrier to adoption. That's verified.
+
+Ask for it in writing: who can see the data, whether it can be sold, whether you can take it with you, and what gets deleted when you leave.
+
+What this means for your family. For a farm family the question is whether a tool earns more than it costs, on your acres, with your signal. Three things to settle before the check is written: what it does with no connection, what it costs every year after the first, and what happens to your records if you switch brands or quit.
+
+For the kid in Four H or F F A, this is a career that doesn't require leaving. Somebody has to install, calibrate, and repair these machines, and that somebody needs to know both a wiring diagram and a field.
+
+And for the county, farm connectivity is infrastructure, the same as a bridge that can carry a loaded grain truck. It belongs on the list when anyone is negotiating over fiber. The County Kit for this module is a one-page farm data and connectivity checklist.
+
+Ask Earl. Earl is an AI character, a retired co-op lineman made by Grid and Grain. He's not a real person, and he'll always tell you so. Here's a question he got. The map says I've got coverage. Why is there no signal in my back forty?
+
+Earl says: Because the map and the field are two different things. The map shows where a company says it can serve. It doesn't know about your creek bottom or the hill between you and the tower. So don't argue with the map, measure the field. Take your phone to the house, the field edge, and the far fence, run a speed test three times at each, and write down what you get. That's a plausible reading, not a lab number, but it's yours, and it's from the spot that matters. Then before you buy anything that needs a signal, ask the dealer one thing: what does it do out there when it's got none? Ask for that in writing. And do your testing on foot. Never fool with a phone from a moving tractor seat.
+
+That's module nine. Ready to test yourself? The self-check is five questions, and four right is a pass. You'll find it on the module page, along with every source we cited.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.
