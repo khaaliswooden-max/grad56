@@ -19,6 +19,50 @@
 <link rel="preload" href="/assets/fonts/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/geist-sans-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
+<style>
+/* Ask Earl chat. Page-scoped; uses the tokens in site.css. */
+.page-hero .earl { align-items: start; }
+.chat [hidden] { display: none !important; }
+.chat { margin-top: 28px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); display: flex; flex-direction: column; overflow: hidden; }
+.chat__head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+.chat__reset { font: inherit; letter-spacing: inherit; text-transform: inherit; color: var(--paper); background: none; border: 1px solid var(--rule-dark); border-radius: var(--radius); min-height: 44px; padding: 0 16px; cursor: pointer; }
+.chat__reset:hover { border-color: var(--paper); }
+.chat__log { padding: 20px 16px 8px; display: flex; flex-direction: column; gap: 16px; min-height: 220px; max-height: min(62vh, 560px); overflow-y: auto; overscroll-behavior: contain; }
+.chat__msg { max-width: 92%; display: flex; flex-direction: column; gap: 6px; }
+.chat__msg--you { align-self: flex-end; align-items: flex-end; }
+.chat__who { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.chat__text { padding: 14px 16px; border-radius: 4px; background: var(--white); color: var(--ink); font-size: 16px; line-height: 1.55; overflow-wrap: anywhere; }
+.chat__text p + p { margin-top: 12px; }
+.chat__text a { text-decoration: underline; text-underline-offset: 3px; }
+.chat__text .grade { display: inline-flex; vertical-align: baseline; gap: 6px; font-size: 11px; padding: 1px 7px 1px 6px; margin: 0 2px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); white-space: nowrap; }
+.chat__text .grade i { width: 10px; height: 10px; }
+.chat__msg--you .chat__text { background: var(--ink); color: var(--paper); }
+.chat__msg.is-error .chat__text { border-left: 2px solid var(--red); }
+.chat__msg.is-writing .chat__text:empty::after { content: "Tracing the wire…"; color: var(--muted); font-style: italic; font-family: var(--serif); }
+.chat__starters { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 16px 4px; }
+.chat__starters button { font: inherit; font-size: 14px; text-align: left; color: var(--ink); background: var(--white); border: 1px solid var(--rule); border-radius: 22px; min-height: 44px; padding: 8px 16px; cursor: pointer; }
+.chat__starters button:hover:not(:disabled) { border-color: var(--ink); }
+.chat__starters button:disabled, .chat__send:disabled { opacity: .5; cursor: not-allowed; }
+.chat__form { display: flex; gap: 8px; align-items: flex-end; padding: 12px 16px 6px; }
+.chat__form textarea { flex: 1; min-width: 0; font: inherit; font-size: 16px; line-height: 1.4; color: var(--ink); background: var(--white); border: 1px solid var(--rule); border-radius: 22px; padding: 11px 18px; min-height: 46px; max-height: 160px; resize: none; }
+.chat__form textarea:focus-visible, .chat__starters button:focus-visible, .chat__reset:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.chat__send { cursor: pointer; height: 46px; }
+.chat__send span + span { transform: translateY(260%); }
+.chat__count { min-height: 18px; padding: 0 20px; font-size: 13px; color: var(--muted); }
+.chat__status { margin: 0 16px 8px; padding: 12px 14px; border-left: 2px solid var(--red); background: var(--white); font-size: 15px; color: var(--muted); }
+.chat__status a, .chat__fine a { text-decoration: underline; text-underline-offset: 3px; color: var(--ink); }
+.chat__fine { padding: 10px 16px 16px; font-size: 13px; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 6px; }
+.chat__fine b { color: var(--ink); font-weight: 500; }
+.chat-noscript { margin-top: 28px; }
+.how { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.how .rules { margin-top: 0; }
+.keeps { margin-top: 18px; padding-left: 20px; color: var(--muted); font-size: 15px; display: grid; gap: 10px; max-width: 60ch; }
+.keeps b { color: var(--ink); font-weight: 500; }
+.keeps a { text-decoration: underline; text-underline-offset: 3px; color: var(--ink); }
+@media (max-width: 980px) { .how { grid-template-columns: 1fr; } .page-hero .earl__card { aspect-ratio: auto; min-height: 0; gap: 20px; } .page-hero .earl__card svg { display: none; } }
+@media (max-width: 760px) { .chat__msg { max-width: 100%; } .chat__log { max-height: 60vh; } }
+</style>
+<script type="module" src="/assets/js/earl.js"></script>
 </head>
 <body>
 
@@ -64,18 +108,58 @@
       <div class="reveal">
         <span class="eyebrow">Ask Earl</span>
         <h1 class="headline">&ldquo;Let&rsquo;s trace the wire.&rdquo;</h1>
-        <p class="lede">Earl answers your questions about power, chips, and data centers in plain words.</p>
-        <p class="body">He&rsquo;s an AI character we built for Grid &amp; Grain. Picture a retired electric co-op lineman who has worked ice storms, rebuilt substations after tornadoes, and taught a lot of apprentices. Every fact he gives you comes from our sourced Straight Talk library, with its evidence grade.</p>
-        <p class="disclose"><b>Chat opens in March 2027.</b> Until then, send Earl a question below. The best ones become Ask Earl posts every Thursday on LinkedIn, Facebook, YouTube, and X.</p>
-        <ul class="rules">
-          <li><span>01</span><div><b>Always disclosed.</b> Earl is an AI character. He never claims to be a real person.</div></li>
-          <li><span>02</span><div><b>No invented facts.</b> If the answer isn&rsquo;t in the library, he says so and points you to where to look.</div></li>
-          <li><span>03</span><div><b>No sides.</b> No positions on specific projects, candidates, or votes. That&rsquo;s your community&rsquo;s call.</div></li>
-          <li><span>04</span><div><b>No legal, financial, or medical advice.</b> He&rsquo;ll point you to the county attorney, the utility commission, your co-op, or a clinician.</div></li>
-          <li><span>05</span><div><b>Concede what&rsquo;s true.</b> When the critics are right, he says so first.</div></li>
-          <li><span>06</span><div><b>Safety first.</b> Downed line, open equipment, live circuit: stay back and call your co-op or 911.</div></li>
+        <p class="lede">Ask Earl about power, chips, and data centers. He answers in plain words and grades every claim.</p>
+
+        <div class="chat" id="chat" data-earl-chat>
+          <div class="chat__head">
+            <span>Earl &middot; AI character, not a person</span>
+            <button class="chat__reset" type="button" data-earl-reset hidden>Start over</button>
+          </div>
+          <div class="chat__log" data-earl-log role="log" aria-live="polite" aria-label="Conversation with Earl, an AI character" tabindex="0"></div>
+          <div class="chat__starters" data-earl-starters aria-label="Questions to start with">
+            <button type="button">Will a data center raise my power bill?</button>
+            <button type="button">How much water does a data center use?</button>
+            <button type="button">What can our county actually do?</button>
+            <button type="button">Are you a real person?</button>
+          </div>
+          <p class="chat__status" data-earl-status hidden>Earl&rsquo;s chat isn&rsquo;t switched on right now. <a href="#ask">Email him a question</a> and we&rsquo;ll answer it.</p>
+          <form class="chat__form" data-earl-form>
+            <label class="sr-only" for="earl-q">Your question for Earl</label>
+            <textarea id="earl-q" data-earl-input rows="1" maxlength="600" placeholder="Ask Earl a question" autocomplete="off" enterkeyhint="send"></textarea>
+            <button class="btn btn--solid chat__send" type="submit" data-earl-send><span>Ask</span><span>Ask</span></button>
+          </form>
+          <div class="chat__count" data-earl-count aria-live="polite"></div>
+          <p class="chat__fine"><b>Earl is an AI character and can be wrong.</b> He gives no legal, financial, or medical advice. <b>Line down or an emergency? Stay back and call 911 and your co-op.</b> We keep no record of this chat; your questions are sent to an AI service to write the answer, so leave out anything private. <a href="#what-we-keep">What happens to what you type</a>.</p>
+        </div>
+        <noscript><p class="disclose chat-noscript"><b>The chat needs JavaScript.</b> You can still <a href="#ask">email Earl a question</a>, or read the <a href="/grid-and-grain#straight-talk">Straight Talk library</a> he answers from.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how-earl-works">
+    <div class="wrap how">
+      <div class="intro reveal">
+        <span class="eyebrow">How Earl works</span>
+        <h2 class="lede">Six rules he doesn&rsquo;t break.</h2>
+        <p class="body">Earl is an AI character we built for Grid &amp; Grain. Picture a retired electric co-op lineman who has worked ice storms, rebuilt substations after tornadoes, and taught a lot of apprentices.</p>
+        <p class="body">He answers only from our sourced Straight Talk library and the Field Guide modules that have opened, so he never gets ahead of what we&rsquo;ve published. When the answer isn&rsquo;t there, he says so.</p>
+        <h3 class="eyebrow" id="what-we-keep" style="margin-top:40px">What happens to what you type</h3>
+        <ul class="keeps">
+          <li><b>We keep no copy.</b> No chat logs, no database, no tracking of your words. The conversation lives in this browser tab and is gone when you reload or close it.</li>
+          <li><b>An AI service writes the answer.</b> Your question and the earlier turns of the chat are sent to Anthropic, the company that makes the Claude model behind Earl. Anthropic says it deletes these within 30 days, or keeps them up to two years if its safety systems flag a conversation (<a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-your-organizations-data" target="_blank" rel="noopener">its retention policy</a>, read Nov. 26, 2026).</li>
+          <li><b>Our web host keeps ordinary request records</b> (time and internet address), as it does for every page. They don&rsquo;t include what you typed.</li>
+          <li><b>To stop misuse, we count questions per visitor</b> using a scrambled form of the internet address, held in memory for up to a day and never written down. Ask too fast and Earl will ask you to wait.</li>
+          <li><b>Leave out anything private:</b> names, account numbers, health details.</li>
         </ul>
       </div>
+      <ul class="rules reveal">
+        <li><span>01</span><div><b>Always disclosed.</b> Earl is an AI character. He never claims to be a real person.</div></li>
+        <li><span>02</span><div><b>No invented facts.</b> If the answer isn&rsquo;t in the library, he says so and points you to where to look.</div></li>
+        <li><span>03</span><div><b>No sides.</b> No positions on specific projects, candidates, or votes. That&rsquo;s your community&rsquo;s call.</div></li>
+        <li><span>04</span><div><b>No legal, financial, or medical advice.</b> He&rsquo;ll point you to the county attorney, the utility commission, your co-op, or a clinician.</div></li>
+        <li><span>05</span><div><b>Concede what&rsquo;s true.</b> When the critics are right, he says so first.</div></li>
+        <li><span>06</span><div><b>Safety first.</b> Climbing a pole, opening equipment, a live circuit: &ldquo;Don&rsquo;t. Call your co-op.&rdquo; Line down: stay back and call 911 too.</div></li>
+      </ul>
     </div>
   </section>
 
@@ -110,7 +194,7 @@
       <div class="intro reveal">
         <span class="eyebrow">Ask a question</span>
         <h2 class="lede">What do you want to know about power lines, chips, or data centers?</h2>
-        <p class="body">Send it in. We read every one. Questions may be answered publicly; we never publish your name or email.</p>
+        <p class="body">Prefer email, or want a person to read it? Send it in. We read every one. The best become Ask Earl posts on Thursdays. Questions may be answered publicly; we never publish your name or email.</p>
         <div class="btns">
           <a class="btn btn--solid" href="mailto:ruralamerica56@gmail.com?subject=Question%20for%20Earl&amp;body=My%20question%20for%20Earl%3A%0A%0A%0AMy%20county%20and%20state%20(optional)%3A%20"><span>Email Earl a question</span><span>Email Earl a question</span></a>
           <a class="btn btn--ghost" href="/straight-talk"><span>Read the Straight Talk library</span><span>Read the Straight Talk library</span></a>
