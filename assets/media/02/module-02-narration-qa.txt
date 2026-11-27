@@ -1,0 +1,27 @@
+# Transcription check: Kokoro v1.0 am_michael render (speed 1.0), transcribed with faster-whisper small.en, compared word by word with module-02-narration.txt.
+# Both sides normalized (lowercase, digits to words, hyphens and punctuation dropped) before comparing.
+duration 21 min 23 s; [('mean_volume', '-20.0 dB'), ('max_volume', '-0.9 dB')]; script words 3097; differing words 45 (1.45%)
+replace: SCRIPT[reasoned] HEARD[reason]  ...it plausible means its >< from evidence but not
+replace: SCRIPT[up front] HEARD[upfront]  ...pays for that equipment >< usually with borrowed money
+replace: SCRIPT[utilitys] HEARD[utilities]  ...a tariff is a >< published rulebook the rates
+replace: SCRIPT[rulebook] HEARD[rule book]  ...is a utilitys published >< the rates conditions for
+replace: SCRIPT[a e p] HEARD[aep]  ...regulators ordered the utility >< ohio to create a
+insert: SCRIPT[] HEARD[dollars]  ...for one point five >< million dollars for each
+delete: SCRIPT[dollars] HEARD[]  ...one point five million >< for each megawatt of
+replace: SCRIPT[cobank] HEARD[kohlbank]  ...of signing according to >< january twenty twenty six
+replace: SCRIPT[a e p] HEARD[aep]  ...ohios tariff took effect >< ohios forecast of large
+replace: SCRIPT[suppertime] HEARD[super time]  ...thats nineteen cents at >< ten cents at bedtime
+replace: SCRIPT[p j m] HEARD[pjm]  ...tight markets such as >< the grid operator for
+replace: SCRIPT[ratemaking] HEARD[rate making]  ...of regulatory staff electric >< fundamentals august twenty twenty
+replace: SCRIPT[a] HEARD[of]  ...cost is fixed spread >< fixed cost over more
+replace: SCRIPT[rung] HEARD[wrong]  ...is the rate case >< five why a tariff
+replace: SCRIPT[p j m] HEARD[pjm]  ...the lines according to >< interconnection january twenty twenty
+replace: SCRIPT[p j m] HEARD[pjm]  ...goes up according to >< interconnection january twenty twenty
+replace: SCRIPT[cobank] HEARD[kohlbank]  ...under contract according to >< january twenty twenty six
+replace: SCRIPT[cobank] HEARD[kohlbank]  ...members bills according to >< january twenty twenty six
+replace: SCRIPT[p j m] HEARD[pjm]  ...verified heres a picture >< itself compares location pricing
+delete: SCRIPT[an] HEARD[]  ...a minimum bill collateral >< exit fee a long
+replace: SCRIPT[up front] HEARD[upfront]  ...long contract upgrades paid >< what to ask at
+replace: SCRIPT[pole] HEARD[poll]  ...signed before the first >< went in lets trace
+replace: SCRIPT[right] HEARD[write]  ...is five questions four >< is a pass the
+replace: SCRIPT[get rural america done dot] HEARD[getruralamericadun]  ...written version are at >< com under field guide

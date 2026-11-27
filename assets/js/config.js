@@ -26,4 +26,4 @@ export const MODULES = [
 ];
 
 /* Modules with a published page, whatever the calendar says. */
-export const PUBLISHED = [1];
+export const PUBLISHED = [1, 2];
