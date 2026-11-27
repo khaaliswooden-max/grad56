@@ -64,7 +64,7 @@ Here's a picture. An irrigation district in a dry year doesn't build a new reser
 
 Rung five. A promise you can check.
 
-Here's what one state wrote into law. Texas put flexibility into statute in twenty twenty-five. Senate Bill Six applies to new customers of seventy-five megawatts or more. Before one connects at transmission voltage, it must install equipment that lets its load be cut off during a firm load shed. That's the grid's last-resort emergency step of switching customers off in rotation. A large customer with backup generators can be ordered, on reasonable notice, to run them or cut its load. And the grid operator must set up a program that pays large customers, chosen by competitive bid, to reduce demand with at least twenty-four hours' notice. That's from the Texas Senate Research Center's analysis of the bill, and it's verified.
+Here's what one state wrote into law. Texas put flexibility into statute in twenty twenty-five. Senate Bill Six covers new customers that connect at transmission voltage, the high-voltage level where big data centers plug in. Before one connects, it must install equipment that lets its load be cut off during a firm load shed. That's the grid's last-resort emergency step of switching customers off in rotation. A large customer with backup generators can be ordered, on reasonable notice, to run them or cut its load. And the grid operator must set up a program that pays large customers, chosen by competitive bid, to reduce demand with at least twenty-four hours' notice. That's from the Texas Senate Research Center's analysis of the bill, and it's verified.
 
 Notice the three different things in that one law. A switch someone else controls. An order to run generators. A paid reduction that customers bid for. They are not equally good for the neighbors.
 
@@ -84,7 +84,7 @@ Straight Talk. Here's a claim people make: data centers can never cut back.
 
 The verdict: overstated. Some can, some of the time, and the contract has to say how much.
 
-One operator has signed one gigawatt of demand response into contracts with five utilities. That's verified as the company's own announcement. Texas law now requires new customers of seventy-five megawatts or more to be able to be cut off in an emergency. That's verified.
+One operator has signed one gigawatt of demand response into contracts with five utilities. That's verified as the company's own announcement. Texas law now requires new customers on the high-voltage grid to be able to be cut off in an emergency. That's verified.
 
 They're right about this part. The same operator says flexibility has limits and is available only at some sites, and a hall can meet its promise by burning diesel instead of using less.
 
