@@ -1,6 +1,6 @@
 # Transcription check: Kokoro v1.0 am_michael render (speed 1.0), transcribed with faster-whisper small.en, compared word by word with the published script, module-02-narration.txt. The voice was given the same script with a few names respelled for pronunciation (for example "Tucson", "PJM", and the site address).
 # Both sides normalized (lowercase, digits to words, hyphens and punctuation dropped) before comparing.
-duration 21 min 23 s; [('mean_volume', '-20.0 dB'), ('max_volume', '-0.9 dB')]; script words 3081; differing words 23 (0.75%)
+duration 21 min 23 s; mean level -20.0 dB, peak -0.9 dB; script words 3081; differing words 23 (0.75%)
 replace: SCRIPT[reasoned] HEARD[reason]  ...it plausible means its >< from evidence but not
 replace: SCRIPT[up front] HEARD[upfront]  ...pays for that equipment >< usually with borrowed money
 replace: SCRIPT[utilitys] HEARD[utilities]  ...a tariff is a >< published rulebook the rates
