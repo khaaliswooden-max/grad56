@@ -171,6 +171,7 @@ async function handler(req, res) {
       body: JSON.stringify({
         model: process.env.EARL_MODEL || MODEL_DEFAULT,
         max_tokens: MAX_OUTPUT_TOKENS,
+        thinking: { type: "disabled" },
         stream: true,
         system: [
           { type: "text", text: system.stable, cache_control: { type: "ephemeral" } },
