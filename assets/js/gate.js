@@ -1,4 +1,5 @@
 /* Holds a Field Guide module closed until its opening day (first Tuesday of its month, Central time).
+   Shared by every module page, self-check, and kit from Module 2 on; reads the module number from <main data-module>.
    The date comes from the calendar in /assets/js/config.js, the same one /field-guide uses.
    Reviewers: add ?preview=1 to any page of the module to read it before it opens. */
 import { MODULES } from "/assets/js/config.js";

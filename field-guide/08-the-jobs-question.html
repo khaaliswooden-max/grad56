@@ -19,6 +19,9 @@
 <link rel="preload" href="/assets/fonts/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
 <link rel="stylesheet" href="/assets/css/guide.css">
+<style>.gate-pending main { visibility: hidden; }</style>
+<script>/* Hide the page until gate.js has checked the opening date; show it anyway after 3 s if that script fails. */
+document.documentElement.classList.add("gate-pending"); setTimeout(function () { document.documentElement.classList.remove("gate-pending"); }, 3000);</script>
 </head>
 <body>
 
@@ -28,8 +31,9 @@
       <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
     </a>
     <ul class="nav__links" id="nav-links">
-      <li><a href="/field-guide">Field Guide</a></li>
-      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/field-guide" aria-current="page">Field Guide</a></li>
+      <li><a href="/straight-talk">Straight Talk</a></li>
+      <li><a href="/kits">County Kits</a></li>
       <li><a href="/earl">Ask Earl</a></li>
       <li><a href="/sign-in" data-account-link>Sign in</a></li>
     </ul>
@@ -40,7 +44,7 @@
   </div>
 </header>
 
-<main>
+<main data-module="8">
   <section class="guide-hero">
     <div class="wrap">
       <span class="eyebrow"><a href="/field-guide">Field Guide</a> &middot; Module 8 of 12 &middot; August 2027</span>
@@ -210,6 +214,8 @@
         <h4>Learn</h4>
         <ul>
           <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/straight-talk">Straight Talk</a></li>
+          <li><a href="/kits">County Kits</a></li>
           <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
           <li><a href="/earl">Ask Earl</a></li>
         </ul>
@@ -219,6 +225,7 @@
         <ul>
           <li><a href="/sign-in">Sign in</a></li>
           <li><a href="/account">My account</a></li>
+          <li><a href="/corrections">Corrections</a></li>
           <li><a href="/privacy">Privacy</a></li>
         </ul>
       </div>
@@ -276,5 +283,6 @@
     slot.hidden = false;
   })();
 </script>
+<script type="module" src="/assets/js/gate.js"></script>
 </body>
 </html>

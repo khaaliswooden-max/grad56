@@ -81,6 +81,9 @@
     .sheet__foot { margin-top: 10px; font-size: 8pt; }
   }
 </style>
+<style>.gate-pending main { visibility: hidden; }</style>
+<script>/* Hide the page until gate.js has checked the opening date; show it anyway after 3 s if that script fails. */
+document.documentElement.classList.add("gate-pending"); setTimeout(function () { document.documentElement.classList.remove("gate-pending"); }, 3000);</script>
 </head>
 <body>
 
@@ -91,7 +94,8 @@
     </a>
     <ul class="nav__links" id="nav-links">
       <li><a href="/field-guide">Field Guide</a></li>
-      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/straight-talk">Straight Talk</a></li>
+      <li><a href="/kits">County Kits</a></li>
       <li><a href="/earl">Ask Earl</a></li>
       <li><a href="/sign-in" data-account-link>Sign in</a></li>
     </ul>
@@ -102,7 +106,7 @@
   </div>
 </header>
 
-<main>
+<main data-module="8">
   <section class="guide-hero" style="padding-bottom:0">
     <div class="wrap">
       <span class="eyebrow"><a href="/field-guide">Field Guide</a> &middot; <a href="/field-guide/08-the-jobs-question">Module 8</a> &middot; County Kit</span>
@@ -234,6 +238,8 @@
         <h4>Learn</h4>
         <ul>
           <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/straight-talk">Straight Talk</a></li>
+          <li><a href="/kits">County Kits</a></li>
           <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
           <li><a href="/earl">Ask Earl</a></li>
         </ul>
@@ -243,6 +249,7 @@
         <ul>
           <li><a href="/sign-in">Sign in</a></li>
           <li><a href="/account">My account</a></li>
+          <li><a href="/corrections">Corrections</a></li>
           <li><a href="/privacy">Privacy</a></li>
         </ul>
       </div>
@@ -272,5 +279,6 @@
   document.querySelector("[data-print]").addEventListener("click", function () { window.print(); });
   document.querySelector("[data-clear]").addEventListener("click", function () { document.querySelector(".sheet").reset(); });
 </script>
+<script type="module" src="/assets/js/gate.js"></script>
 </body>
 </html>
