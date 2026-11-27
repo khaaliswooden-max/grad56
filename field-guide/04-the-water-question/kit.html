@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water Disclosure Checklist: County Kit, Module 4 | Grid &amp; Grain Field Guide</title>
+<meta name="description" content="A one-page checklist for any data center water permit or claim: cooling type, peak and average gallons, the source, where it goes, who pays for the pipes, and the drought clause. Free County Kit from the Grid &amp; Grain Field Guide.">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/avatar-navy.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Water Disclosure Checklist | Grid &amp; Grain County Kit">
+<meta property="og:description" content="One page to fill in before a water permit, a utility agreement, or a public hearing.">
+<meta property="og:url" content="https://getruralamericadone.com/field-guide/04-the-water-question/kit">
+<meta property="og:image" content="https://getruralamericadone.com/assets/brand/og.png">
+<link rel="canonical" href="https://getruralamericadone.com/field-guide/04-the-water-question/kit">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@GetRural56Done">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/guide.css">
+<style>
+  /* County Kit sheet. Screen: fill-in form (nothing is saved). Print: one Letter page. */
+  .kit { max-width: 860px; margin-top: 8px; }
+  .kit__intro { font-size: 17px; color: #2A3445; max-width: 62ch; }
+  .kit__tools { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .kit__tools .btn { min-height: 44px; cursor: pointer; }
+  .kit__tools small { color: var(--muted); font-size: 13px; }
+  .sheet { margin-top: 28px; border: 1px solid var(--rule); border-radius: 4px; padding: clamp(18px, 3vw, 32px); background: var(--white); }
+  .sheet__top { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--ink); padding-bottom: 10px; }
+  .sheet__k { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .sheet__h { font-family: var(--serif); font-size: clamp(28px, 3.4vw, 38px); letter-spacing: -0.02em; line-height: 1.05; }
+  .sheet__how { margin-top: 10px; font-size: 14px; color: #2A3445; }
+  .sec { margin-top: 18px; break-inside: avoid; }
+  .sec h2 { font-family: var(--mono); font-size: 12px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+  .sec h2 i { font-style: normal; color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 20px; margin-top: 8px; }
+  .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .f { display: flex; flex-direction: column; gap: 2px; }
+  .f--wide { grid-column: 1 / -1; }
+  .f label, .f .lbl { font-size: 13px; font-weight: 500; color: var(--ink); }
+  .f input[type="text"], .f textarea { width: 100%; min-height: 40px; padding: 6px 2px; border: 0; border-bottom: 1px solid #8E8A80; border-radius: 0; background: transparent; font: 400 15px/1.3 var(--sans); color: var(--ink); }
+  .f textarea { min-height: 52px; resize: vertical; }
+  .f input:focus-visible, .f textarea:focus-visible, .opts input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .f small { font-size: 12px; color: var(--muted); }
+  .opts { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 2px; }
+  .opts label { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 400; min-height: 32px; cursor: pointer; }
+  .opts input { width: 18px; height: 18px; accent-color: var(--ink); margin: 0; }
+  .ask { margin-top: 8px; padding-left: 20px; font-size: 14px; color: #2A3445; }
+  .ask li + li { margin-top: 4px; }
+  .sheet__foot { margin-top: 18px; padding-top: 10px; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; font-size: 12px; color: var(--muted); }
+  .kit__why { margin-top: 40px; max-width: 720px; }
+  .kit__why h2 { font-family: var(--serif); font-size: clamp(26px, 3vw, 32px); letter-spacing: -0.02em; }
+  .kit__why p, .kit__why li { margin-top: 10px; font-size: 17px; line-height: 1.6; color: #2A3445; }
+  .kit__why ul { padding-left: 22px; }
+  .kit__why a { text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 640px) {
+    .grid, .grid--3 { grid-template-columns: minmax(0, 1fr); }
+  }
+  @page { size: letter; margin: 0.4in 0.5in; }
+  @media print {
+    html, body { background: #fff; }
+    .nav, .footer, .no-print, .guide-hero, .kit__intro, .kit__tools, .kit__why { display: none !important; }
+    main section { padding: 0 !important; }
+    .wrap { padding: 0 !important; max-width: none; }
+    .sheet { margin: 0; border: 0; padding: 0; }
+    .sheet__h { font-size: 21pt; }
+    .kit { margin-top: 0; }
+    .sheet__how { font-size: 9.5pt; margin-top: 6px; }
+    .sec { margin-top: 7px; break-inside: auto; }
+    .sec h2 { font-size: 8.5pt; padding-bottom: 2px; }
+    .grid { gap: 2px 18px; margin-top: 3px; }
+    .f label, .f .lbl { font-size: 9pt; }
+    .f small { font-size: 7.5pt; line-height: 1.2; }
+    .f { gap: 1px; }
+    .f input[type="text"], .f textarea { min-height: 0; height: 15px; padding: 0; font-size: 10pt; }
+    .f textarea { height: 15px; resize: none; }
+    .opts label { font-size: 9.5pt; min-height: 18px; gap: 4px; }
+    .opts input { width: 11px; height: 11px; }
+    .ask { font-size: 9.5pt; margin-top: 3px; }
+    .ask li + li { margin-top: 1px; }
+    .sheet__foot { margin-top: 10px; font-size: 8pt; }
+  }
+</style>
+<style>.gate-pending main { visibility: hidden; }</style>
+<script>/* Hide the page until gate.js has checked the opening date; show it anyway after 3 s if that script fails. */
+document.documentElement.classList.add("gate-pending"); setTimeout(function () { document.documentElement.classList.remove("gate-pending"); }, 3000);</script>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="/" aria-label="Get Rural America Done, home">
+      <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/field-guide">Field Guide</a></li>
+      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/earl">Ask Earl</a></li>
+      <li><a href="/sign-in" data-account-link>Sign in</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="/field-guide/04-the-water-question"><span>Back to the module</span><span>Back to the module</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main data-module="4">
+  <section class="guide-hero" style="padding-bottom:0">
+    <div class="wrap">
+      <span class="eyebrow"><a href="/field-guide">Field Guide</a> &middot; <a href="/field-guide/04-the-water-question">Module 4</a> &middot; County Kit</span>
+      <h1 class="headline">Water Disclosure Checklist</h1>
+      <p class="lede">One page to fill in before a water permit, a utility agreement, or a public hearing.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom:clamp(64px,9vw,120px)">
+    <div class="wrap">
+      <div class="kit">
+        <p class="kit__intro">Type straight into the sheet, then print it or save it as a PDF. Nothing you type is stored or sent anywhere; closing the page clears it. Prefer pen and paper? Print it blank.</p>
+        <div class="kit__tools no-print">
+          <button class="btn btn--solid" type="button" data-print><span>Print or save as PDF</span><span>Print or save as PDF</span></button>
+          <a class="btn btn--ghost" href="/assets/media/04/water-disclosure-checklist-kit.pdf" download><span>Blank PDF</span><span>Blank PDF</span></a>
+          <button class="btn btn--ghost" type="button" data-clear><span>Clear the sheet</span><span>Clear the sheet</span></button>
+        </div>
+
+        <form class="sheet" aria-labelledby="sheet-title" onsubmit="return false">
+          <div class="sheet__top">
+            <h2 class="sheet__h" id="sheet-title">Water Disclosure Checklist</h2>
+            <span class="sheet__k">Grid &amp; Grain County Kit &middot; Module 4</span>
+          </div>
+          <p class="sheet__how">Fill this in from the application, the developer&rsquo;s written answers, and your water utility. Write down where each answer came from. A blank is a question to send back before the vote.</p>
+
+          <div class="sec">
+            <h2>1. The project</h2>
+            <div class="grid">
+              <div class="f"><label for="k-proj">Project and applicant</label><input type="text" id="k-proj"></div>
+              <div class="f"><label for="k-me">Filled in by, and date</label><input type="text" id="k-me"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>2. Cooling type <i>&middot; Rung 2</i></h2>
+            <div class="grid">
+              <div class="f f--wide"><span class="lbl" id="k-cool-l">Heat leaves the site by:</span>
+                <div class="opts" role="group" aria-labelledby="k-cool-l">
+                  <label><input type="checkbox"> Evaporative (cooling towers)</label>
+                  <label><input type="checkbox"> Dry or closed-loop</label>
+                  <label><input type="checkbox"> Hybrid (water on hot days)</label>
+                  <label><input type="checkbox"> Not stated</label>
+                </div>
+              </div>
+              <div class="f"><label for="k-fill">First fill of a closed loop (gallons), and refill events</label><input type="text" id="k-fill"></div>
+              <div class="f"><label for="k-bind">Is the cooling type written into the permit?</label><input type="text" id="k-bind"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>3. Gallons <i>&middot; Rung 3</i></h2>
+            <div class="grid grid--3">
+              <div class="f"><label for="k-peak">Peak-day gallons</label><input type="text" id="k-peak"><small>The most in any one day</small></div>
+              <div class="f"><label for="k-avg">Average-day gallons</label><input type="text" id="k-avg"></div>
+              <div class="f"><label for="k-yr">Gallons per year, at full build-out</label><input type="text" id="k-yr"></div>
+              <div class="f"><label for="k-evap">Share evaporated (not returned)</label><input type="text" id="k-evap"></div>
+              <div class="f"><label for="k-wue">Water usage effectiveness (liters per kWh)</label><input type="text" id="k-wue"></div>
+              <div class="f"><label for="k-cap">Is there a cap in the permit? At what number?</label><input type="text" id="k-cap"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>4. Source, and where it goes <i>&middot; Rung 5</i></h2>
+            <div class="grid">
+              <div class="f f--wide"><span class="lbl" id="k-src-l">The water comes from:</span>
+                <div class="opts" role="group" aria-labelledby="k-src-l">
+                  <label><input type="checkbox"> City or rural water system</label>
+                  <label><input type="checkbox"> Its own wells</label>
+                  <label><input type="checkbox"> River or lake</label>
+                  <label><input type="checkbox"> Reclaimed wastewater</label>
+                </div>
+              </div>
+              <div class="f"><label for="k-aq">Aquifer or watershed, and who else draws on it</label><input type="text" id="k-aq"></div>
+              <div class="f"><label for="k-dis">Discharge: where, how much, and what&rsquo;s in it</label><input type="text" id="k-dis"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>5. The pipe <i>&middot; Module 2</i></h2>
+            <div class="grid grid--3">
+              <div class="f"><label for="k-sys">Our system&rsquo;s peak-day capacity</label><input type="text" id="k-sys"><small>Ask the water utility</small></div>
+              <div class="f"><label for="k-share">Project peak as a share of it</label><input type="text" id="k-share"></div>
+              <div class="f"><label for="k-pay">New mains, pumps, or treatment: cost, and who pays</label><input type="text" id="k-pay"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>6. Drought and reporting</h2>
+            <div class="grid">
+              <div class="f"><label for="k-dr">Drought clause: what is cut back, and at what trigger?</label><input type="text" id="k-dr"></div>
+              <div class="f"><label for="k-rep">Metered use reported to the public: how often?</label><input type="text" id="k-rep"></div>
+              <div class="f f--wide"><label for="k-up">Power supplier, and its water source (the upstream water)</label><input type="text" id="k-up"></div>
+            </div>
+          </div>
+
+          <div class="sec">
+            <h2>Ask in writing</h2>
+            <ol class="ask">
+              <li>Which cooling type, and will the permit hold you to it?</li>
+              <li>What are your peak-day and average-day gallons at full build-out, and from what source?</li>
+              <li>Under drought restrictions, what do you cut back, and who pays for any new water infrastructure?</li>
+            </ol>
+          </div>
+
+          <div class="sheet__foot">
+            <span>Grid &amp; Grain &middot; getruralamericadone.com/field-guide/04-the-water-question/kit</span>
+            <span>Free. No developer money. Sources and grades in Module 4.</span>
+          </div>
+        </form>
+
+        <div class="kit__why">
+          <h2>Why these questions</h2>
+          <ul>
+            <li><b>Cooling type</b> decides most of the on-site water. Large data centers can use up to 5 million gallons a day (Environmental and Energy Study Institute, June 2025). <span class="tag tag--v">VERIFIED</span> A closed-loop campus planned in Port Washington, Wisconsin, says its peak will be under 22,000 gallons a day (TMJ4 News, Sept. 2025). <span class="tag tag--v">VERIFIED</span> as the company&rsquo;s stated plan.</li>
+            <li><b>Peak-day gallons</b> size the pipes and pumps. Data center peak days are estimated at 3 to 10 times their average, against 1.5 to 2.5 for ordinary customers (Han and colleagues, Mar. 2026). <span class="tag tag--p">PLAUSIBLE</span></li>
+            <li><b>Share evaporated.</b> Evaporated water doesn&rsquo;t return to the river or the aquifer. In evaporative systems about 80% of the water taken in evaporates (Environmental and Energy Study Institute, June 2025). <span class="tag tag--v">VERIFIED</span></li>
+            <li><b>The pipe.</b> If new water infrastructure is built for one customer, the terms from <a href="/kits/large-load-tariff">the large-load tariff checklist</a> apply: who pays, and what happens if the customer leaves.</li>
+            <li><b>Reporting.</b> A 2021 review found fewer than a third of operators tracked their water use (Mytton, <em>npj Clean Water</em>, 2021). <span class="tag tag--v">VERIFIED</span> Virginia will require monthly reporting of water delivered to data centers from January 1, 2027 (National Conference of State Legislatures, Aug. 2026). <span class="tag tag--v">VERIFIED</span></li>
+            <li><b>Upstream water.</b> About three-quarters of the U.S. data center water footprint is at power plants (Siddik and colleagues, 2021). <span class="tag tag--v">VERIFIED</span> It may be in another county, but it belongs in the picture.</li>
+          </ul>
+          <p style="font-size:14px;color:var(--muted)">This kit is general education, not legal or engineering advice. Spot an error? Email <a href="mailto:ruralamerica56@gmail.com">ruralamerica56@gmail.com</a>. We correct within 48 hours, in public.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="340" height="30">
+        <p>Grid &amp; Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities.</p>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
+          <li><a href="/earl">Ask Earl</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="/sign-in">Sign in</a></li>
+          <li><a href="/account">My account</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ruralamerica56@gmail.com">ruralamerica56@gmail.com</a></li>
+          <li><a href="https://getrural56done.substack.com" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="/">Get Rural America Done</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy;2026 Get Rural America Done</span>
+      <span class="footer__stripes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span>@GetRural56Done</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+<script type="module">
+  import { markNav } from "/assets/js/members.js";
+  markNav();
+</script>
+<script>
+  document.querySelector("[data-print]").addEventListener("click", function () { window.print(); });
+  document.querySelector("[data-clear]").addEventListener("click", function () { document.querySelector(".sheet").reset(); });
+</script>
+<script type="module" src="/field-guide/04-the-water-question/gate.js"></script>
+</body>
+</html>

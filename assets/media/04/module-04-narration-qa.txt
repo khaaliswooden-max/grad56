@@ -1,0 +1,30 @@
+# Transcription check: Kokoro v1.0 am_michael render (speed 1.0), transcribed with faster-whisper small.en, compared word by word with the published script, module-04-narration.txt. The voice was given the same script with a few names respelled for pronunciation (for example "Tucson", "PJM", and the site address).
+# Both sides normalized (lowercase, digits to words, hyphens and punctuation dropped) before comparing.
+duration 17 min 45 s; mean level -20.0 dB, peak -0.9 dB; script words 2575; differing words 32 (1.24%)
+replace: SCRIPT[two] HEARD[too]  ...down the drain rung >< which kind of cooling
+replace: SCRIPT[companys] HEARD[company]  ...thats verified as the >< stated plan its a
+insert: SCRIPT[] HEARD[dollars]  ...costing five point four >< million dollars to serve
+delete: SCRIPT[dollars] HEARD[]  ...five point four million >< to serve about one
+insert: SCRIPT[] HEARD[dollars]  ...more than one hundred >< million dollars after a
+delete: SCRIPT[dollars] HEARD[]  ...than one hundred million >< after a request for
+replace: SCRIPT[four] HEARD[for]  ...in it so ask >< things ask for them
+replace: SCRIPT[dollar] HEARD[dollars]  ...porch set a ten >< digital hygrometer in the
+replace: SCRIPT[u] HEARD[you]  ...twenty one study of >< s data centers found
+replace: SCRIPT[siddik] HEARD[siddick]  ...the site according to >< colleagues twenty twenty one
+insert: SCRIPT[] HEARD[the science magazine]  ...one as reported by >< eos thats verified berkeley
+replace: SCRIPT[leans] HEARD[liens]  ...berkeley labs later estimate >< even further that way
+insert: SCRIPT[] HEARD[in]  ...studies use different methods >< years so dont average
+replace: SCRIPT[liters] HEARD[leaders]  ...is water usage effectiveness >< of water used at
+replace: SCRIPT[steak] HEARD[stake]  ...a picture buying a >< you dont see the
+replace: SCRIPT[steak] HEARD[stake]  ...meter is like that >< most of the water
+replace: SCRIPT[mytton] HEARD[mitten]  ...at all according to >< npj clean water twenty
+replace: SCRIPT[u] HEARD[you]  ...the same review put >< s data center water
+replace: SCRIPT[siddik] HEARD[sidec]  ...power plants according to >< colleagues twenty twenty one
+insert: SCRIPT[] HEARD[is]  ...curtailment clause your well >< your water bill two
+replace: SCRIPT[up front] HEARD[upfront]  ...who pays that customer >< or every ratepayer over
+replace: SCRIPT[ratepayer] HEARD[rate payer]  ...up front or every >< over thirty years the
+replace: SCRIPT[too] HEARD[two]  ...two work for water >< a separate rate class
+delete: SCRIPT[an] HEARD[]  ...a minimum bill collateral >< exit fee a long
+replace: SCRIPT[up front] HEARD[upfront]  ...long contract upgrades paid >< your water utilitys manager
+replace: SCRIPT[utilitys] HEARD[utilities]  ...up front your water >< manager knows the systems
+replace: SCRIPT[right] HEARD[write]  ...is five questions four >< is a pass the
