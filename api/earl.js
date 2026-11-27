@@ -18,7 +18,10 @@ const crypto = require("crypto");
 const { buildSystem } = require("./_earl/prompt.js");
 
 const MODEL_DEFAULT = "claude-sonnet-5-5";
-const MAX_OUTPUT_TOKENS = 600;
+/* Output budget, thinking included: the model may think before it answers, and thinking
+   counts against this budget. 600 left answers cut off or empty. The answer itself is held
+   to about 250 words by the instructions. */
+const MAX_OUTPUT_TOKENS = 4000;
 const MAX_QUESTION_CHARS = 600;
 const MAX_TURN_CHARS = 2400;
 const MAX_TURNS = 8;          /* the latest question plus up to seven earlier turns */
@@ -171,7 +174,6 @@ async function handler(req, res) {
       body: JSON.stringify({
         model: process.env.EARL_MODEL || MODEL_DEFAULT,
         max_tokens: MAX_OUTPUT_TOKENS,
-        thinking: { type: "disabled" },
         stream: true,
         system: [
           { type: "text", text: system.stable, cache_control: { type: "ephemeral" } },
