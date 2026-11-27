@@ -1,0 +1,131 @@
+Grid and Grain Field Guide. Module five: Noise, Light, and Land
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+Noise is the complaint neighbors actually live with. Here's how sound travels, what counties are already writing into law, and how to tell a rule you can enforce from one you can't.
+
+Carry this. A limit at the property line beats a promise in a press release.
+
+Rung one. How sound fades.
+
+Modules three and four followed the heat out of the building. Moving that heat takes fans, pumps, and chillers, and all of them make noise. So does the row of backup generators out back. A data center's sound is mostly the sound of its cooling.
+
+Loudness is measured in decibels. A whisper is about thirty. A humming refrigerator is about forty. A normal talking voice at arm's length is sixty-five to eighty. Sounds at eighty-five or more can damage hearing over time, according to National Institutes of Health, citing the CDC. That's verified. You'll usually see the unit written with three letters: D, B, A. The last letter means the meter is tuned to hear roughly the way a person does.
+
+Sound fades as you walk away from it, by a fixed rule: out in the open, the level drops six decibels each time you double your distance from the source, according to Simon Fraser University acoustics handbook. That's verified. for a single source with nothing reflecting the sound.
+
+Notice what that rule does. The first doubling is cheap: from ten feet to twenty feet. The eighth doubling is expensive: from a quarter mile to a half mile. Distance helps a lot close in and less and less farther out. That's why where the machines sit on the property matters as much as how big the property is.
+
+Here's a picture. A pebble dropped in a pond. The ripple is tall where the pebble lands and flattens as the ring spreads, because the same energy is stretched around a bigger and bigger circle. Here's where that picture breaks. A pond is flat and empty. Real sound bounces off buildings, bends over hills, carries farther on a still night, and adds up when there are a hundred machines instead of one pebble.
+
+Rung two. Measure it at the property line.
+
+You'll hear two kinds of claims. From opponents: "They're ninety-six decibels, twenty-four hours a day." From developers: "You won't hear a thing." Both skip the only question that matters: how loud, measured where?
+
+The city of Linn Valley, Kansas, put it plainly while studying its own ordinance. Levels right next to machines or inside equipment rooms can be very high, but those readings don't establish the level at a property line or a home, according to City of Linn Valley, updated August twenty twenty-six. That's verified. Next to a big generator, one hundred decibels is possible. At a house a half mile off, it's a different number. Neither number is a lie. Only one of them is about your bedroom.
+
+So the rule worth having names a number and a place: no more than so many decibels, measured at the property line. Counties are writing these now.
+
+Sanford, North Carolina: data centers may not exceed sixty-five A-weighted decibels at the perimeter of their property, and the city may order independent testing, according to NC Newsline, July twenty twenty-six. That's verified.
+
+Henry County, Virginia: fifty A-weighted decibels at the property line, a sound study before construction, a test within ninety days of full operation, and testing every year for the life of the facility, according to WDBJ, August twenty twenty-six. That's verified.
+
+Spencer County, Indiana: an ordinance text posted by the county sets fifty A-weighted decibels at the property line, and says that if the place is already louder than that, the data center may not add to it, according to Spencer County's ordinance text. That's verified, as the posted text; the copy we read was unsigned.
+
+Fifteen decibels separates fifty from sixty-five. That's a big gap. By the rule in Rung one, it's the difference between standing at one spot and standing more than five times farther away. Which number is right for your county is a local choice. What matters is that there is a number, a place it's measured, and someone other than the operator doing the measuring.
+
+Where the critics are right. Noise complaints are real, and a limit on paper doesn't end them. Neighbors in Vineland, New Jersey, have sued over round-the-clock noise from a data center, in the Straight Talk library. That's verified. A limit nobody tests is a press release with a number in it.
+
+Field Test. Walk away from an air conditioner. On a still day, stand one meter, about one long step, from your own home's outdoor air conditioner unit while it's running. Open a sound-meter app and write down the reading. Then read it again at two meters, four meters, and eight meters, walking straight out into the yard. Turn the unit off at the thermostat and take the background level at the same four spots. In open ground you should lose close to six decibels each time you double the distance, until the reading sinks into the background. Next to a wall you'll lose less. A phone reading is That's plausible., never VERIFIED: the federal government's own app claims accuracy within two decibels only on the phones it was tested on. Phone app only. Don't touch, open, or reach into the unit, and measure only on your own property.
+
+Rung three. The working parts of an ordinance.
+
+A noise number is one line. The ordinances passed in twenty twenty-six pair it with a handful of others, and each one does a job.
+
+Setbacks. Distance between the equipment and the neighbors. Henry County requires at least one thousand feet from land that isn't zoned industrial, according to WDBJ, August twenty twenty-six. Spencer County's text requires at least five hundred feet from homes and recommends one thousand, in the posted ordinance. That's verified. Remember Rung one: the first few hundred feet buy the most quiet.
+
+Screening. Berms and evergreens along roads and neighbors' lines. Spencer County's text asks for a screen at least twenty feet tall once it's grown. That's verified.
+
+Light. Outdoor lights aimed inward and downward and shielded, so they don't spill onto neighbors or light up the night sky, according to Spencer County's ordinance text. That's verified.
+
+Generator test hours. Backup generators have to be run regularly to prove they work. Henry County limits routine testing to weekdays, nine a.m. to five p.m., according to WDBJ, August twenty twenty-six. That's verified.
+
+Monitoring. A sound study by an outside engineer before construction, a test after opening, and repeat testing. The operator pays.
+
+The end of the story. Henry County requires money set aside to cover taking the facility down someday, with the estimate reviewed every three years, according to WDBJ, August twenty twenty-six. That's verified.
+
+All of these cost little to require before a site is designed. After the concrete is poured, moving a generator yard five hundred feet is nearly impossible. That's plausible. The time to write it down is before the vote.
+
+Go deeper.
+
+The first three rungs give you the limit, the place to measure, and the parts of an ordinance. The next two cover what a simple decibel number misses, and who actually has the power to enforce any of it. They're more technical, but every term is defined. You can pass the self-check without them.
+
+Rung four. The hum a meter can miss.
+
+People who live near data centers often describe a low hum or a steady tone, not a roar. A standard reading can understate both.
+
+Low-pitched sound.
+
+An A-weighted meter is built to be less sensitive to low-pitched sound, because human ears are too. But big fans and engines put out a lot of low-pitched sound. A thorough study also uses C-weighting, which counts the low end more fully, or looks at each band of pitch separately, according to City of Linn Valley, updated August twenty twenty-six. That's verified.
+
+Spencer County's text handles it this way: low-pitched or tonal sound may not exceed the C-weighted level that was there before construction, in the posted ordinance. That's verified. That only works if someone measured the place before construction. The baseline reading is the cheapest study a county will ever commission, and it can't be done afterward.
+
+A single tone.
+
+A steady whine at one pitch is more annoying than a broad whoosh at the same decibel level. That's plausible. Henry County's rule says equipment may not produce a clearly audible pure tone at or beyond a residential property line, according to WDBJ, August twenty twenty-six. That's verified.
+
+Averages and adding up.
+
+Two more traps. First, many limits are written as an average over time, called Leq. An average can hide a generator test that's loud for one hour a week. Ask whether the limit is an average or a maximum. Second, decibels don't add like ordinary numbers. Two identical machines aren't twice the decibels of one; they're three decibels more. Ten identical machines are ten more. That's verified. by arithmetic. So a study has to model the whole site running at once on its hottest day, not one unit.
+
+Here's a picture. A bathroom scale that only weighs what's above your knees. It gives a real number, and it's the wrong number for the question. A study in A-weighted decibels alone of a low hum is that scale. Here's where that picture breaks. The scale is simply wrong. A-weighting is right for most everyday sound, which is why it's the standard. It just needs a second reading alongside it when the source is big, slow machinery.
+
+Rung five. Who decides, and who enforces.
+
+Zoning is local.
+
+Rates are set by a state commission or a co-op board. Land use is usually set at the county or the city. That makes zoning the lever closest to home. Henry County's process shows the steps: a new zoning district for data centers, a rezoning with public hearings before the planning commission and the board of supervisors, and then a special use permit with its own hearing, where conditions can be added, according to WDBJ, August twenty twenty-six. That's verified. States differ in how much they leave to local government, so check with your county attorney.
+
+Generators: what federal rules cover, and what they don't.
+
+A data center keeps enough backup generators to carry its whole load through a grid outage, plus spares, so a large site can have dozens. That's plausible. Federal air rules let an emergency engine run up to one hundred hours a year for maintenance checks and readiness testing, and put no time limit on running in a real emergency, according to U.S. Environmental Protection Agency, September twenty thirteen. That's verified.
+
+So "they'll run diesel all the time" overstates it for emergency engines. But the federal rule is about air pollution, not noise, and not the time of day. One hundred hours each across dozens of engines is a lot of testing. That's plausible. When those hours fall is left to you. That's the weekday, nine-to-five clause.
+
+Enforcement is the hard part.
+
+An ordinance is only as strong as the county's ability to check it. A rural county rarely owns a certified sound meter or employs an acoustical engineer. The ordinances above answer that by making the operator pay for third-party testing on a schedule and after credible complaints, and by treating each day of a continuing violation as a separate offense, according to Spencer County's ordinance text. That's verified.
+
+Still open, and that's speculative. Does very low-pitched sound from large cooling plants affect health at the levels neighbors report, or mainly sleep and comfort? What happens to a fifty-decibel limit when three campuses sit on adjoining parcels, each one compliant alone? And is a one thousand-foot setback enough for the larger machines now being designed? Nobody has settled these. Questions for researchers, and for your planning board.
+
+Straight Talk. Here's a claim we hear.
+
+"They're ninety-six decibels, twenty-four hours a day."
+
+The verdict: Overstated as a blanket claim. Noise complaints are real.
+
+Readings taken next to machines don't equal levels at a home, according to City of Linn Valley. Neighbors in Vineland, New Jersey, have sued over round-the-clock noise. Sanford, North Carolina, caps data centers at sixty-five A-weighted decibels at the edge of the property, according to NC Newsline. That's verified.
+
+So don't argue about the ninety-six. Argue about the number at your fence.
+
+Ask for it in writing: a decibel limit at the property line, low-frequency measurement, setbacks, generator test hours, and third-party monitoring.
+
+At your fence line.
+
+Power bills and water tables are things you read about. Noise and light you live with, every night, at your own house. That's why this is the module to bring to a planning board meeting.
+
+Two things a resident can do before any project is approved. First, ask the county to commission a baseline sound reading at the nearest homes, in A-weighted decibels and C-weighted decibels, day and night. It's the "before" that makes every later complaint provable. Second, ask where on the site the cooling equipment and generators will sit. The same building can be a good neighbor or a bad one depending on which side the machines face.
+
+And if you farm or own land nearby: setbacks, screening, and shielded lights are cheap to require at the start and costly to add later. Ask for them now.
+
+County Kit. Model Ordinance Terms. A one-page worksheet for marking up a draft ordinance: the noise limit and where it's measured, low-pitched sound, studies and monitoring, setbacks, light, generator test hours, and decommissioning. It's free on the module page.
+
+Ask Earl. Earl is Grid and Grain's AI character, a retired co-op lineman. He's not a real person, and he'll always tell you so. Here's a question he got.
+
+How loud is sixty-five A-weighted decibels?
+
+Earl says: About a normal talking voice at arm's length. Doesn't sound like much, does it? Now picture that voice outside your bedroom window all night, every night, and it never takes a breath. That's the difference between loud and constant. A number tells you how loud. It doesn't tell you how long, or how low the pitch is, or whether it's your fence they measured at. So when somebody quotes you decibels, ask three things. Measured where? Averaged or peak? And who's holding the meter? Then ask for it in writing.
+
+That's Module five. The self-check is five questions, and four right is a pass. The County Kit, the sources, and the written version are at getruralamericadone.com, under Field Guide.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.
