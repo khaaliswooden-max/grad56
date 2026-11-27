@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 9: AI on the Farm | Grid &amp; Grain Field Guide</title>
+<meta name="description" content="Why some farm decisions have to be made on the machine, how to measure the signal in your own field, and who ends up holding your data. Module 9 of the free Grid & Grain Field Guide, with every claim graded.">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/avatar-navy.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI on the Farm | Grid & Grain Field Guide, Module 9">
+<meta property="og:description" content="Some decisions can't wait for a round trip to the cloud. Ask what the tool does with no signal, and who holds your data.">
+<meta property="og:url" content="https://getruralamericadone.com/field-guide/09-ai-on-the-farm">
+<meta property="og:image" content="https://getruralamericadone.com/assets/brand/og.png">
+<link rel="canonical" href="https://getruralamericadone.com/field-guide/09-ai-on-the-farm">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@GetRural56Done">
+<link rel="preload" href="/assets/fonts/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/guide.css">
+<style>.gate-pending main { visibility: hidden; }</style>
+<script>/* Hide the page until gate.js has checked the opening date; show it anyway after 3 s if that script fails. */
+document.documentElement.classList.add("gate-pending"); setTimeout(function () { document.documentElement.classList.remove("gate-pending"); }, 3000);</script>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="nav__logo" href="/" aria-label="Get Rural America Done, home">
+      <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/field-guide" aria-current="page">Field Guide</a></li>
+      <li><a href="/straight-talk">Straight Talk</a></li>
+      <li><a href="/kits">County Kits</a></li>
+      <li><a href="/earl">Ask Earl</a></li>
+      <li><a href="/sign-in" data-account-link>Sign in</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a class="btn btn--solid" href="/field-guide/09-ai-on-the-farm/check"><span>Take the self-check</span><span>Take the self-check</span></a>
+      <button class="nav__toggle" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main data-module="9">
+  <section class="guide-hero">
+    <div class="wrap">
+      <span class="eyebrow"><a href="/field-guide">Field Guide</a> &middot; Module 9 of 12 &middot; September 2027</span>
+      <h1 class="headline">AI on the Farm</h1>
+      <p class="lede">Precision farming tools are computers making decisions about your ground. Here&rsquo;s where those computers sit, what they need from your signal, and what to read before you sign.</p>
+      <p class="body"><b>The decision it serves:</b> choosing precision-ag tools, and where the computing should happen. About 12 minutes to read, plus 10 for the Go deeper rungs.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom:clamp(64px,9vw,120px)">
+    <div class="wrap">
+      <article class="read">
+
+        <div class="listen" id="listen">
+          <div class="listen__head">
+            <span class="listen__k">Listen to this module</span>
+            <span class="listen__ai">Narration: AI voice</span>
+          </div>
+          <audio controls preload="none" src="/assets/media/09/module-09-narration.mp3">
+            Your browser can&rsquo;t play this audio. <a href="/assets/media/09/module-09-narration.mp3">Download the MP3</a>.
+          </audio>
+          <p class="listen__foot">The whole module, rungs 1 to 5, read aloud. About <span data-listen-min>16</span> minutes. <a href="/assets/media/09/module-09-narration.txt">Read the script</a> &middot; <a href="/assets/media/09/module-09-narration.mp3" download>Download MP3</a></p>
+        </div>
+
+        <div class="carry">
+          <span>Carry this</span>
+          <p>Some decisions can&rsquo;t wait for a round trip to the cloud. Before you buy, ask what the tool does with no signal, and who ends up holding your data.</p>
+        </div>
+
+        <h2>Rung 1. A decision that can&rsquo;t wait</h2>
+        <p><b>Precision agriculture</b> means treating each part of a field according to what that part needs, instead of treating the whole field the same. A planter that changes its seeding rate as the soil changes. A sprayer that sprays the weed and skips the bare ground. A yield monitor that maps where the crop came in heavy and where it didn&rsquo;t.</p>
+        <p>Every one of those is a computer making a decision. The question this module asks is where that computer sits.</p>
+        <p>Some decisions are slow. Which hybrid to plant next spring can be worked out over the winter, on a big computer a thousand miles away. Call that the <b>cloud</b>: somebody else&rsquo;s data hall, reached over the internet.</p>
+        <p>Some decisions are fast. A sprayer rolling across a field has a fraction of a second to decide whether the green thing under its boom is a weed. That decision has to be made on the machine. Engineers call a computer that sits where the work happens the <b>edge</b>.</p>
+        <div class="analogy"><b>Analogy</b>You&rsquo;d mail a soil sample to the lab and wait a week for the report. You wouldn&rsquo;t mail the lab a question about whether to swerve around a rock.</div>
+        <div class="breaks"><b>Where it breaks</b>The lab and the tractor seat aren&rsquo;t really separate. The fast decision on the machine is made by a model that was built, slowly, in a data hall, from other people&rsquo;s fields, and the machine sends its own records back afterward. Edge and cloud are two ends of one system.</div>
+
+        <h2>Rung 2. What the tools do, and who is using them</h2>
+        <p>Start with a tool that works. One manufacturer&rsquo;s camera-guided sprayer carries cameras and processors on the boom, identifies weeds as it passes, and opens individual nozzles only over them. The company reports its customers ran it on more than 5 million acres in 2025 and cut their use of non-residual herbicide by nearly 50% on average, at speeds up to 15 miles an hour (Deere &amp; Co. news release, Nov. 2025). <span class="tag tag--v">VERIFIED</span> as the company&rsquo;s own report of its own product; no independent audit is cited.</p>
+        <p>Now the wider picture, which is thinner. In a 2025 federal survey, 22% of U.S. farms used precision agriculture practices, down from 27% in 2023 (USDA National Agricultural Statistics Service, Aug. 2025). <span class="tag tag--v">VERIFIED</span> The survey counts farms of every size.</p>
+        <p>Congress&rsquo;s auditors looked at why. The benefits they list are real: the same yield with less fertilizer, herbicide, fuel, and water, and less runoff. The obstacles are real too: equipment that costs more than a smaller farm can justify, brands that won&rsquo;t work together, and farmers who don&rsquo;t trust what happens to their data (U.S. Government Accountability Office, Jan. 2024). <span class="tag tag--v">VERIFIED</span></p>
+        <p>They&rsquo;re right to be cautious. A tool that pays on 5,000 acres may never pay on 300, and a subscription is a cost every year whether or not the crop comes in.</p>
+
+        <h2>Rung 3. Coverage on the map, signal in the field</h2>
+        <p>Whatever a tool decides on the machine, it still needs a connection sooner or later: to download its maps, upload its records, and get its updates.</p>
+        <p>Here is how farms connect. In the same 2025 survey, 85% of U.S. farms had internet access. Counting every type a farm uses, 74% connected through a cellular data plan, 55% through a wired broadband line, and 24% by satellite (USDA National Agricultural Statistics Service, Aug. 2025). <span class="tag tag--v">VERIFIED</span></p>
+        <p>Two cautions about numbers like that. First, they describe the farm, which usually means the house and the shop. They say nothing about the far corner of the back forty. Second, the federal broadband maps count where a provider says service is available; the map can show coverage where a tractor cab shows no bars. <span class="tag tag--p">PLAUSIBLE</span> The only reading that counts is one you take yourself, in the place the machine will be working.</p>
+        <p>Two things to measure. <b>Speed</b> is how much data moves per second. <b>Latency</b> is the delay for one round trip, in thousandths of a second, or <b>milliseconds</b>. A tool that uploads a yield map overnight cares about speed. A tool that expects an answer back while the machine is moving cares about latency.</p>
+        <div class="try"><b>Field Test: latency at the house, the field edge, and the far fence</b>Put a free speed-test app on your phone. Stand at the house and run it three times; write down download, upload, and latency. Do the same at the edge of a field, and again at the fence farthest from the road. Note the carrier and the number of bars each time. Now you have a coverage map nobody can argue with, made by the person who farms the ground. Phone-app readings are <span class="tag tag--p">PLAUSIBLE</span>, not lab measurements, and they change with weather and time of day. <b style="display:inline;text-transform:none;letter-spacing:0;font-family:var(--sans);font-weight:500;color:var(--ink)">Phone only. Walk or drive the field as you normally would, and never run the test from a moving tractor seat.</b></div>
+        <!-- Field Test video slot. Stays hidden until data-video-url is set to a YouTube link or an .mp4 path. -->
+        <figure class="fieldtest-video" data-video-slot data-video-url="" data-video-title="Field Test: latency at the house, the field edge, and the far fence" hidden>
+          <div class="fieldtest-video__frame" data-video-frame></div>
+          <figcaption>Field Test video. One phone, one carrier, one afternoon; readings reported as measured. Phone-app readings are PLAUSIBLE.</figcaption>
+        </figure>
+
+        <h2 id="go-deeper">Go deeper</h2>
+        <p>The first three rungs explain what these tools do and what they need. The next two explain the arithmetic that forces some computing onto the machine, and the question of who holds the data it produces. They get more technical, but every term is defined. Skip them and you can still pass the self-check; read them and you can read a technology contract before you sign it.</p>
+
+        <h2>Rung 4. The arithmetic of a round trip</h2>
+
+        <h3>How far does the machine move while it waits?</h3>
+        <p>Take the sprayer at 15 miles an hour. That is 22 feet every second.</p>
+        <p>Now suppose it had to ask a distant data hall whether to spray. One widely cited measurement put the average round trip from 260 points around the world to the nearest large cloud site at 74 milliseconds, before adding the wireless hop at either end (Satyanarayanan, <em>Computer</em>, Jan. 2017). <span class="tag tag--v">VERIFIED</span> The measurement is an older one, and a rural cellular link adds delay of its own.</p>
+        <p>In 74 milliseconds the sprayer travels 22 feet per second &times; 0.074 seconds, which is about 1.6 feet. <span class="tag tag--v">VERIFIED</span> as arithmetic on the two figures above. The weed is behind the nozzle before the answer arrives. And that is the best case, with a signal. With no signal there is no answer at all.</p>
+        <p>So the decision is made on the boom. Not because the cloud is weak, but because distance is delay, and a moving machine can&rsquo;t spend it.</p>
+
+        <h3>Send the answer, not the pictures</h3>
+        <p>The same paper names a second reason to compute at the edge: a nearby computer can boil a flood of raw data down to a small result and send only that (Satyanarayanan, 2017). <span class="tag tag--v">VERIFIED</span> By the company&rsquo;s account, that sprayer&rsquo;s cameras scan more than 2,500 square feet of ground every second. No rural connection carries that much video. What the machine can send, later, from the shop, is the summary: where it sprayed and how much. <span class="tag tag--p">PLAUSIBLE</span></p>
+
+        <h3>A latency budget</h3>
+        <p>Engineers sort jobs by how long they can wait. You can do the same with any tool you&rsquo;re offered. <span class="tag tag--p">PLAUSIBLE</span> as a way of sorting, not a standard.</p>
+        <ul>
+          <li><b>Thousandths of a second.</b> Steering, spraying, anything tied to a moving machine. This has to run on the machine.</li>
+          <li><b>Seconds to minutes.</b> A grain cart finding the combine, an alert that a pivot has stopped. A local link is enough; the cloud is optional.</li>
+          <li><b>Hours to seasons.</b> Yield analysis, seed selection, marketing. The cloud is fine, and a slow connection overnight will do.</li>
+        </ul>
+        <p>A tool that puts a first-row job on a third-row connection will fail in the field, and the field is where you&rsquo;ll find out.</p>
+        <div class="analogy"><b>Analogy</b>A combine operator and a grain cart driver work by hand signals and a glance, because that&rsquo;s fast enough. The elevator&rsquo;s price comes by phone, because that can wait a minute. Nobody runs the hand signals through the elevator.</div>
+        <div class="breaks"><b>Where it breaks</b>Two people in a field can always see each other. A machine at the edge only knows what it was taught before it left the shop. If the weeds changed this year, it finds out when someone updates it, and that update comes down the same thin connection.</div>
+
+        <h2>Rung 5. Who holds the harvest of data</h2>
+
+        <h3>Ownership is a principle; control is a contract</h3>
+        <p>Every pass across a field now produces a record: what was planted, sprayed, and harvested, where, and when. Whose is it?</p>
+        <p>The farm groups and equipment companies that wrote the industry&rsquo;s <em>Privacy and Security Principles for Farm Data</em> put it plainly: farmers own the information generated on their operations. But that is a principle the industry agreed to, not a rule of law. The same extension guide that explains it says what actually governs is the written agreement between the farmer and the technology company, and that ownership gets murky when a landlord, a tenant, and a custom applicator all have a hand in the same field (Ohio State University Extension, 2018). <span class="tag tag--v">VERIFIED</span></p>
+        <p>That guide lists what to look for in the agreement: who may collect and see the data, why, whether you can opt out of pieces, whether you can take your data to another company, whether it can be sold or shared, how long it&rsquo;s kept, what happens when you cancel, and whether the company is barred from using it to trade in commodity markets (Ohio State University Extension, 2018). <span class="tag tag--v">VERIFIED</span> The County Kit turns that list into a one-page sheet.</p>
+
+        <h3>Why this matters more with AI</h3>
+        <p>An AI model is built from data. The sprayer that knows a weed from a soybean learned it from pictures of many farmers&rsquo; fields. That is a fair trade if the terms say so. Congress&rsquo;s auditors found that concerns over data sharing and ownership are themselves an obstacle to using AI in agriculture: farmers worry about losing a competitive edge, about security, and about drawing regulatory attention (U.S. Government Accountability Office, Jan. 2024). <span class="tag tag--v">VERIFIED</span></p>
+        <p>The same report names the other lock: without common standards, one brand&rsquo;s equipment and records may not work with another&rsquo;s (GAO, Jan. 2024). <span class="tag tag--v">VERIFIED</span> Data you can&rsquo;t move is data you don&rsquo;t control, whatever the contract calls it. <span class="tag tag--p">PLAUSIBLE</span></p>
+
+        <h3>What a county has to do with it</h3>
+        <p>Module 6 made the case that a hospital&rsquo;s AI is only as good as its connection. A farm&rsquo;s is the same. When fiber or a tower comes to a county as part of a larger project, where it runs decides which farms can use these tools. <span class="tag tag--p">PLAUSIBLE</span> A route that passes the school, the clinic, and the farm-to-market roads is worth asking for by name.</p>
+        <div class="analogy" style="border-left:2px solid var(--blue)"><b>Still open <span class="tag tag--s">SPECULATIVE</span></b>Could farmers pool their data in a cooperative they own, the way they pooled grain, and license it on their own terms? Would a small shared computer at the co-op or the elevator serve a neighborhood of farms better than a signal to a distant hall? Does precision equipment ever pay on a small farm if it&rsquo;s shared or hired by the acre? Nobody has settled these. Questions for researchers, and for your extension office.</div>
+
+        <h2>Straight Talk</h2>
+        <p style="font-family:var(--serif);font-size:24px;line-height:1.25;color:var(--ink)">&ldquo;My farm data is mine automatically.&rdquo;</p>
+        <p><span class="verdict">It depends on what you signed.</span></p>
+        <p>The industry&rsquo;s own principles say farmers own the information generated on their operations. Those are principles, not law; the written agreement decides who can collect, use, share, and keep the data (Ohio State University Extension, 2018). <span class="tag tag--v">VERIFIED</span></p>
+        <p>They&rsquo;re right about this part: farmers&rsquo; distrust of how their data is handled is well founded enough that federal auditors list it as a barrier to adoption (GAO, Jan. 2024). <span class="tag tag--v">VERIFIED</span></p>
+        <p><b>Ask for it in writing:</b> who can see the data, whether it can be sold, whether you can take it with you, and what gets deleted when you leave.</p>
+
+        <h2>What this means for your family</h2>
+        <p>For a farm family the question is whether a tool earns more than it costs, on your acres, with your signal. Three things to settle before the check is written: what it does with no connection, what it costs every year after the first, and what happens to your records if you switch brands or quit.</p>
+        <p>For the kid in 4-H or FFA, this is a career that doesn&rsquo;t require leaving. Somebody has to install, calibrate, and repair these machines, and that somebody needs to know both a wiring diagram and a field.</p>
+        <p>And for the county, farm connectivity is infrastructure, the same as a bridge that can carry a loaded grain truck. It belongs on the list when anyone is negotiating over fiber.</p>
+
+        <div class="kit-cta">
+          <div>
+            <span class="kit-cta__k">County Kit &middot; Module 9</span>
+            <p class="kit-cta__t">Farm Data and Connectivity</p>
+            <p class="kit-cta__d">A one-page checklist to fill in before you buy or subscribe: your own signal readings, what the tool does offline, and the data terms to find in the agreement.</p>
+          </div>
+          <div class="kit-cta__btns">
+            <a class="btn btn--solid" href="/field-guide/09-ai-on-the-farm/kit"><span>Open the kit</span><span>Open the kit</span></a>
+            <a class="btn btn--ghost" href="/assets/media/09/farm-data-connectivity-kit.pdf" download><span>Download PDF</span><span>Download PDF</span></a>
+          </div>
+        </div>
+
+        <h2>Ask Earl</h2>
+        <p><span class="ai-badge" style="color:var(--ink);border-color:var(--rule)">AI character</span></p>
+        <p><b>The map says I&rsquo;ve got coverage. Why is there no signal in my back forty?</b></p>
+        <p>&ldquo;Because the map and the field are two different things. The map shows where a company says it can serve. It doesn&rsquo;t know about your creek bottom or the hill between you and the tower. So don&rsquo;t argue with the map, measure the field. Take your phone to the house, the field edge, and the far fence, run a speed test three times at each, and write down what you get. That&rsquo;s a plausible reading, not a lab number, but it&rsquo;s yours, and it&rsquo;s from the spot that matters. Then before you buy anything that needs a signal, ask the dealer one thing: what does it do out there when it&rsquo;s got none? Ask for that in writing. And do your testing on foot. Never fool with a phone from a moving tractor seat.&rdquo;</p>
+
+        <div class="next">
+          <div>
+            <p style="font-family:var(--serif);font-size:26px;color:var(--ink)">Ready? Five questions.</p>
+            <p style="font-size:15px;color:var(--muted);margin-top:4px">Get 4 right to pass. Retakes are fine.</p>
+          </div>
+          <a class="btn btn--solid btn--lg" href="/field-guide/09-ai-on-the-farm/check"><span>Take the self-check</span><span>Take the self-check</span></a>
+        </div>
+
+        <h2 style="font-size:20px;font-family:var(--sans);font-weight:500;margin-top:56px">Sources</h2>
+        <p style="font-size:15px">Every source below was opened Nov. 26, 2026.</p>
+        <ul style="font-size:15px">
+          <li>Deere &amp; Co. (Nov. 2025), news release as published by CropLife (Nov. 6, 2025), <a href="https://www.croplife.com/smart-tech/john-deere-customers-use-see--spray-technology-across-five-million-acres-in-2025/">&ldquo;John Deere Customers Use See &amp; Spray Technology Across Five Million Acres in 2025&rdquo;</a>: acres, herbicide reduction, operating speed. A company release.</li>
+          <li>USDA National Agricultural Statistics Service (Aug. 2025), <a href="https://esmis.nal.usda.gov/sites/default/release-files/h128nd689/bv73dz25x/1c18gf445/fmpc0825.txt"><em>Technology Use (Farm Computer Usage and Ownership)</em></a>: internet access, connection types, precision agriculture use in 2025 and 2023.</li>
+          <li>U.S. Government Accountability Office (Jan. 31, 2024), <a href="https://gao.gov/products/gao-24-105962"><em>Precision Agriculture: Benefits and Challenges for Technology Adoption and Use</em></a>, GAO-24-105962: benefits, cost, standards, data concerns.</li>
+        </ul>
+        <h3 style="font-size:16px;margin-top:24px">Go deeper (rungs 4 and 5), opened Nov. 26, 2026</h3>
+        <ul style="font-size:15px">
+          <li>Satyanarayanan, M. (Jan. 2017), <a href="https://www.andrew.cmu.edu/course/15-440/assets/READINGS/satya-edge2016.pdf">&ldquo;The Emergence of Edge Computing&rdquo;</a>, <em>Computer</em>, 50(1), 30&ndash;39: 74-millisecond average round trip; edge analytics.</li>
+          <li>Fulton, J., Port, K., &amp; Colley, T. (Feb. 9, 2018), <a href="https://ohioline.osu.edu/factsheet/fabe-55201">&ldquo;The Data Ownership Confusion&rdquo;</a>, Ohio State University Extension, FABE-552.01: the farm data principles; what an agreement should state.</li>
+        </ul>
+        <p style="font-size:14px;color:var(--muted);margin-top:16px">Spot an error? Email <a href="mailto:ruralamerica56@gmail.com">ruralamerica56@gmail.com</a>. We correct within 48 hours, in public.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="340" height="30">
+        <p>Grid &amp; Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities.</p>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/straight-talk">Straight Talk</a></li>
+          <li><a href="/kits">County Kits</a></li>
+          <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
+          <li><a href="/earl">Ask Earl</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="/sign-in">Sign in</a></li>
+          <li><a href="/account">My account</a></li>
+          <li><a href="/corrections">Corrections</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ruralamerica56@gmail.com">ruralamerica56@gmail.com</a></li>
+          <li><a href="https://getrural56done.substack.com" target="_blank" rel="noopener">Substack</a></li>
+          <li><a href="/">Get Rural America Done</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy;2026 Get Rural America Done</span>
+      <span class="footer__stripes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span>@GetRural56Done</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+<script type="module">
+  import { markNav } from "/assets/js/members.js";
+  markNav();
+</script>
+<script>
+  // Field Test video: shows nothing until data-video-url is set. Accepts a YouTube link or an .mp4/.webm path.
+  (function () {
+    var slot = document.querySelector("[data-video-slot]");
+    if (!slot) return;
+    var url = (slot.getAttribute("data-video-url") || "").trim();
+    if (!url) return;
+    var frame = slot.querySelector("[data-video-frame]");
+    var title = slot.getAttribute("data-video-title") || "Field Test video";
+    var yt = url.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+    var el;
+    if (yt) {
+      el = document.createElement("iframe");
+      el.src = "https://www.youtube-nocookie.com/embed/" + yt[1] + "?rel=0";
+      el.title = title;
+      el.loading = "lazy";
+      el.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture";
+      el.allowFullscreen = true;
+    } else if (/\.(mp4|webm)(\?|$)/i.test(url)) {
+      el = document.createElement("video");
+      el.src = url;
+      el.controls = true;
+      el.preload = "metadata";
+      el.setAttribute("playsinline", "");
+      el.setAttribute("aria-label", title);
+    } else {
+      return;
+    }
+    frame.appendChild(el);
+    slot.hidden = false;
+  })();
+</script>
+<script type="module" src="/assets/js/gate.js"></script>
+</body>
+</html>

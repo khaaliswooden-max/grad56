@@ -138,6 +138,14 @@
     const row = document.querySelector(`[data-module="${m.n}"] [data-status]`);
     if (!row) continue;
     const open = today >= m.opens && PUBLISHED.includes(m.n);
+    const title = row.parentElement.querySelector("span.mlist__t");
+    if (open && title) {
+      const a = document.createElement("a");
+      a.className = "mlist__t";
+      a.href = `/field-guide/${m.slug}`;
+      a.textContent = title.textContent;
+      title.replaceWith(a);
+    }
     if (progress.passed.has(m.n)) { row.textContent = `Passed · ${progress.best.get(m.n)}/5`; row.className = "mlist__s mlist__s--passed"; }
     else if (open) { row.textContent = "Open now"; row.className = "mlist__s mlist__s--open"; }
     else row.textContent = `Opens ${short(m.opens)}`;

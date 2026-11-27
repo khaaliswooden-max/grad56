@@ -1,0 +1,135 @@
+Grid and Grain Field Guide. Module four: The Water Question
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+"It'll drain the aquifer" and "it uses no water at all" can both be said about the same size of building. Here's how to find out which one you're being offered.
+
+Carry this. Cooling design, not size, decides the water bill.
+
+Rung one. Heat always runs downhill.
+
+Module three ended with a building full of heaters. Nearly every watt that goes into a computer comes out as heat, and a chip is ruined if that heat stays put. So the first job of a data center is moving heat from the chips to the outdoors.
+
+Heat has one rule it never breaks: it flows from hot things to cold things, the way water runs downhill. To keep a hot computer cool, you give its heat a path to somewhere cooler and keep that path open.
+
+At the end of that path, a building has two ways to hand its heat to the outside air. It can evaporate water, the way sweat cools your skin. Or it can blow air across a radiator, the way a truck cools its engine. The first way uses water, a lot of it. The second uses almost none, and more electricity.
+
+That one choice is most of the water question.
+
+Here's a picture. On a hot day you cool off two ways. You sweat, which works well and costs you water. Or you stand in front of a fan, which costs no water and works less well the hotter the air gets. Here's where that picture breaks. You drink a few quarts and you're fine. A building that sweats takes its water from the same pipes or the same aquifer the town does, and the water it evaporates doesn't come back down the drain.
+
+Rung two. Which kind of cooling?
+
+Before you argue about gallons, ask which of three families the project is in, according to Data Center Frontier, July twenty twenty-six. That's verified.
+
+Evaporative. Cooling towers and similar equipment evaporate water to carry heat away. This family uses the most water.
+
+Dry, or closed-loop. Liquid circulates in sealed pipes, like the coolant in a truck, and fans push the heat out through big radiators. Little or no water is used in normal running. In hot weather these systems need more electricity.
+
+Hybrid. Runs dry in mild weather and adds water when it's hot. Its water use is concentrated on the hottest days.
+
+How far apart are they? A large data center can use up to five million gallons a day, about what a town of ten thousand to fifty thousand people uses, according to Environmental and Energy Study Institute, June twenty twenty-five. That's verified. In evaporative systems, about eighty percent of the water taken in evaporates, same source. That's verified.
+
+At the other end, the developer of a very large closed-loop campus in Port Washington, Wisconsin, says its peak daily water use will be less than twenty-two thousand gallons, about what sixty-five homes use, according to Vantage Data Centers, as reported by TMJfour News, September twenty twenty-five. That's verified, as the company's stated plan. It's a promise, not yet a meter reading.
+
+That's a gap of more than two hundred to one, between buildings that can be the same size. So size tells you little. The cooling design tells you most of it.
+
+Where the critics are right. Closed-loop isn't free. It needs a first fill, about one point two million gallons at Port Washington, by the same report. It uses more electricity in the heat, and making electricity uses water somewhere else. Rung four follows that water. And a design on paper can change before the building opens, which is why the number belongs in the permit.
+
+Rung three. The peak day and the pipe.
+
+A water system, like the grid, is built for its worst day. So the number that matters to your town isn't a data center's average use. It's the most it will ever ask for in one day, and that day will be the hottest of the summer, when everybody else's demand is highest too.
+
+Engineers call the ratio of the peak day to the average day a peaking factor. For ordinary water customers taken together, it's about one point five to two point five. For data centers, one research team estimates three to ten, according to Han and colleagues, March twenty twenty-six. That's plausible.: it's a recent study that hasn't been through peer review. A data center that looks modest on an annual average can ask for a great deal on one July afternoon.
+
+Meeting that peak can mean new pumps, mains, or treatment capacity. The same study lists a pump station costing five point four million dollars to serve about one hundred thousand gallons a day, and a host town in Wisconsin facing an upgrade of more than one hundred million dollars after a request for one point two million gallons a day. That's plausible. Somebody pays for that pipe. It's the substation question from Module two, with water in it.
+
+So ask four things, and ask for them in the permit:
+
+Cooling type: evaporative, dry, or hybrid?
+
+Peak-day and average-day gallons, both.
+
+The source: city water, a well, the river, or reclaimed wastewater?
+
+A drought clause: what does the site cut back, and when, if the town is under water restrictions?
+
+Field Test. When a cold glass sweats. Evaporation only cools when the air has room for more water. You can measure that room on your porch. Set a ten-dollar digital hygrometer in the shade and read the temperature and the relative humidity. Look up the dew point for those two numbers with the National Weather Service's free online calculator: at seventy-seven degrees and fifty percent humidity, it's about fifty-seven degrees. Now fill a glass with ice water and take its surface temperature with an infrared thermometer. If the glass is colder than the dew point, it sweats. If it's warmer, it stays dry. On a dry day the dew point sits far below the air temperature, and evaporative cooling works well. On a muggy day the two are close, and it works poorly, so the system runs harder. Report your own readings as measured. Handheld meters only. Never open or touch cooling equipment, yours or anyone else's.
+
+Go deeper.
+
+The first three rungs cover the water a data center takes at the site. The next two follow the water you can't see: the water used to make its electricity, and the gaps in what anyone measures. They're more technical, but every term is defined. You can pass the self-check without them.
+
+Rung four. The hidden water.
+
+A data center uses water in two places. Direct water is used at the site, mostly for cooling. Indirect water is used at the power plants that make its electricity, because most power plants boil water to spin a turbine and then cool that steam.
+
+The bigger share is upstream.
+
+A twenty twenty-one study of U.S. data centers found that about seventy-five percent of their water footprint was indirect, at power plants, and about twenty-five percent was at the site, according to Siddik and colleagues, twenty twenty-one, as reported by Eos. That's verified. Berkeley Lab's later estimate leans even further that way: in twenty twenty-three, U.S. data centers used about sixty-six billion liters of water on site, roughly seventeen billion gallons, and nearly eight hundred billion liters, about two hundred eleven billion gallons, indirectly through their electricity, according to Lawrence Berkeley National Laboratory, December twenty twenty-four. That's verified. That's about twelve times as much upstream as on site.
+
+The two studies use different methods and years, so don't average them. Both say the same thing: most of the water is where you can't see it, and often in someone else's watershed.
+
+The trade nobody escapes.
+
+Here's the tension. Evaporative cooling saves electricity by spending water. Dry cooling saves water by spending electricity, and cutting water at the site can shift some of the demand to the power system, according to Data Center Frontier, July twenty twenty-six. That's verified. Which trade is better depends on the local watershed and the local grid. In a dry county fed by a low-water power supply, dry cooling is plainly better. Where water is plentiful and the grid is strained on hot afternoons, the answer is less obvious. That's plausible.
+
+The number to ask for.
+
+The industry's yardstick is water usage effectiveness: liters of water used at the site for each kilowatt-hour of electricity the computers use. Lower is better, and a dry system can be close to zero. Berkeley Lab puts the U.S. average for site water at about zero point three six liters per kilowatt-hour through twenty twenty-three, against about four point five liters per kilowatt-hour used indirectly to make the electricity, according to Lawrence Berkeley National Laboratory, December twenty twenty-four. That's verified.
+
+Like any yardstick, it has a boundary. Site water usage effectiveness leaves out the upstream water entirely. And a building can post an excellent energy score by evaporating a great deal of water. Ask for the energy number and the water number together.
+
+Here's a picture. Buying a steak, you don't see the water the cattle drank. A data center's electric meter is like that steak: most of the water behind it was used miles away. Here's where that picture breaks. Cattle water falls as rain on the pasture. Power-plant water comes from a particular river or reservoir, and a county that hosts the data center may not be the county that hosts the power plant. The hidden water has an address. It may not be yours.
+
+Rung five. What nobody is measuring.
+
+You can't manage what isn't metered, and much of this isn't.
+
+Few operators count.
+
+A review in twenty twenty-one found that fewer than a third of data center operators tracked their water use at all, according to Mytton, npj Clean Water, twenty twenty-one. That's verified. The same review put U.S. data center water consumption at about one point seven billion liters a day, against about one thousand, two hundred eighteen billion liters a day for the whole country, a little over a tenth of one percent. That's verified. That national share is small. It's also the wrong scale: water is local, and a national average says nothing about one town's wells.
+
+Evaporated water is gone from the basin.
+
+Most water a town uses goes down a drain and returns to the river after treatment. Water that's evaporated doesn't. One estimate is that data centers evaporate about seventy-five percent of the water they withdraw, against about twelve percent for public water supply on average, according to Han and colleagues, March twenty twenty-six. That's plausible. So a gallon sold to an evaporative data center isn't the same as a gallon sold to a neighborhood. In a basin that's already short, that difference is the whole argument.
+
+The rules are starting to arrive.
+
+Lawmakers in at least six states have introduced bills requiring data centers to report water use or disclose what they expect to need. Virginia's law takes effect January one, twenty twenty-seven: certain water providers must report, every month, how much drinking water and reclaimed water they deliver to data centers, according to National Conference of State Legislatures, August twenty twenty-six. That's verified. Tucson, Arizona, went further in August twenty twenty-five. After a proposed data center there was voted down, the city moved to require a public mayor-and-council vote on any application for large water use, with the applications open as public records, according to KJZZ, August twenty twenty-five. That's verified.
+
+A county doesn't have to wait for the state. Reporting can be a condition of a permit or a water contract.
+
+Still open, and that's speculative. As chips get hotter and move to liquid cooling, does site water use fall, or does the heat just get rejected through bigger evaporative systems? Can reclaimed wastewater supply most cooling without shorting the river downstream? And should a water permit count the upstream water at the power plant, when that plant is in another county? Nobody has settled these. Questions for researchers, and for your water board.
+
+Straight Talk. Here's a claim we hear.
+
+"A data center will drain our water."
+
+The verdict: It depends on the cooling.
+
+Large data centers can use up to five million gallons a day, according to Environmental and Energy Study Institute. A closed-loop campus planned in Port Washington, Wisconsin, says its peak will be under twenty-two thousand gallons a day, about sixty-five homes, according to TMJfour News. That's verified. About three-quarters of the U.S. data center water footprint is upstream at power plants, according to Siddik and colleagues, twenty twenty-one. That's verified.
+
+So the worry is reasonable, and it isn't automatic. It turns on a design choice you can ask about before the vote.
+
+Ask for it in writing: cooling type, peak and average gallons, the source, and a drought curtailment clause.
+
+Your well, your water bill.
+
+Two things reach your kitchen. The first is supply. If the site draws on the same aquifer as your well or your town's wells, what matters is how much it evaporates in a dry August, and whether its permit makes it cut back before you have to.
+
+The second is the bill. If the water utility builds new mains, pumps, or treatment for one large customer, ask who pays: that customer up front, or every ratepayer over thirty years. The six terms from Module two work for water too: a separate rate class, a minimum bill, collateral, an exit fee, a long contract, and upgrades paid up front.
+
+Your water utility's manager knows the system's peak-day capacity and how much of it is spoken for. That's a public number. Ask for it.
+
+County Kit. Water Disclosure Checklist. One page to fill in before a water permit or a hearing: cooling type, peak and average gallons, the source, where the water goes, who pays for the pipes, and the drought clause. It's free on the module page.
+
+Ask Earl. Earl is Grid and Grain's AI character, a retired co-op lineman. He's not a real person, and he'll always tell you so. Here's a question he got.
+
+How does a data center stay cool?
+
+Earl says: Same two ways you do. It can sweat, or it can stand in front of a fan. The sweating kind runs water over the heat and lets it evaporate. Works fine, but that water's gone, and it wants the most on the hottest day of the year. The fan kind keeps its water in sealed pipes, like the radiator on a line truck, and blows the heat off with air. Hardly any water, but it pulls more power when it's hot out. Neither one's wrong. They're different bills. So don't ask how big the building is. Ask which kind it is, and get the gallons in writing.
+
+That's Module four. The self-check is five questions, and four right is a pass. The County Kit, the sources, and the written version are at getruralamericadone.com, under Field Guide.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.

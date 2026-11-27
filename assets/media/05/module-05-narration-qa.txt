@@ -1,0 +1,22 @@
+# Transcription check: Kokoro v1.0 am_michael render (speed 1.0), transcribed with faster-whisper small.en, compared word by word with the published script, module-05-narration.txt. The voice was given the same script with a few names respelled for pronunciation (for example "Tucson", "PJM", and the site address).
+# Both sides normalized (lowercase, digits to words, hyphens and punctuation dropped) before comparing.
+duration 17 min 33 s; mean level -20.0 dB, peak -0.6 dB; script words 2511; differing words 20 (0.80%)
+replace: SCRIPT[writing] HEARD[riding]  ...what counties are already >< into law how to
+replace: SCRIPT[rung] HEARD[run]  ...in a press release >< one how sound fades
+replace: SCRIPT[centers] HEARD[center]  ...out back a data >< sound is mostly the
+replace: SCRIPT[matters] HEARD[matter]  ...sit on the property >< as much as how
+replace: SCRIPT[a] HEARD[one]  ...up when there are >< hundred machines instead of
+replace: SCRIPT[two] HEARD[too]  ...of one pebble rung >< measure it at the
+replace: SCRIPT[linn] HEARD[lynn]  ...where the city of >< valley kansas put it
+replace: SCRIPT[linn] HEARD[lynn]  ...according to city of >< valley updated august twenty
+replace: SCRIPT[buy] HEARD[by]  ...first few hundred feet >< the most quiet screening
+replace: SCRIPT[pitched] HEARD[pitch]  ...can understate both low >< sound an a weighted
+replace: SCRIPT[pitched] HEARD[pitch]  ...less sensitive to low >< sound because human ears
+replace: SCRIPT[linn] HEARD[lynn]  ...according to city of >< valley updated august twenty
+replace: SCRIPT[whine] HEARD[wine]  ...single tone a steady >< at one pitch is
+replace: SCRIPT[u] HEARD[you]  ...real emergency according to >< s environmental protection agency
+replace: SCRIPT[ordinances] HEARD[ordinance is]  ...an acoustical engineer the >< above answer that by
+replace: SCRIPT[linn] HEARD[lynn]  ...according to city of >< valley neighbors in vineland
+delete: SCRIPT[and] HEARD[]  ...side the machines face >< if you farm or
+replace: SCRIPT[pitched] HEARD[pitch]  ...where its measured low >< sound studies monitoring setbacks
+replace: SCRIPT[right] HEARD[write]  ...is five questions four >< is a pass the

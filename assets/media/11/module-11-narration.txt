@@ -1,0 +1,173 @@
+Grid and Grain Field Guide. Module eleven: Small Is Possible.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+No single town is big enough to matter to the computing industry. Several together can be. Rural America has solved this problem once already, with poles.
+
+Carry this. Pooled demand can pull rural services out of computing's slow lane.
+
+Rung one. The fast lane and the slow lane.
+
+For decades, everybody who bought a computer rode the same wave. Each buyer helped pay for the next, faster chip, and the next chip was better at everything. A bank, a farmer, and a video-game company were all pulling the same wagon.
+
+That wagon is splitting. Researchers Neil Thompson and Svenja Spanuth describe computing dividing into a fast lane, where the biggest users get chips designed for their one job, and a slow lane, where everyone else stays on general-purpose chips that improve more slowly (Communications of the A C M, March twenty twenty-one). That's verified.
+
+The fast lane has a toll. Designing one specialized chip on the newest manufacturing technology cost about eighty million dollars as of twenty eighteen, so it only pays for a customer with an enormous amount of the same work to do. The researchers name two kinds of users who end up in the slow lane: those with too little demand to justify the upfront cost, and those whose demand is spread out and hard to coordinate (Thompson and Spanuth, twenty twenty-one). That's verified.
+
+Read that second description again. Too little demand in any one place, spread thin, hard to coordinate. That's a rural county's nine one one center, its clinic, its school district, and its courthouse. That's plausible.
+
+Rural America has been here before. In the mid nineteen thirties, about nine in ten rural homes had no electric service. Power companies weren't interested in running lines to a few customers per mile. So farmers formed cooperatives, borrowed through a federal program created in May nineteen thirty-five, and built the lines themselves. By nineteen fifty-three, more than ninety percent of U.S. farms had electricity (N R E C A). That's verified.
+
+Nobody made the farms bigger. They pooled.
+
+Here's a picture. One farm can't justify a grain elevator. Forty farms can. The elevator doesn't care that each farm is small; it cares what comes down the road in total.
+
+Here's where that picture breaks. An elevator built in nineteen sixty may still be standing. Computers are out of date in a handful of years. A group that pools computing has to plan for replacing the equipment from the first day, not the fortieth year.
+
+Rung two. Why close matters.
+
+Most of what your county does on a computer happens somewhere else. "The cloud" is a plain thing: very large computers in a few big buildings, rented by the hour, reached over the internet. Edge computing is the opposite arrangement: real computing and storage placed near the people and machines that use it (Satyanarayanan, Computer, twenty seventeen). That's verified.
+
+The big buildings win on cost, and it's worth saying so plainly. Putting everything in one place lowers the cost of running each machine (Satyanarayanan, twenty seventeen). That's verified. Big sites waste less power, too. Engineers track a number called P U E: the total power a data center draws, divided by the power that reaches its computers. In a twenty twenty-six survey the average site reported one point five two, but when sites are weighted by size the figure drops to one point three six, because the largest ones are the most efficient (Uptime Institute, August twenty twenty-six). That's verified.
+
+So why would anyone keep a computer close? The same paper gives four reasons:
+
+Speed of response. In one study, the average round trip from two hundred and sixty points around the world to the nearest of Amazon's big data centers took seventy-four milliseconds. Some jobs need a reply in a few tens of milliseconds.
+
+Less to send. A nearby computer can chew through the raw data, such as hours of camera footage, and send on only the result.
+
+Privacy. Sensitive records can be screened or kept at the first place they land.
+
+Riding through an outage. A nearby computer can keep a service going when the link to the cloud is down.
+
+(Satyanarayanan, twenty seventeen.) That's verified.
+
+For public services, the fourth one carries the most weight. On July nineteen, twenty twenty-four, a faulty software update from one security company knocked out computers around the world. Hospitals reported delayed procedures, diverted patients, and cancellations, and some were hit a second way when their local emergency call centers went down (American Hospital Association, July twenty twenty-four). That's verified.
+
+Be careful with that example. A server down the hall running the same faulty software would have failed the same way. Keeping a machine close doesn't make it safe. The lesson is narrower: decide ahead of time which services must keep working when the outside world doesn't, and make sure those few can run without help. That's plausible.
+
+Here's a picture. The big hospital in the city is efficient because everyone goes through it. The clinic in town is valuable because it is close.
+
+Here's where that picture breaks. You can't move a hospital. You can move a computing job in a blink. So the real answer is both at once: send each job to whichever place does it better.
+
+Rung three. Pooling: how small becomes possible.
+
+There's already a name for computing shared by a group of organizations with a common mission. The federal standards agency NIST calls it a community cloud: computing set up for the exclusive use of a specific community of organizations with shared concerns, owned and run by one or more of them, by a hired third party, or by some mix (NIST, September twenty eleven). That's verified. The idea is more than a decade old. It isn't exotic.
+
+And people already do it:
+
+Ohio's schools. State law sets up an education computer network run through regional information technology centers. Each center's members are school districts and educational service centers, banded together to reach enough students to make the services efficient (Ohio Revised Code). The council that coordinates them is itself a sixteen member consortium of governments, offering hosting, disaster recovery, and shared services (Management Council of the Ohio Education Computer Network). That's verified.
+
+Wisconsin's rural hospitals. The Rural Wisconsin Health Cooperative was incorporated in nineteen seventy-nine and is owned by about forty rural hospitals. Health information technology is one of the services they share (Rural Wisconsin Health Cooperative). That's verified.
+
+Electric co-ops and broadband. N R E C A's broadband group counted one hundred and twenty-eight participants in twenty twenty-five, most of them electric co-ops, serving nearly one million families and businesses across thirty-one states (N R E C A, twenty twenty-five). That's verified. The co-ops that strung the first wire went back and strung the second.
+
+None of these looks like the data centers in the news. A regional compute co-op would be closer to this: a few racks of ordinary servers in a room the members already own, a handful of shared technicians, and cloud contracts bought together at a better price. That's plausible.
+
+What would it run? The kinds of jobs Rung two points to: backup copies of county and school records; a fallback for nine one one dispatch; the hospital's and the schools' day-to-day systems; perhaps a shared AI tool for transcribing and translating that keeps patient and student records inside the region. That's speculative. Module six covered what a rural hospital needs from tools like that.
+
+Field Test: the dishwasher and the sun. Some jobs don't care what time they run. Here's a way to see why that matters, using only public data. Open the U.S. Energy Information Administration's Hourly Electric Grid Monitor, pick your region, and look at yesterday. Write down solar's share of the power being generated at one in the afternoon, and again at eight in the evening: solar divided by the total. Now your dishwasher. A standard Energy Star model may use up to two hundred and forty kilowatt-hours a year over two hundred and fifteen cycles, which is about one point one kilowatt-hours a cycle. That's verified. Multiply that by each share. Same dishes, same energy, different power plants behind it. The regional share is not your house's exact mix, so your answer is an estimate. That's plausible. Computers have jobs like the dishes: backups and record scanning can wait for the right hour. Public data only. Nothing to plug in, nothing to open.
+
+Go deeper.
+
+The first three rungs make the case that pooling is possible. The next two are about whether it's wise: what a small site costs, what it's good for, and how a group of local governments would actually run one. They're more technical, but every term is defined. Skip them and you can still pass the self-check; read them before you bring this idea to a budget meeting.
+
+Rung four. The arithmetic of a small site.
+
+A small site will never beat a giant one on cost per unit of computing. Rung two gave the reasons. So a small site has to earn its keep another way. It pays for presence, not scale.
+
+What stands in the way.
+
+The paper that lists the four advantages of closeness also lists three obstacles: the cost of managing many scattered sites, weaker physical security than a big guarded building, and a chicken-and-egg problem, where nobody builds the sites until the uses exist and nobody builds the uses until the sites exist (Satyanarayanan, twenty seventeen). That's verified. The people who say small towns shouldn't run their own computers are pointing at real problems.
+
+Each one translates directly to a county:
+
+People. The scarce thing isn't the machine. It's the technician who knows how to keep it patched, backed up, and secure. One county can't afford three of them. Six member organizations might. That's plausible. This is the main thing pooling buys.
+
+Security. A server in a courthouse closet is easier to walk up to than one behind a fence and a guard. A shared site can afford a locked room, cameras, and a log of who went in.
+
+Who goes first. Somebody has to be the anchor: usually the member with the most at stake, such as the hospital or the largest school district.
+
+A test for what stays close.
+
+Run each service through the four advantages from Rung two. Does it need an answer in a split second? Does it produce far more raw data than anyone needs to send? Is the data sensitive enough that it shouldn't leave? Must it keep working when the outside link is down? A service that answers yes to none of them belongs in the cloud, where it's cheaper. A service that answers yes to one or more is a candidate to keep close.
+
+Most groups will end up with both. NIST has a name for that too: a hybrid cloud, two or more separate clouds tied together so that data and programs can move between them (NIST, September twenty eleven). That's verified.
+
+Three sites, not one.
+
+Module ten showed that copies aren't independence. The same holds here. One server room is a single point of failure, however carefully it's built. Two rooms in two towns on two different power lines, plus a copy in the cloud, makes three places that are unlikely to fail together. That's plausible. Pooling is what makes the second room affordable.
+
+Small can be flexible.
+
+The Field Test showed that the same job can lean on different power plants depending on the hour. A small site can use that. Backups, scanning old records, and updating software don't need to happen at five in the afternoon in July. Scheduling them for hours when the grid has room is the flexibility chain from Module seven at small scale, and it costs nothing but planning. That's plausible.
+
+Here's a picture. A town doesn't keep a fire truck because it's the cheapest way to put out fires per fire. It keeps one because the truck in the city is forty minutes away.
+
+Here's where that picture breaks. A fire truck is supposed to sit idle. A server that sits idle is wasted money. So a small site should be kept busy with work that can wait, and cleared the moment something urgent comes in.
+
+Rung five. Who owns it, and who votes.
+
+The hard part of a compute co-op isn't the computers. It's the bylaws.
+
+Borrow the co-op rulebook.
+
+Cooperatives run on seven published principles. Three of them do most of the work here (N R E C A). That's verified.
+
+Democratic member control. Members control the organization, and in a local co-op each member gets one vote.
+
+Members' economic participation. Members put in the capital fairly, and any surplus goes to reserves, to growth, or back to members in proportion to their use.
+
+Cooperation among cooperatives. Co-ops get stronger by working through shared regional and national structures.
+
+Ohio's school network adds a fourth idea worth copying. State law says no rule may stop a district from buying computer services from any other public or private vendor (Ohio Revised Code). That's verified. Members stay because the service is worth it, not because they're locked in.
+
+The decisions to write down.
+
+Who can join? County, cities, school districts, the hospital, the library, the electric co-op.
+
+One member, one vote, or votes by use? A hospital that uses half the capacity and a library that uses two percent won't see this the same way.
+
+Whose data is it? Each member should own its data outright and be able to take it and leave.
+
+Who pays to replace the machines? Equipment runs on the chip clock. A reserve funded every year, from the first year, is the difference between a co-op and a one-time grant that rusts. That's plausible.
+
+What legal form? A cooperative, or a council of governments like Ohio's. That one is a question for the members' attorneys.
+
+A two-question screen.
+
+Here's a rough way to decide which services to look at first. Ask how badly the service is stuck in the slow lane: is anyone ever going to build a product for a buyer this small? Then ask how thin the demand is: how few users per square mile? A service that scores high on both, such as dispatch for a large, empty county, is where pooling has the most to offer and where the market is least likely to show up without it. That's speculative. It's a way to sort a list, not a finding.
+
+And one link back to Module ten. A community negotiating a benefit agreement with a large data center could ask for the seed of something like this: a room, a fiber connection, and a few years of funding for shared public computing. That's speculative. We know of no agreement that has done it yet.
+
+Still open. That's speculative. How many members, or how many people served, does a compute co-op need before it covers its costs? Can a rural region hire and keep the technicians? Does keeping an AI tool inside the region measurably improve privacy or uptime, or does it only feel safer? Who insures it? These don't have answers yet. They're good questions for a state university, an extension office, or the first region willing to try and publish what happens.
+
+Straight Talk.
+
+"Small towns can't run their own compute."
+
+Partly right. Alone, usually. Together, some already do.
+
+The objection has weight. Big sites are more efficient: an average P U E of one point five two falls to one point three six when sites are weighted by size (Uptime Institute, August twenty twenty-six). And the research that makes the case for computing close to home also lists what stands in the way: management cost, security, and nobody wanting to go first (Satyanarayanan, twenty seventeen). That's verified.
+
+But pooled public computing isn't hypothetical. Ohio law organizes school districts into regional technology centers, and about forty rural Wisconsin hospitals have owned a cooperative that shares technology services since nineteen seventy-nine (Ohio Revised Code; Rural Wisconsin Health Cooperative). That's verified.
+
+Ask for it in writing: before anyone buys hardware, a list of the services that must keep running when the outside link is down, and the names of the neighbors willing to share the cost.
+
+What this does at your kitchen table.
+
+Nobody outside a county office will ever see a server room. What families see is whether the nine one one call gets answered on a bad night, whether the clinic can pull up a chart when the internet is down, and whether the school's systems are running on Monday morning.
+
+There's a job in it, too. Module eight was blunt that large data centers bring few permanent jobs. A shared regional site brings fewer still, perhaps a handful. But they're skilled jobs that have to be done locally, by people who answer to local boards. That's plausible.
+
+November is budget season. If the idea is worth an hour of your board's time, the concept sheet below is the one page to bring.
+
+Ask Earl.
+
+Earl is an AI character.
+
+Could our county run its own computers instead of renting everything from the cloud?
+
+"By itself? Probably not well, and I'd be wary of anybody who tells you it's easy. The folks who say small towns can't do this are right about the hard part: it isn't the machines, it's keeping good people to run them. But that's the same thing they said about stringing wire to farms. One farm couldn't do it. A few hundred farms with a board and a loan could. So don't ask whether your county can. Ask which neighbors would go in with you, the hospital, the schools, the co-op, and which two or three services you can't afford to lose when the outside link goes down. Start there, and keep renting the rest. Whether it pencils out for your county is a question for your own budget people, not for me."
+
+That's Module eleven. The County Kit for this module is the Regional Compute Co-op Concept Sheet, and the five-question self-check is on the module page, free, at getruralamericadone.com. Know the wires. Set the terms.

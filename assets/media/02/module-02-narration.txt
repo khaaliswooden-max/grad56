@@ -1,0 +1,155 @@
+Grid and Grain Field Guide. Module two: Who Pays for the Substation?
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+A big new customer needs a substation built before it uses a single kilowatt-hour. Here's who pays for it, and the six lines of fine print that decide whether it's them or you.
+
+Carry this. Wires earn a return on capital, which rewards building. A large-load tariff decides who pays if the building outlasts the customer.
+
+Rung one. Somebody always pays for the substation.
+
+Module one ended with a question: when one giant customer plugs in, who pays for the equipment it needs? This module answers it.
+
+A data center can't just plug into the line on your road. It needs its own substation, heavier lines to feed it, and sometimes upgrades farther up the grid. All of that gets built before the customer uses a single kilowatt-hour.
+
+Your co-op or utility pays for that equipment up front, usually with borrowed money, and earns it back a little at a time through monthly bills over many years. If the big customer stays and pays, the plan works. If it leaves early, shrinks, or never shows up at all, the equipment and the loan are still there, and the cost lands on everyone else's bills. That's plausible.
+
+So the real question isn't whether a data center pays its power bill. It's who is on the hook for what was built for it.
+
+Here's a picture. Ten neighbors share a gravel road and split the upkeep. A new neighbor wants the road paved a mile out to his place, on a twenty-year loan in everyone's name. He promises his share will cover it. Here's where that picture breaks. If he moves away, a paved road still helps whoever buys his place. A substation sized for one giant customer may have no second customer in the county big enough to use it.
+
+Rung two. The large-load tariff: six terms.
+
+A tariff is a utility's published rulebook: the rates and conditions for each kind of customer. A large-load tariff is the chapter written for the biggest customers. It sets what they pay and the conditions for connecting to the grid, according to Columbia Law School, Sabin Center, June twenty twenty-six. That's verified.
+
+As of May twenty twenty-six, twenty-three states had approved at least one large-load tariff, and seven more had one pending, according to Edison Electric Institute, as cited by the Sabin Center. That's verified.
+
+The good ones share six terms. Each one closes a different way the cost could slide onto you.
+
+One. A separate rate class.
+
+Big customers are billed in their own group, so their costs don't blend into the rates for homes and farms. Ohio's regulators ordered the utility AEP Ohio to create a data center class for new loads above twenty-five megawatts, according to Public Utilities Commission of Ohio order of July nine, twenty twenty-five, as reported by Power magazine. That's verified.
+
+Two. A minimum bill.
+
+The customer pays for most of the capacity it reserved, whether it uses it or not. In Ohio that floor is as high as eighty-five percent of the capacity the data center signed up for, according to Power magazine, July twenty twenty-five. That's verified. Reserve one hundred megawatts, use forty, and the bill is still figured on eighty-five.
+
+Three. Collateral.
+
+The customer posts money or a bank guarantee that the utility keeps if the customer fails. Dominion Energy's tariff in Virginia asks for one point five million dollars for each megawatt of capacity, according to Sabin Center, June twenty twenty-six. That's verified.
+
+Four. An exit fee.
+
+Leaving early costs money. In Ohio a data center can't buy its way out at all in the early years, and when it can, the fee equals three years of minimum charges, according to Vorys law firm summary of the order, July twenty twenty-five. That's verified.
+
+Five. A long contract.
+
+The contract should run closer to the life of the equipment. Ohio's runs up to twelve years, counting a ramp-up period of up to four. Dominion's minimum is fourteen. And they're getting longer: tariffs proposed before twenty twenty-five averaged a minimum of about five years, and those proposed since average about twelve, according to Lawrence Berkeley National Laboratory and the Brattle Group, as reported by Utility Dive, September twenty twenty-six. That's verified.
+
+Six. Upgrades paid up front.
+
+The customer pays for its own substation and lines before construction, instead of the utility borrowing for them. Rappahannock Electric Cooperative in Virginia collects about sixty percent of a substation's projected cost within about ten business days of signing, according to CoBank, January twenty twenty-six. That's verified.
+
+Do these terms change anything? After Ohio's tariff took effect, AEP Ohio's forecast of large-load demand reportedly fell by about half, according to Sabin Center, June twenty twenty-six. That's plausible, as a reported figure. The likely reason: projects that were only testing the water left the line once a real commitment was required.
+
+Field Test. What one dishwasher cycle costs, twice. A minimum bill is about one idea: power costs more at some hours than others, and reserved capacity costs money even when it sits unused. See the first half at home. If your dishwasher plugs into an outlet you can reach, plug a watt meter between them, reset it, and run one normal cycle. Read the kilowatt-hours. Then find two numbers on your co-op's rate sheet: its on-peak and off-peak price per kilowatt-hour, if it offers a time-of-use rate. Multiply. Say the cycle used one point two kilowatt-hours, and your rates were sixteen cents on-peak and eight cents off-peak: that's nineteen cents at suppertime and ten cents at bedtime, for the same clean dishes. Those are example numbers, not yours. Hardwired dishwasher, or the plug is out of reach? Use the washing machine instead. Plug-in meters only. Never open an appliance, an outlet, or a panel.
+
+Rung three. Where you get a say.
+
+Who writes the tariff depends on who owns the wires, Module one, Rung four.
+
+If you're on a co-op, the board you elect sets the terms, sometimes with a state commission's approval. Co-ops are already acting. In South Carolina, Central Electric Power Cooperative, which supplies nineteen local co-ops, adopted a rate for loads of twenty megawatts or more: contracts of at least fifteen years with penalties for leaving early, cash deposits or letters of credit, monthly minimums, and advance payment for upgrades, the National Rural Electric Cooperative Association's magazine, July twenty twenty-six. That's verified. In Arizona, regulators voted unanimously on August twelve, twenty twenty-six, to approve a process for the state's wholesale co-op and five local co-ops. Every large-load agreement gets checked to make sure no other group of customers subsidizes it, according to Arizona Corporation Commission, August twenty twenty-six. That's verified.
+
+If you're on an investor-owned utility, the state utility commission decides, in a public case that takes written comments. Few local voices show up. The Sabin Center reports that no city took part in Pennsylvania's large-load proceeding, according to June twenty twenty-six. That's plausible, as a reported account. A county or town that files a comment is often the only local government in the record.
+
+Where the critics are right. A tariff protects you from the cost of wires built for one customer. It doesn't cover everything. A large new load also buys power from the same regional market you do, and where supply is tight, that can raise the price for everyone. Studies find those effects concentrated in tight markets such as PJM, the grid operator for much of the East, according to E and E News, in the Straight Talk library. That's verified. Rung five explains why. A good tariff is necessary. It isn't the whole answer.
+
+Go deeper.
+
+The first three rungs give you the six terms and where to ask for them. The next two explain how a rate is built in the first place, and why a tariff can protect your co-op's books and still not shield your region's power price. They're more technical, but every term is defined. You can pass the self-check without them.
+
+Rung four. How a rate gets built.
+
+Rates aren't picked. They're worked out in three steps, and each step is a place where costs can be pointed at one group of customers or another.
+
+Step one: how much money in total.
+
+The utility adds up what it needs to collect in a year. That total is the revenue requirement: operating costs, plus the return on what it has built, Module one, Rung four. For a co-op, it's operating costs plus loan payments and a margin the lenders require.
+
+Step two: who caused which costs.
+
+A cost-of-service study splits that total among groups of customers, called rate classes: residential, commercial, industrial, and so on. It works in three moves. First, sort every cost by job: making power, moving it long distance, delivering it locally, serving customers. Second, label each cost by what drives it: the amount of energy used, the size of the peak, or simply the number of customers. Third, hand each class its share, according to South Carolina Office of Regulatory Staff, Electric Ratemaking Fundamentals, August twenty twenty-five. That's verified.
+
+The idea underneath is cost causation: whoever causes a cost should pay it. A separate rate class for large loads is cost causation made visible. Without it, a substation built for one customer sits in a shared pool, and the study spreads it across everyone in the class.
+
+Step three: how the bill is shaped.
+
+Last, each class's share is turned into prices. Most bills have two or three parts: a fixed customer charge, an energy charge per kilowatt-hour, and for larger customers a demand charge based on their highest draw, according to South Carolina Office of Regulatory Staff, August twenty twenty-five. That's verified. A minimum bill is a floor under the demand charge. That's the eighty-five percent in Ohio.
+
+Why a big customer can push your rate either way.
+
+Here's the part both sides of the argument get half right. Much of a utility's cost is fixed. Spread a fixed cost over more kilowatt-hours and the price per kilowatt-hour falls. A study led by the Electric Power Research Institute found that from twenty fifteen to twenty twenty-four, a doubling of data center capacity lowered residential prices by about four percent. That's verified. But a big customer also triggers new costs. A Wharton and Harvard Business School paper attributes about four percent of the rise in residential prices from twenty twenty to twenty twenty-five to data centers, and fifteen percent of the rise in industrial prices. That's verified. Both are in the Straight Talk library.
+
+Those findings don't contradict each other. Which way your bill moves depends on whether the new customer pays more than the new costs it causes. That's plausible. The six terms are how you make sure it does.
+
+Here's a picture. A big table at a restaurant can split the check evenly or by what each person ordered. Cost causation is splitting by what you ordered. A large-load tariff makes the guest who ordered the steak pay for the steak, and leave a deposit in case he walks out. Here's where that picture breaks. At a restaurant you can see who ordered what. On a grid, one substation, one line, and one power plant serve many customers at once, so the split depends on formulas that reasonable people argue over. That argument is the rate case.
+
+Rung five. Why a tariff can't cover everything.
+
+A tariff governs the deal between one utility and one customer. The price of the power itself is set somewhere else, and by location.
+
+Power has a price at every point on the map.
+
+In regions with a wholesale market, the grid operator posts a price at thousands of points on the grid. It's called the locational marginal price, and it has three parts: the cost of making the power, the cost of congestion, and the cost of power lost as heat on the lines, according to PJM Interconnection, January twenty twenty-five. That's verified.
+
+Congestion is the one to watch. When demand is low, power flows freely and prices are close to the same everywhere. As demand climbs, some lines reach the limit of what they can safely carry. The cheapest power can't get through, so the operator runs costlier plants on the near side of the bottleneck, and the price there goes up, according to PJM Interconnection, January twenty twenty-five. That's verified.
+
+Now put a very large load on the crowded side of a bottleneck. It pays the higher price, and so does every other buyer at that spot, including your co-op's power supplier. That's plausible. No clause in the data center's contract with its utility changes that, because the price comes from the market, not the contract.
+
+How big the requests are.
+
+Scale is what makes this matter. Rappahannock Electric Cooperative's ordinary peak demand is about one thousand, one hundred fifty megawatts. The requests it has received from data centers add up to about twenty thousand megawatts, roughly seventeen times its peak, with about a fifth of that under contract, according to CoBank, January twenty twenty-six. That's verified. The co-op buys the power for those loads through a separate affiliate, so the supply costs stay off its existing members' bills, according to CoBank, January twenty twenty-six. That's verified. That's a seventh term some co-ops now add: a separate power supply.
+
+Bring your own power.
+
+A newer tool goes after the supply side directly. A clean transition tariff makes the large customer responsible for bringing new generation onto the grid to match its load, the way a long-term power contract would. A proposed agreement between Google and Xcel Energy in Minnesota runs fifteen years and includes a minimum monthly bill, credit support, and an exit fee, according to Sabin Center, June twenty twenty-six. That's verified.
+
+Here's a picture. PJM itself compares location pricing to a taxi fare. In light traffic the fare is steady. In heavy traffic the same trip costs more. Here's where that picture breaks. A taxi fare goes up only for the rider in the cab. On the grid, when one very large rider crowds the road, the fare goes up for everyone traveling that road at that hour.
+
+Still open, and that's speculative. Is a twelve-year contract long enough for equipment built to last decades? The thresholds in today's tariffs run from under one megawatt to one hundred fifty, so there's no agreed line for what counts as "large." And nobody has shown yet whether tariffs written in twenty twenty-five and twenty twenty-six will hold when the first big customer actually walks away. Questions for researchers, and for your board.
+
+Straight Talk. Here's a claim we hear.
+
+"Data centers are why my power bill went up."
+
+The verdict: Overstated, with a real local risk.
+
+The two best studies so far point in different directions and both find small effects: residential prices about four percent lower with a doubling of data center capacity from twenty fifteen to twenty twenty-four, according to Electric Power Research Institute, and about four percent of the twenty twenty to twenty twenty-five residential price rise attributed to data centers, according to Wharton and Harvard Business School. That's verified. Most of what raised bills in those years was something else.
+
+The risk is real where supply is tight and where no tariff is in place. What happens next depends on the rules written now. That's plausible.
+
+Ask for it in writing: a large-load tariff with a separate rate class, a minimum bill, collateral, an exit fee, a long contract, and upgrades paid up front.
+
+What to ask at your annual meeting.
+
+This is the part that reaches your kitchen table: the monthly bill. Co-op annual meetings run from February into spring, and members elect the board there. You don't need to be an engineer to ask three questions.
+
+Does our co-op have a large-load tariff or policy? May I have a copy?
+
+If a large customer leaves early, who pays for the substation and lines built for it?
+
+Has anyone asked to connect a load of twenty megawatts or more, and what share of our peak would it be?
+
+One thing people get wrong: "Co-ops have to take any customer." Partly true. In Virginia, state law gives a co-op an obligation to serve, even where the community opposes the project, according to CoBank, January twenty twenty-six. That's verified. But a duty to serve is not a duty to serve at everyone else's expense. The co-op sets the terms. That's what the tariff is for. The rule differs by state, so ask your co-op which one applies to you.
+
+County Kit. Large-load tariff checklist. The six terms on one page, each with the question to ask. Hold a draft tariff or contract next to it and check what's covered. For a co-op meeting, a commission comment, or a county hearing. It's free on the module page.
+
+Ask Earl. Earl is Grid and Grain's AI character, a retired co-op lineman. He's not a real person, and he'll always tell you so. Here's a question he got.
+
+What happens if the data center leaves?
+
+Earl says: Depends what got signed before the first pole went in. Let's trace the wire. The co-op built a substation for that customer, and there's a loan on it. If the contract has a minimum bill and an exit fee, the customer keeps paying or pays to get out, and if it goes broke there's collateral to draw on. If none of that's in there, the loan doesn't leave with them. It stays with the members. So the time to ask is before the vote, not after. Ask for it in writing.
+
+That's Module two. The self-check is five questions, and four right is a pass. The County Kit, the sources, and the written version are at getruralamericadone.com, under Field Guide.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.
