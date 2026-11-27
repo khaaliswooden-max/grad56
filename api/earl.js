@@ -214,11 +214,15 @@ async function handler(req, res) {
           res.write(ev.delta.text); wrote = true;
         } else if (ev.type === "error") {
           console.error("earl: stream error " + ((ev.error || {}).type || ""));
+          if (test) res.write("\n[test: stream error " + ((ev.error || {}).type || "") + "]");
+        } else if (test && ev.type === "message_delta" && ev.delta && ev.delta.stop_reason && ev.delta.stop_reason !== "end_turn") {
+          res.write("\n[test: stop " + ev.delta.stop_reason + "]");
         }
       }
     }
   } catch (e) {
     console.error("earl: stream interrupted");
+    if (test) res.write("\n[test: stream interrupted " + (e && e.name) + "]");
   }
   if (!wrote) res.write("I lost my place there. Ask me again?");
   res.end();
