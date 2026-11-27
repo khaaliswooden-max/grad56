@@ -28,7 +28,7 @@ The good ones share six terms. Each one closes a different way the cost could sl
 
 One. A separate rate class.
 
-Big customers are billed in their own group, so their costs don't blend into the rates for homes and farms. Ohio's regulators ordered the utility A-E-P Ohio to create a data center class for new loads above twenty-five megawatts, according to Public Utilities Commission of Ohio order of July nine, twenty twenty-five, as reported by Power magazine. That's verified.
+Big customers are billed in their own group, so their costs don't blend into the rates for homes and farms. Ohio's regulators ordered the utility AEP Ohio to create a data center class for new loads above twenty-five megawatts, according to Public Utilities Commission of Ohio order of July nine, twenty twenty-five, as reported by Power magazine. That's verified.
 
 Two. A minimum bill.
 
@@ -50,7 +50,7 @@ Six. Upgrades paid up front.
 
 The customer pays for its own substation and lines before construction, instead of the utility borrowing for them. Rappahannock Electric Cooperative in Virginia collects about sixty percent of a substation's projected cost within about ten business days of signing, according to CoBank, January twenty twenty-six. That's verified.
 
-Do these terms change anything? After Ohio's tariff took effect, A-E-P Ohio's forecast of large-load demand reportedly fell by about half, according to Sabin Center, June twenty twenty-six. That's plausible, as a reported figure. The likely reason: projects that were only testing the water left the line once a real commitment was required.
+Do these terms change anything? After Ohio's tariff took effect, AEP Ohio's forecast of large-load demand reportedly fell by about half, according to Sabin Center, June twenty twenty-six. That's plausible, as a reported figure. The likely reason: projects that were only testing the water left the line once a real commitment was required.
 
 Field Test. What one dishwasher cycle costs, twice. A minimum bill is about one idea: power costs more at some hours than others, and reserved capacity costs money even when it sits unused. See the first half at home. If your dishwasher plugs into an outlet you can reach, plug a watt meter between them, reset it, and run one normal cycle. Read the kilowatt-hours. Then find two numbers on your co-op's rate sheet: its on-peak and off-peak price per kilowatt-hour, if it offers a time-of-use rate. Multiply. Say the cycle used one point two kilowatt-hours, and your rates were sixteen cents on-peak and eight cents off-peak: that's nineteen cents at suppertime and ten cents at bedtime, for the same clean dishes. Those are example numbers, not yours. Hardwired dishwasher, or the plug is out of reach? Use the washing machine instead. Plug-in meters only. Never open an appliance, an outlet, or a panel.
 
@@ -62,7 +62,7 @@ If you're on a co-op, the board you elect sets the terms, sometimes with a state
 
 If you're on an investor-owned utility, the state utility commission decides, in a public case that takes written comments. Few local voices show up. The Sabin Center reports that no city took part in Pennsylvania's large-load proceeding, according to June twenty twenty-six. That's plausible, as a reported account. A county or town that files a comment is often the only local government in the record.
 
-Where the critics are right. A tariff protects you from the cost of wires built for one customer. It doesn't cover everything. A large new load also buys power from the same regional market you do, and where supply is tight, that can raise the price for everyone. Studies find those effects concentrated in tight markets such as P J M, the grid operator for much of the East, according to E and E News, in the Straight Talk library. That's verified. Rung five explains why. A good tariff is necessary. It isn't the whole answer.
+Where the critics are right. A tariff protects you from the cost of wires built for one customer. It doesn't cover everything. A large new load also buys power from the same regional market you do, and where supply is tight, that can raise the price for everyone. Studies find those effects concentrated in tight markets such as PJM, the grid operator for much of the East, according to E and E News, in the Straight Talk library. That's verified. Rung five explains why. A good tariff is necessary. It isn't the whole answer.
 
 Go deeper.
 
@@ -100,9 +100,9 @@ A tariff governs the deal between one utility and one customer. The price of the
 
 Power has a price at every point on the map.
 
-In regions with a wholesale market, the grid operator posts a price at thousands of points on the grid. It's called the locational marginal price, and it has three parts: the cost of making the power, the cost of congestion, and the cost of power lost as heat on the lines, according to P J M Interconnection, January twenty twenty-five. That's verified.
+In regions with a wholesale market, the grid operator posts a price at thousands of points on the grid. It's called the locational marginal price, and it has three parts: the cost of making the power, the cost of congestion, and the cost of power lost as heat on the lines, according to PJM Interconnection, January twenty twenty-five. That's verified.
 
-Congestion is the one to watch. When demand is low, power flows freely and prices are close to the same everywhere. As demand climbs, some lines reach the limit of what they can safely carry. The cheapest power can't get through, so the operator runs costlier plants on the near side of the bottleneck, and the price there goes up, according to P J M Interconnection, January twenty twenty-five. That's verified.
+Congestion is the one to watch. When demand is low, power flows freely and prices are close to the same everywhere. As demand climbs, some lines reach the limit of what they can safely carry. The cheapest power can't get through, so the operator runs costlier plants on the near side of the bottleneck, and the price there goes up, according to PJM Interconnection, January twenty twenty-five. That's verified.
 
 Now put a very large load on the crowded side of a bottleneck. It pays the higher price, and so does every other buyer at that spot, including your co-op's power supplier. That's plausible. No clause in the data center's contract with its utility changes that, because the price comes from the market, not the contract.
 
@@ -114,7 +114,7 @@ Bring your own power.
 
 A newer tool goes after the supply side directly. A clean transition tariff makes the large customer responsible for bringing new generation onto the grid to match its load, the way a long-term power contract would. A proposed agreement between Google and Xcel Energy in Minnesota runs fifteen years and includes a minimum monthly bill, credit support, and an exit fee, according to Sabin Center, June twenty twenty-six. That's verified.
 
-Here's a picture. P J M itself compares location pricing to a taxi fare. In light traffic the fare is steady. In heavy traffic the same trip costs more. Here's where that picture breaks. A taxi fare goes up only for the rider in the cab. On the grid, when one very large rider crowds the road, the fare goes up for everyone traveling that road at that hour.
+Here's a picture. PJM itself compares location pricing to a taxi fare. In light traffic the fare is steady. In heavy traffic the same trip costs more. Here's where that picture breaks. A taxi fare goes up only for the rider in the cab. On the grid, when one very large rider crowds the road, the fare goes up for everyone traveling that road at that hour.
 
 Still open, and that's speculative. Is a twelve-year contract long enough for equipment built to last decades? The thresholds in today's tariffs run from under one megawatt to one hundred fifty, so there's no agreed line for what counts as "large." And nobody has shown yet whether tariffs written in twenty twenty-five and twenty twenty-six will hold when the first big customer actually walks away. Questions for researchers, and for your board.
 
@@ -150,6 +150,6 @@ What happens if the data center leaves?
 
 Earl says: Depends what got signed before the first pole went in. Let's trace the wire. The co-op built a substation for that customer, and there's a loan on it. If the contract has a minimum bill and an exit fee, the customer keeps paying or pays to get out, and if it goes broke there's collateral to draw on. If none of that's in there, the loan doesn't leave with them. It stays with the members. So the time to ask is before the vote, not after. Ask for it in writing.
 
-That's Module two. The self-check is five questions, and four right is a pass. The County Kit, the sources, and the written version are at get rural america done dot com, under Field Guide.
+That's Module two. The self-check is five questions, and four right is a pass. The County Kit, the sources, and the written version are at getruralamericadone.com, under Field Guide.
 
 Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.
