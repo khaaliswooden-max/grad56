@@ -29,7 +29,8 @@
     </a>
     <ul class="nav__links" id="nav-links">
       <li><a href="/field-guide" aria-current="page">Field Guide</a></li>
-      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
+      <li><a href="/straight-talk">Straight Talk</a></li>
+      <li><a href="/kits">County Kits</a></li>
       <li><a href="/earl">Ask Earl</a></li>
       <li><a href="/sign-in" data-account-link>Sign in</a></li>
     </ul>
@@ -90,6 +91,8 @@
         <h4>Learn</h4>
         <ul>
           <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/straight-talk">Straight Talk</a></li>
+          <li><a href="/kits">County Kits</a></li>
           <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
           <li><a href="/earl">Ask Earl</a></li>
         </ul>
@@ -99,6 +102,7 @@
         <ul>
           <li><a href="/sign-in">Sign in</a></li>
           <li><a href="/account">My account</a></li>
+          <li><a href="/corrections">Corrections</a></li>
           <li><a href="/privacy">Privacy</a></li>
         </ul>
       </div>
@@ -134,6 +138,14 @@
     const row = document.querySelector(`[data-module="${m.n}"] [data-status]`);
     if (!row) continue;
     const open = today >= m.opens && PUBLISHED.includes(m.n);
+    const title = row.parentElement.querySelector("span.mlist__t");
+    if (open && title) {
+      const a = document.createElement("a");
+      a.className = "mlist__t";
+      a.href = `/field-guide/${m.slug}`;
+      a.textContent = title.textContent;
+      title.replaceWith(a);
+    }
     if (progress.passed.has(m.n)) { row.textContent = `Passed · ${progress.best.get(m.n)}/5`; row.className = "mlist__s mlist__s--passed"; }
     else if (open) { row.textContent = "Open now"; row.className = "mlist__s mlist__s--open"; }
     else row.textContent = `Opens ${short(m.opens)}`;

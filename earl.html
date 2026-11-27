@@ -72,9 +72,11 @@
       <img src="/assets/brand/wordmark-horizontal-light.svg" alt="Get Rural America Done" width="300" height="26">
     </a>
     <ul class="nav__links" id="nav-links">
-      <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
-      <li><a href="/grid-and-grain#straight-talk">Straight Talk</a></li>
-      <li><a href="#ask">Ask a question</a></li>
+      <li><a href="/field-guide">Field Guide</a></li>
+      <li><a href="/straight-talk">Straight Talk</a></li>
+      <li><a href="/kits">County Kits</a></li>
+      <li><a href="/earl" aria-current="page">Ask Earl</a></li>
+      <li><a href="/sign-in" data-account-link>Sign in</a></li>
     </ul>
     <div class="nav__cta">
       <a class="btn btn--solid" href="/grid-and-grain#subscribe"><span>Get the first issue</span><span>Get the first issue</span></a>
@@ -195,7 +197,7 @@
         <p class="body">Prefer email, or want a person to read it? Send it in. We read every one. The best become Ask Earl posts on Thursdays. Questions may be answered publicly; we never publish your name or email.</p>
         <div class="btns">
           <a class="btn btn--solid" href="mailto:ruralamerica56@gmail.com?subject=Question%20for%20Earl&amp;body=My%20question%20for%20Earl%3A%0A%0A%0AMy%20county%20and%20state%20(optional)%3A%20"><span>Email Earl a question</span><span>Email Earl a question</span></a>
-          <a class="btn btn--ghost" href="/grid-and-grain#straight-talk"><span>Read the Straight Talk library</span><span>Read the Straight Talk library</span></a>
+          <a class="btn btn--ghost" href="/straight-talk"><span>Read the Straight Talk library</span><span>Read the Straight Talk library</span></a>
         </div>
       </div>
       <div class="reveal">
@@ -224,7 +226,11 @@
           <li><a href="/">Home</a></li>
           <li><a href="/grid-and-grain">Grid &amp; Grain</a></li>
           <li><a href="/field-guide">Field Guide</a></li>
+          <li><a href="/straight-talk">Straight Talk</a></li>
+          <li><a href="/kits">County Kits</a></li>
           <li><a href="/earl">Ask Earl</a></li>
+          <li><a href="/corrections">Corrections</a></li>
+          <li><a href="/privacy">Privacy</a></li>
           <li><a href="/#about">About</a></li>
         </ul>
       </div>
@@ -259,5 +265,9 @@
 </footer>
 
 <script src="/assets/js/site.js" defer></script>
+<script type="module">
+  import { markNav } from "/assets/js/members.js";
+  markNav();
+</script>
 </body>
 </html>

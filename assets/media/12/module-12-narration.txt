@@ -1,0 +1,175 @@
+Grid and Grain Field Guide. Module twelve: The Three Clocks.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+Eleven modules, one picture. Three clocks run at three speeds, and only one of them is yours to set.
+
+Carry this. Compute grows at chip speed, power at grid speed; the gap is where you bargain.
+
+Rung one. Three clocks, three speeds.
+
+Everything in this Field Guide fits on three clocks.
+
+The first is the chip clock. Demand for computing moves fast. U.S. data centers used about four point four percent of the country's electricity in twenty twenty-three. Their load had roughly tripled over the decade before, and a national laboratory projects it will double or triple again by twenty twenty-eight, to somewhere between six point seven percent and twelve percent (Lawrence Berkeley National Laboratory, December twenty twenty-four). That's verified. Five years, from one size to two or three times that size. That is chip speed.
+
+The second is the grid clock. Power plants, substations, and lines move slow. A new power project now waits more than five years between asking to connect and switching on, in the regions that report data. At the end of twenty twenty-five, about two thousand and sixty-one gigawatts of projects were standing in that line (Lawrence Berkeley National Laboratory, July twenty twenty-six). That's verified. Big new customers face studies and upgrades of their own (Module one, Rung five).
+
+The third clock is yours. It's the county's calendar: the planning commission's meeting dates, the budget hearing, the co-op's annual meeting, the next election. Nothing gets built in your county until something on that calendar says yes.
+
+A company on the chip clock is in a hurry. The grid it needs is not. And the permission it needs sits on a calendar that you and your neighbors control.
+
+Here's a picture. The seed company has a new variety every spring. An orchard takes years to bear. And what goes in the ground on your place this year is your decision, made on your schedule.
+
+Here's where that picture breaks. A farmer who waits a season loses one season. A county that waits can lose its turn: the project goes elsewhere, or the decision moves to the state. The third clock is yours only if you're ready when it strikes.
+
+Rung two. The gap is where you bargain.
+
+Put the first two clocks side by side. One side wants power in two years. The other can deliver it in five or more. The distance between them is the gap.
+
+That gap is where the money is, because whoever can close it fastest wins the business. It's where the conflict is, because closing it fast tempts people to skip steps. And it's where your room to bargain is, because a developer who needs speed has reasons to accept terms. That's plausible.
+
+Three habits follow from that.
+
+Treat hurry as information. "We need a vote this month" tells you the other side's clock is running. In Frederick County, Maryland, residents got ten days to comment on a proposal worth more than one hundred and ten million dollars; the county executive rejected it (W Y P R, September twenty twenty-six; Module ten). That's verified. A good deal survives thirty more days of reading.
+
+Plan in ranges. The twenty twenty-eight forecast above spans nearly a factor of two. Nobody knows which end is right. A plan that only works at one end is no plan at all.
+
+Write your terms before the phone rings. A county that already has its ordinance, its questions, and its priorities on paper negotiates on its own clock. A county that starts writing after the application arrives negotiates on the developer's.
+
+Rung three. Three chains, three asks.
+
+Underneath the year's twelve topics are three chains of cause and effect. Each one turns into something a community can ask for in writing.
+
+The heat chain.
+
+Every watt a chip uses becomes heat, and moving that heat outdoors takes more power and sometimes water (Modules three and four). The average data center draws about one point five two watts for every watt that reaches its computers; weighted by size, the figure is one point three six (Uptime Institute, August twenty twenty-six). That's verified. So a watt saved at the chip saves the cooling behind it and the generation behind that.
+
+The ask: efficiency and cooling, in the ordinance. Name the measure and where it's taken, require it reported every year, and require the cooling design to be stated, because the design decides the water.
+
+The capital chain.
+
+A very large customer needs a substation and lines that are paid off over decades. If that customer shrinks or leaves, the unpaid cost can land on everyone else (Module two). As of May twenty twenty-six, twenty-three states had approved at least one large-load tariff to prevent that (Columbia Sabin Center, in the Straight Talk library). That's verified.
+
+The ask: a large-load tariff with a minimum bill, collateral posted up front, an exit fee, and a contract as long as the debt.
+
+The flexibility chain.
+
+The grid is built for its worst hour and has room in most of the others (Module one). A customer that can cut back in the worst hours is easier and cheaper to connect (Module seven).
+
+The ask: flexibility as a condition of connecting. Curtailment hours in the contract, batteries before more diesel engines, and limits on generator hours in the permit.
+
+Three chains, three documents: the ordinance, the tariff, and the agreement. Module ten explained why you want all three, each standing by itself.
+
+Field Test: the year's log. This month's test is to look back at the other eleven. If you ran them, lay your readings side by side: the volts your outlet lost when the microwave started, the dishwasher cycle at two prices, the laptop's watts idle and busy, the dew point on the porch, the condenser's sound at four distances, the words a laptop wrote per joule, the window unit's watts through the peak hour, the dead battery you found by halving, the delay at the far fence, the mesh point at the modem, and the dishwasher against the sun. For each one, write three things: what you measured, with what, and whether it matched what the module said. Where it didn't match, that's the interesting line. Phone-app readings are estimates. That's plausible. One house is never a national figure. Plug-in and handheld meters only. Never open equipment.
+
+Go deeper.
+
+The first three rungs are the year in review. The next two turn it into a plan: what a county does in each quarter, and how to plan honestly when the forecasts disagree. They're more technical, but every term is defined. Skip them and you can still pass the self-check; read them if you're the one who has to write the plan.
+
+Rung four. A twelve-month plan, quarter by quarter.
+
+A county plan for this isn't a study. It's a short list of facts to gather, rules to write, and dates to hit, with a name next to each. Here is one way to lay it out. The order matters more than the months. That's plausible.
+
+First quarter: know where you stand.
+
+Fill in the Know Your Utility sheet (Module one): who owns the wires, when the board is elected, and your system's peak demand.
+
+Ask the utility, in writing, how many large-load requests are pending and how big the largest is as a share of that peak.
+
+Ask whether anyone in county government has signed a nondisclosure agreement (Module ten).
+
+Mark the year's fixed dates: budget adoption, planning commission meetings, the co-op annual meeting, filing deadlines for board seats.
+
+Second quarter: write the rules.
+
+Water: a disclosure requirement covering cooling type, peak and average gallons, source, and a drought clause (Module four).
+
+Noise and land: a decibel limit at the property line, setbacks, generator test hours, and third-party monitoring (Module five).
+
+Efficiency: the yearly reporting from the heat chain above.
+
+Spring is planning and zoning season in most places. An ordinance written before any application is on file is ordinary lawmaking. One written after can look like it was aimed at a single company, and may be challenged that way. That's plausible.
+
+Third quarter: set the terms.
+
+The tariff: if your utility has no large-load tariff, ask the co-op board or the state commission for one, using the Module two checklist.
+
+Flexibility: the curtailment and battery terms from Module seven.
+
+Jobs: local-hire targets, apprenticeships, and a community college partner (Module eight).
+
+Fourth quarter: decide what you want.
+
+Fill in the benefit agreement term sheet with your own priorities before anyone offers theirs (Module ten).
+
+Name the three things your community is shortest on. For many rural places that's the hospital, broadband, and a way for young people to train and stay (Modules six, eight, and nine).
+
+Ask the neighbors whether any public computing is worth pooling (Module eleven).
+
+Set next year's dates, and publish the plan.
+
+Triggers.
+
+Most counties will never get the call. So the plan should say what moves the county from watching to acting. Three reasonable triggers: a pending request above a set share of the utility's peak; a rezoning or annexation inquiry for a large tract; a request that any official sign a nondisclosure agreement. That's speculative. When one trips, the plan's owner calls a public meeting. That's all a trigger has to do.
+
+Here's a picture. A county emergency plan doesn't predict the tornado. It says who opens the shelter, who has the keys, and what siren means go.
+
+Here's where that picture breaks. A tornado isn't negotiating with you. A developer is, and will read your plan. That's fine. A published plan tells serious developers what a yes looks like and saves both sides time.
+
+Rung five. Planning when nobody knows.
+
+The numbers in Rung one came with a warning: the twenty twenty-eight range runs from six point seven percent to twelve percent. People who study this for a living disagree by nearly a factor of two about a date that is close. Past that date, they disagree by more.
+
+Why the forecasts are wide.
+
+History gives reasons to doubt both extremes. From twenty ten to twenty eighteen, the world's data centers did about six point five times as much computing while their electricity use rose only about six percent, because efficiency improved almost as fast as demand (Masanet et al., twenty twenty, in the Straight Talk library). That's verified. AI broke that balance after twenty seventeen. Whether efficiency catches up again, nobody can say. That's speculative.
+
+The grid clock has the same uncertainty. The line of projects waiting to connect shrank by ten percent in twenty twenty-five, with more than seven hundred and fifty gigawatts withdrawn. Of everything that asked to connect from two thousand to twenty twenty, about thirteen percent had been built by the end of twenty twenty-five and seventy-five percent had dropped out (Lawrence Berkeley National Laboratory, July twenty twenty-six). That's verified. Most of what is announced never arrives.
+
+What a plan can do about that.
+
+Ask for three cases, not one. Any forecast your utility or a developer shows you should come as a low, a base, and a high. Then test each term in your plan against all three.
+
+If the boom keeps going, the risk is strain: on rates, water, land, and the grid. The heat and flexibility asks protect you.
+
+If the boom ends, the risk is being left with the bill: a substation built for a customer who never came, or left early. The capital ask protects you. A minimum bill, collateral, and an exit fee matter most in exactly the future where the optimists were wrong. That's plausible.
+
+Either way, an enforcement clause is worth the same. Module ten's test doesn't depend on the forecast.
+
+That's the reason to write terms that hold in every case, and not to bet the county on one.
+
+Where the critics were right this year.
+
+This guide has tried to say so each time. Permanent jobs are few (Module eight). Tax breaks can erase much of the promised revenue (Module ten). Noise complaints are real, and so is local water strain from some cooling designs (Modules four and five). Deals are often made in secret (Module ten). Rate risk is real where power is tight (Module two). None of that is settled by enthusiasm. All of it can be addressed in writing, and that has been the argument of the whole year.
+
+Still open. That's speculative. Will the three clocks stay this far apart? Faster grid studies, on-site power, or a slowdown in AI spending could each narrow the gap, and with it the leverage. Will states leave these decisions with counties, or take them? Does a published county plan attract better proposals, or just fewer? We don't know. If your county writes one, tell us what happened, and we'll publish it with the grade it earns.
+
+Straight Talk.
+
+"The AI boom will be over soon."
+
+It depends, and your plan shouldn't.
+
+It might be. Forecasts for twenty twenty-eight differ by nearly a factor of two, from six point seven percent to twelve percent of U.S. electricity (Lawrence Berkeley National Laboratory, December twenty twenty-four), and most projects that ask to connect to the grid are never built: seventy-five percent of the capacity requested from two thousand to twenty twenty was withdrawn (Lawrence Berkeley National Laboratory, July twenty twenty-six). That's verified.
+
+But "it'll blow over" isn't a plan either. If the boom ends, the communities hurt most will be the ones that built for a customer and didn't secure the bill. That's plausible.
+
+Ask for it in writing: low, base, and high cases in any forecast, and terms that protect you in all three.
+
+What the year was for.
+
+Infrastructure is a means. The end is a hospital that stays open, a farm that stays profitable, and a kid who can build a career without leaving home.
+
+None of that comes from a building at the edge of town. It comes from what a community asks for and gets in writing: broadband that stays, a training program with a real employer at the end of it, technology money for the clinic and the schools, a co-op whose members aren't paying for someone else's substation. The opportunity is not the building. It is the leverage.
+
+If you've passed all twelve self-checks, the Field Certificate is yours, with your county's name on it. Take it to your board along with the one-page plan below.
+
+Ask Earl.
+
+Earl is an AI character.
+
+This is a lot. Where do I start?
+
+"Same place a lineman starts: find out what you're standing under before you touch anything. Three phone calls. Call your co-op or utility and ask what its peak is and whether any big customers have asked to hook up. Call the county and ask when the planning board meets and whether anybody's signed a confidentiality paper. Then call one neighbor who'll go to the meeting with you. That's the first quarter of the plan, and it costs you an afternoon. I won't tell you whether any project is good for your county. That's yours to decide. But decide it on your own calendar, and ask for it in writing."
+
+That's Module twelve, and that's the Field Guide. The County Kit for this module is the County A I Infrastructure Plan. Pass all twelve self-checks and the Field Certificate is yours, free, at getruralamericadone.com. Know the wires. Set the terms.

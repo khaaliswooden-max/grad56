@@ -1,0 +1,105 @@
+Grid and Grain Field Guide. Module seven: Sun, Storage, and Flexible Load.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+The hottest afternoon of the year sets the size of the grid. Here's what sun, batteries, and a customer willing to step aside can change, and what to ask for.
+
+Carry this. A load that can yield on the worst days connects sooner and cheaper. A promise to yield counts only if someone can check it.
+
+Rung one. The worst hour of the year.
+
+Module one said the grid is built for its worst hour. In most of the country that hour comes on a hot weekday in July or August, late in the afternoon. Offices are still running. People are getting home and turning the air conditioning down. Every air conditioner in three states is working at once.
+
+That one hour sets the size of nearly everything: the power plants, the lines, the substation near your town. The equipment built for it sits partly idle the rest of the year, and everybody pays for it all year.
+
+That's why your co-op sends a text asking you to hold off on the dryer. Choptank Electric Cooperative in Maryland tells its members plainly that peak times are when the co-op is buying wholesale power at the highest prices, and that using less then lowers what every member pays. That's verified.
+
+You can watch your own grid's worst hour arrive. The federal Energy Information Administration publishes hourly demand for every grid operator in the Lower forty-eight states, usually within about an hour. That's verified. On the next hot day, look yours up and find the top of the curve.
+
+Here's a picture. A church builds its parking lot for Easter Sunday. On an ordinary Tuesday the lot is nearly empty, but the paving was paid for all the same. Here's where that picture breaks. If the lot fills on Easter, people park on the grass. If the grid runs short at its peak, something has to be switched off, on purpose and fast, or the whole system is at risk. The grid has no grass.
+
+Rung two. Sun and storage move the worst hour.
+
+Solar panels make the most power around midday. People use the most power a few hours later. In between sits a gap that grid operators have a name for.
+
+Take everything customers are using and subtract what the sun and wind are supplying. What's left is the net load: the part that other power plants have to cover. On a sunny day the net load sags at midday, then climbs steeply toward sunset as the panels fade and the air conditioners keep going. Plotted on a chart, the line looks like a duck, so the industry calls it the duck curve. That's from the Energy Information Administration, and it's verified.
+
+The hard hour moves from the hottest part of the afternoon to the hour the sun goes down.
+
+That's the job batteries were hired for. A grid battery fills up at midday, when solar power is plentiful and cheap, and empties in the evening. The country had about forty-four gigawatts of grid batteries at the end of twenty twenty-five and nearly fifty-two by the middle of twenty twenty-six, after three years of growth averaging seventy percent a year. That's from the Energy Information Administration, August twenty twenty-six, and it's verified. A gigawatt is roughly one large power plant running flat out.
+
+Two honest limits. Most grid batteries today are built to discharge for a few hours, not a few days. That's plausible. And a battery doesn't make energy. It moves energy from an hour that has too much to an hour that has too little, and loses a little on the way.
+
+Rung three. The other way to meet a peak: don't.
+
+There are two ways to get through the worst hour. Build enough to cover it, or have some customers use less during it. The second is called flexible load, and when the utility asks for it, curtailment.
+
+You already do a small version when you wait to run the dishwasher. The question for a county is whether a customer the size of a town can do it.
+
+A twenty twenty-five Duke University study ran the numbers for the twenty-two largest grid areas in the country, covering about ninety-five percent of U.S. demand. It found the existing system could take on seventy-six gigawatts of new load if that load cut back a quarter of one percent of the time, about eighty-five hours a year. It could take one hundred twenty-six gigawatts if the load cut back one percent of the time, about three hundred sixty-six hours. Most of those hours wouldn't need a full shutdown. On average, half the new load could keep running for eighty-eight percent of the curtailment time. That's verified as a system-wide estimate.
+
+They're right to be skeptical about this part, and the study says so itself. It didn't look at whether local lines and substations have room, and data centers have not historically taken part in programs like this. That's verified. Room on the whole system isn't room at your substation.
+
+Here's a Field Test for a summer afternoon. A smart plug that logs energy can do on your windowsill what a utility asks of a big customer. On a hot afternoon, read the watts a window air conditioner draws. Then set the plug to switch it off for your grid's peak hour, and put a thermometer in the room. At the end of the hour you have both sides of the bargain: watt-hours saved, and degrees gained. That trade is what a curtailment contract prices. Plug-in meters only. Not on a heat-advisory day, and not in a room where anyone is elderly, ill, or very young.
+
+Go deeper.
+
+The first three rungs explain why the peak matters and the two ways to meet it. The next two explain how flexibility is paid for, and how a promise to cut back gets written so that it can be enforced. They get more technical, but every term is defined.
+
+Rung four. What flexibility is worth.
+
+Start with load factor: how full the system runs. Load factor is average demand divided by peak demand. A system with a load factor of one half is, on average, half used. A customer that runs flat out around the clock, as a data hall usually does, has a load factor near one. That is good for a utility in one way: steady sales over the same wires. It is hard in another: the customer is at full draw during the worst hour, too, so it adds to the peak one for one. That's plausible.
+
+A flexible customer changes that arithmetic. If it can drop during the few dozen hours that set the peak, it buys energy all year without adding much to the size of the system. That is the whole idea behind the Duke estimate.
+
+How does a battery earn its keep? A grid battery has three ways to earn money. These are standard industry definitions, graded plausible. One: arbitrage. Buy power when it's cheap, sell when it's dear. This is the duck curve turned into income. Two: capacity. Get paid simply for being available at the peak, the way a volunteer fire department is funded to be ready. Three: fast response. The grid has to hold its frequency steady second by second. A battery can react in a fraction of a second, faster than any turbine.
+
+A battery at a data hall can do a fourth thing: carry the hall through its own curtailment. The hall keeps computing, and the grid sees the load drop. That is why on-site batteries belong on a county's list of terms.
+
+What have the big customers actually signed? This is no longer theory. Google reported in March twenty twenty-six that it had put one gigawatt of data center demand response into long-term contracts with five utilities: Indiana Michigan Power, the Tennessee Valley Authority, Entergy Arkansas, Minnesota Power, and D T E Energy. Under those contracts it can pause or shift part of its machine-learning work when the grid is strained. That's verified as the company's own announcement.
+
+The same announcement concedes the limit. It says there are limits to how flexible a given data center can be, and that the capability will only be available at certain locations. It doesn't say how many hours a year the contracts cover. That's verified. A county should ask for that number.
+
+Here's a picture. An irrigation district in a dry year doesn't build a new reservoir for August. Farmers with junior rights agree ahead of time to shut their gates when the river drops, and they pay less for water because of it. Here's where that picture breaks. A ditch rider can see a closed gate from the road. Nobody can see a data hall using less power. It takes a meter, a record, and someone with the right to read both.
+
+Rung five. A promise you can check.
+
+Here's what one state wrote into law. Texas put flexibility into statute in twenty twenty-five. Senate Bill Six covers new customers that connect at transmission voltage, the high-voltage level where big data centers plug in. Before one connects, it must install equipment that lets its load be cut off during a firm load shed. That's the grid's last-resort emergency step of switching customers off in rotation. A large customer with backup generators can be ordered, on reasonable notice, to run them or cut its load. And the grid operator must set up a program that pays large customers, chosen by competitive bid, to reduce demand with at least twenty-four hours' notice. That's from the Texas Senate Research Center's analysis of the bill, and it's verified.
+
+Notice the three different things in that one law. A switch someone else controls. An order to run generators. A paid reduction that customers bid for. They are not equally good for the neighbors.
+
+Now the generator question. The cheapest way for a data hall to curtail is to start its backup diesel generators and take itself off the grid. The grid sees less demand. The people downwind get the exhaust, on the hottest days of the year.
+
+Federal air rules put a ceiling on that. Emergency engines can run without an hourly limit in a true emergency, but only one hundred hours a year for other purposes. Within that, they can run up to fifty hours a year for demand response under set conditions, including being dispatched by the local grid operator and keeping records. That's from Environmental Protection Agency guidance, as reported by the American Public Power Association in May twenty twenty-five, and it's verified. That guidance is a letter, not a binding rule, and the agency has said it is weighing further changes.
+
+So a county has a fair question that the federal rule doesn't settle. When this customer says it will be flexible, will it use less power, run a battery, or burn diesel? The answer can be written into a permit or an agreement. That part is plausible.
+
+Four things make a promise checkable. This list is reasoned from the examples above, so grade it plausible. One: the amount and the hours. How many megawatts, for how many hours a year, on how much notice. Two: the method. Reduced computing, on-site batteries, or generators, and a cap on generator hours. Three: the meter. Who measures the drop, against what baseline, and who can see the record. Four: the consequence. What the customer pays if it doesn't deliver. A discount for flexibility with no penalty for failing is a discount.
+
+Why is this the county's leverage? Module one showed that connecting to the grid can take years. A customer that will yield at the peak needs less new equipment built for it, so it can often be connected sooner. That's plausible. Speed is worth a great deal to a developer. That is the trade a co-op board or a county can offer: a faster yes, in exchange for flexibility that is written down, metered, and enforced.
+
+Still open, and these are speculative. How much of a modern AI data hall's work can really wait an hour, or four? Will flexible contracts hold when a customer's own deadline collides with a heat wave? If every large load on a system promises to cut back in the same emergency, has the system counted the same megawatt twice? Nobody has settled these. They're questions for researchers, and for your utility.
+
+Straight Talk. Here's a claim people make: data centers can never cut back.
+
+The verdict: overstated. Some can, some of the time, and the contract has to say how much.
+
+One operator has signed one gigawatt of demand response into contracts with five utilities. That's verified as the company's own announcement. Texas law now requires new customers on the high-voltage grid to be able to be cut off in an emergency. That's verified.
+
+They're right about this part. The same operator says flexibility has limits and is available only at some sites, and a hall can meet its promise by burning diesel instead of using less.
+
+Ask for it in writing: megawatts, hours each year, the method, who meters it, and what it costs them to break the promise.
+
+What this means for your family. The peak is where a new customer either raises everybody's costs or doesn't. If a big load adds to the worst hour, the system has to grow to carry it, and module two showed who can end up paying for that growth. If the load steps aside during that hour, the same wires serve more sales, and that can hold rates down. That's plausible.
+
+It also decides what the air is like on the hottest days. A row of diesel generators running through a heat wave is a different neighbor from a battery.
+
+If you're a co-op member, the question for the annual meeting is short. For our largest customers, what can we ask them to do at the peak, and how do we know they did it? The County Kit for this module is a one-page sheet of flexibility terms to bring with you.
+
+Ask Earl. Earl is an AI character, a retired co-op lineman made by Grid and Grain. He's not a real person, and he'll always tell you so. Here's a question he got. Why does my co-op beg me to cut back at five in the afternoon?
+
+Earl says: Because that's the hour the whole system is sized for, and the hour the co-op pays the most for the power it buys. Everything from the plant to the pot on your pole has to be big enough for that one stretch of a hot afternoon. If the members shave a little off the top, the co-op's power bill comes down, and since you own the place, so does yours. Nobody's asking you to sit in the heat. Run the dryer after supper and nudge the thermostat up a couple of degrees. And if you've got somebody at home who doesn't do well in the heat, leave the air on. That one's not worth the savings.
+
+That's module seven. Ready to test yourself? The self-check is five questions, and four right is a pass. You'll find it on the module page, along with every source we cited.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.

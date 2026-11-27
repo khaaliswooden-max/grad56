@@ -1,0 +1,125 @@
+Grid and Grain Field Guide. Module three: Why AI Eats Power
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+Somebody will hand your county a number: megawatts, homes powered, a percent of the grid. Here's why AI uses the power it does, and how to tell a solid number from a soft one.
+
+Carry this. Chips are limited by heat, and moving data costs more than math.
+
+Rung one. A computer is a heater that thinks.
+
+Inside every computer chip are billions of tiny switches. They have no moving parts; electricity flips them. A switch that's on stands for one, and a switch that's off stands for zero. Everything a computer does, from a text message to an AI answer, is those switches flipping in a pattern, in step with a clock that ticks billions of times a second.
+
+Every flip moves a tiny bit of electric charge, and moving charge takes energy. That energy doesn't vanish. It turns into heat. One flip makes almost none. Billions of flips, billions of times a second, make a chip you can't hold your finger on.
+
+So here's the first thing to carry into any hearing: nearly all the electricity that goes into a computer comes back out as heat. That's plausible, as plain physics; energy has to go somewhere, and a computer doesn't lift, light, or move anything. A building full of computers is a building full of heaters, and that's why Module four is about cooling.
+
+Here's a picture. A computer is an electric space heater that does arithmetic on the way. Plug in one thousand watts of computers and you've plugged in a one thousand-watt heater. Here's where that picture breaks. A space heater is supposed to get hot. A chip is ruined by heat, so every watt it makes has to be carried away at once, and that carrying takes more electricity.
+
+Rung two. Voltage is the master dial.
+
+What decides how much power a chip burns? Two dials matter most: how fast the clock ticks, and how hard the electricity is pushed, which is the voltage. A chip's power use rises in step with its clock speed, and with its voltage squared, according to National Research Council, twenty eleven. That's verified.
+
+The squaring is the whole story. To run a clock faster, a chip needs a little more voltage. Push a clock sixty percent faster with about twelve percent more voltage, and the power doesn't go up sixty percent. It doubles: one point one two five times one point one two five times one point six is about two. That's verified. by arithmetic.
+
+For decades, chipmakers dodged that bill. Each time they made switches smaller, they lowered the voltage too, so chips got faster without getting hotter. Around two thousand four that stopped working: voltage couldn't go lower, and faster clocks meant more heat than a chip could shed. Before two thousand four, processor performance grew about one hundred times per decade. After, a single processor was forecast to improve only about two times per decade, according to National Research Council, twenty eleven. That's verified.
+
+The industry's answer was to stop making one fast worker and start putting many workers on each chip. That's where AI chips come from: thousands of small workers side by side, all doing simple math at once.
+
+You already own proof that heat is the limit. When a processor gets too hot, it slows its own clock to protect itself. Intel calls it throttling, according to Intel, reviewed April twenty twenty-six. That's verified. Your phone does the same thing on a hot dashboard.
+
+Field Test. Watch a laptop turn watts into heat. Charge a laptop to one hundred percent, then plug its charger into a watt meter. Let it sit idle for five minutes and write down the watts. Point an infrared thermometer at the vent where the warm air comes out and write that down too. Now give it hard work for ten minutes, such as a free benchmark that loads the processor, and read both again. More watts in, hotter air out. Then try the phone version: run a free benchmark app three times in a row and watch the score fall as the phone warms. That's throttling. The phone reading is That's plausible., like any phone-app number. Plug-in and handheld meters only. Never open a computer, a charger, or a battery.
+
+Rung three. Moving data costs more than math.
+
+You'd think the arithmetic is what uses the power. It isn't. Most of the energy goes to fetching the numbers, not adding them.
+
+Stanford engineers worked out the numbers for one generation of chips. Adding two numbers took a sliver of energy. Fetching a number from the computer's main memory took five hundred to three thousand, five hundred times as much, depending on the size of the number. In their words, most of the energy goes "not in computation but in moving data to and from memory", according to Pedram and colleagues, Stanford University, twenty sixteen. That's verified.
+
+That's why AI is hungry. An AI model is, at bottom, a gigantic table of numbers, often billions of them. To answer one question, the chip has to pull a great many of those numbers out of memory, multiply, and put results back, over and over. It's a moving job more than a math job. That's plausible.
+
+Here's a picture. A cook making supper. Chopping is fast. Walking to the cellar for each onion is what takes the evening. So good kitchens keep a pantry by the stove, and good chips keep small, fast memory right next to the workers. Here's where that picture breaks. A pantry can be made bigger. Memory close to the processor is small because closeness is the scarce thing, and an AI model is far too big to fit there. Most of it stays in the cellar.
+
+Two facts that are both true.
+
+Each AI answer is getting cheaper. Google reports that a typical text question to its Gemini assistant used about zero point two four watt-hours in May twenty twenty-five, about what a television uses in nine seconds, and that the figure fell thirty-three-fold in a year, according to Google, August twenty twenty-five. That's plausible.: it's the company's own measurement and hasn't been checked by an outside party.
+
+The total is going up anyway. U.S. data centers used fifty-eight terawatt-hours of electricity in twenty fourteen and one hundred seventy-six in twenty twenty-three, about three times as much, with the growth since twenty seventeen driven largely by AI servers, according to Lawrence Berkeley National Laboratory, December twenty twenty-four. That's verified.
+
+Where the critics are right. A company that tells you its chips are getting more efficient is telling the truth and leaving something out. Cheaper answers mean more questions get asked, and longer ones. Efficiency per answer and total power are different numbers. When someone gives you one, ask for the other.
+
+Go deeper.
+
+The first three rungs explain where the power goes. The next two are about judging a number someone hands you: why AI's appetite grows the way it does, and the questions that separate a solid estimate from a soft one. They're more technical, but every term is defined. You can pass the self-check without them.
+
+Rung four. Train once, answer forever.
+
+AI uses power in two phases. Training is building the model: feeding it text or images for weeks on thousands of chips until its table of numbers is tuned. Inference is using it: answering one question at a time, for millions of people, for years.
+
+Which one uses more?
+
+Training makes the headlines, but the evidence points the other way. One estimate puts the training of a single large model in twenty twenty-five at about zero point three one terawatt-hours, roughly zero point two percent of the one hundred fifty-five terawatt-hours that AI-focused data centers used worldwide that year. The same review concludes it's likely that demand is dominated by inference, not training, according to Our World in Data, July twenty twenty-six, citing Epoch AI and the International Energy Agency. That's plausible.: these are estimates, and the companies publish little.
+
+That matters at the county line. A training site can sit almost anywhere there's power, and can sometimes pause. Answering questions for the public has to happen right now, all day, and often closer to the people asking.
+
+Why bigger keeps winning.
+
+In twenty twenty, researchers found that an AI model's error falls along a predictable curve, called a power law, as you give it more of three things: a bigger model, more data, and more computing, according to Kaplan and colleagues, twenty twenty. That's verified. On a curve like that, each further step of improvement costs a multiple of the last one, not a fixed amount more. That's plausible. That's the business reason behind the building boom: as long as that curve holds, more computing buys a better product.
+
+Not every question costs the same.
+
+A short question is cheap. A long one isn't. Estimates gathered in the same review run from about zero point three watt-hours for a typical question, to about two point five for one with seven thousand, five hundred words of input, to about fifty for a request where the AI works through many steps on its own, according to Our World in Data, July twenty twenty-six, citing Epoch AI and the International Energy Agency. That's plausible. So "energy per question" depends heavily on which question.
+
+Here's a picture. Training is building the grain elevator: a big job, done once. Inference is running it every day of every harvest for thirty years. Ask which one moves more grain. Here's where that picture breaks. An elevator lasts decades. An AI model is replaced by a bigger one within a year or two, so the building never really stops.
+
+Rung five. How to read a power number.
+
+Every figure you'll be shown has soft spots in the same four places.
+
+Power or energy?
+
+Megawatts measure power: how hard something pulls at one moment. Megawatt hours measure energy: how much it used over time. A site that pulls one hundred megawatts around the clock uses one hundred times eight thousand, seven hundred sixty hours, or eight hundred seventy-six thousand megawatt-hours, a year. Substations are sized for the megawatts. Bills and fuel follow the megawatt-hours. A claim that mixes them up, or gives only one, is incomplete.
+
+Nameplate or real?
+
+The number in an application is usually the most a site could ever draw. Real use runs lower. Silicon Valley Power, a city-owned utility in California, reports that its data centers' peak loads average only about sixty-seven percent of their nameplate, the rated maximum. Sites also take several years to ramp up to full operation, according to Energy and Environmental Economics, December twenty twenty-five. That's verified.
+
+Firm or hopeful?
+
+Requests aren't projects. After Ohio required data centers to pay for eighty-five percent of the capacity they asked for, requests to AEP Ohio fell from thirty gigawatts to thirteen, according to Energy and Environmental Economics, December twenty twenty-five. That's verified. Module two covers that tariff. Some developers file the same project with several utilities, which inflates the apparent demand. Ask what share of a forecast is under signed contract.
+
+One number or a range?
+
+Honest forecasts come as ranges. Berkeley Lab's estimate for U.S. data centers in twenty twenty-eight runs from three hundred twenty-five to five hundred eighty terawatt-hours, or six point seven percent to twelve percent of the country's electricity, according to Lawrence Berkeley National Laboratory, December twenty twenty-four. That's verified. The top is nearly double the bottom, and that's the experts being candid. History cuts both ways, too: from twenty ten to twenty eighteen, the world's data centers did about six point five times the computing on only about six percent more electricity, according to Masanet and colleagues, twenty twenty, in the Straight Talk library. That's verified. AI broke that balance, and nobody knows whether it's broken for good.
+
+Still open, and that's speculative. Will cheaper answers keep being swamped by more questions, or does demand level off? Will the curve that rewards bigger models keep holding? Could smaller models running close to home do most everyday jobs for a fraction of the power? Nobody knows yet. Which is the reason to plan in ranges and write contracts that hold up at either end.
+
+Straight Talk. Here's a claim we hear.
+
+"Data center power use will double forever."
+
+The verdict: Plan in ranges.
+
+From twenty ten to twenty eighteen, global data center electricity rose only about six percent while computing grew about six point five times, according to Masanet and colleagues, twenty twenty. AI broke that balance after twenty seventeen, and forecasts for twenty twenty-eight now span nearly a factor of two, according to Lawrence Berkeley National Laboratory. That's verified.
+
+So "it will double forever" and "efficiency will take care of it" are both guesses. The record supports neither one alone.
+
+Ask for it in writing: low, base, and high scenarios in any utility plan, and what gets built under each.
+
+What one question costs at your house.
+
+People ask whether using AI at home is running up the nation's power bill. Use Google's own figure from August twenty twenty-five: zero point two four watt-hours for a typical text question. That's plausible. A hundred questions a day for a year comes to about nine kilowatt-hours. At an example rate of fifteen cents a kilowatt-hour, that's about a dollar thirty of electricity a year.
+
+So your own questions aren't the issue. The issue is hundreds of millions of people asking, plus longer and harder requests, all served from buildings that cluster in a few places. That's a question about where those buildings go and who pays for their wires, which is to say, it's a local question. Yours.
+
+County Kit. Questions to Ask About a Power Estimate. A one-page card to hold next to any power number: power or energy, peak or average, what's counted, nameplate or real, compared with what, and how sure. It's free on the module page.
+
+Ask Earl. Earl is Grid and Grain's AI character, a retired co-op lineman. He's not a real person, and he'll always tell you so. Here's a question he got.
+
+Why does my phone get warm?
+
+Earl says: Same reason a wire does. Electricity doing work leaves heat behind. That phone has billions of little switches in it, and every time one flips, it gives off a speck of heat. Ask it to do something hard and they're all flipping at once. When it gets too warm it slows itself down on purpose, so it doesn't cook. Now picture a building with thousands upon thousands of those chips running flat out, day and night. That's a data center. The question isn't whether it makes heat. It's where the heat goes, and what it takes to move it.
+
+That's Module three. The self-check is five questions, and four right is a pass. The County Kit, the sources, and the written version are at getruralamericadone.com, under Field Guide.
+
+Grid and Grain is the free education series of Get Rural America Done. It takes no money from data center developers or utilities. Know the wires. Set the terms.

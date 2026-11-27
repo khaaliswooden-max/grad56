@@ -1,0 +1,19 @@
+# Transcription check: Kokoro v1.0 am_michael render (speed 1.0), transcribed with faster-whisper small.en, compared word by word with the published script, module-03-narration.txt. The voice was given the same script with a few names respelled for pronunciation (for example "Tucson", "PJM", and the site address).
+# Both sides normalized (lowercase, digits to words, hyphens and punctuation dropped) before comparing.
+duration 17 min 56 s; mean level -20.0 dB, peak -0.9 dB; script words 2565; differing words 23 (0.90%)
+replace: SCRIPT[reasoned] HEARD[reason]  ...it plausible means its >< from evidence but not
+replace: SCRIPT[rung] HEARD[wrong]  ...costs more than math >< one a computer is
+replace: SCRIPT[chipmakers] HEARD[chip makers]  ...by arithmetic for decades >< dodged that bill each
+insert: SCRIPT[] HEARD[in]  ...phone app number plug >< in handheld meters only
+replace: SCRIPT[u s] HEARD[us]  ...is going up anyway >< data centers used fifty
+replace: SCRIPT[theyre] HEARD[they are]  ...from a soft one >< more technical but every
+delete: SCRIPT[in] HEARD[]  ...according to our world >< data july twenty twenty
+delete: SCRIPT[in] HEARD[]  ...according to our world >< data july twenty twenty
+replace: SCRIPT[it] HEARD[at]  ...once inference is running >< every day of every
+replace: SCRIPT[masanet] HEARD[massinet]  ...more electricity according to >< colleagues twenty twenty in
+replace: SCRIPT[masanet] HEARD[massinet]  ...five times according to >< colleagues twenty twenty ai
+replace: SCRIPT[a] HEARD[one]  ...text question thats plausible >< hundred questions a day
+replace: SCRIPT[a dollar thirty] HEARD[one point three zero dollars]  ...kilowatt hour thats about >< of electricity a year
+replace: SCRIPT[speck] HEARD[spec]  ...it gives off a >< of heat ask it
+replace: SCRIPT[right] HEARD[write]  ...is five questions four >< is a pass the
+replace: SCRIPT[getruralamericadone] HEARD[getruralamericadun]  ...written version are at >< com under field guide

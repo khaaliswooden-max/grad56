@@ -1,0 +1,207 @@
+Grid and Grain Field Guide. Module ten: Making the Deal.
+
+Narration: AI voice. This is a synthetic voice reading the module. Every fact in it comes with a grade. Verified means a cited source directly supports it. Plausible means it's reasoned from evidence, but not measured by the source. Speculative means it's an idea worth testing, not a fact.
+
+A developer's promise and a county's contract are two different things. Here's how to tell them apart before anyone signs.
+
+Carry this. A promise is worth what its enforcement clause says.
+
+Rung one. A promise and a contract are different things.
+
+When a big project comes to a county, the promises come first: jobs, tax money, a new park, help for the school. Some arrive in a press release. Some are said out loud at a meeting. A few end up in a signed contract.
+
+Only the last kind can be collected. A community benefit agreement is that contract: a legally binding agreement between a developer and a local government, local community groups, or both. The developer commits to specific benefits. In return, the community agrees to support the project, or at least not to fight it (Columbia Law School, Sabin Center, May twenty twenty-six). That's verified.
+
+Ask four questions of any promise, and you'll know which kind it is:
+
+Who signed it? A name on a contract can be held to it. A quote in a newspaper can't.
+
+When is it paid? "Over the life of the project" is not a date.
+
+What backs it? If the company is sold or goes broke, is the money already set aside?
+
+Who checks? Someone has to measure whether the promise was kept, and say so in public.
+
+The rest of this module is those four questions, one at a time.
+
+Here's a picture. A man selling a used truck says, "She runs great." A dealer hands you a written warranty that says what gets fixed, for how long, and who pays. Both are promises. Only one of them is worth anything the day the transmission goes.
+
+Here's where that picture breaks. You can look under a truck's hood today. A data center deal runs twenty years or more, and you can't inspect year twelve. So the paper has to say now what happens then.
+
+Rung two. The four clauses that make a deal real.
+
+There aren't many of these agreements to study yet. In August twenty twenty-six the Federation of American Scientists went looking and could find only eight signed benefit agreements for data centers in the whole country. Only one, in Lancaster, Pennsylvania, was posted where the public could read it; the others took news searches and public-records requests to find (Federation of American Scientists, August twenty twenty-six). That's verified. So the examples below are a short list, and Lancaster shows up often because it's the one everybody can read.
+
+One. Say it in numbers.
+
+A term can only be enforced if a judge can tell whether it was met. Lancaster's agreement caps water at twenty thousand gallons a day for each campus (City of Lancaster). That's verified. That's a number. A meter can check it.
+
+The same agreement's hiring plan asks only for "good faith efforts," with no minimum number or share of local hires, and other terms lean on phrases like "where feasible." A Columbia Law School review called those terms hard to enforce (Sabin Center, May twenty twenty-six). That's verified. The critics who say much of this language is soft are right about that part.
+
+Two. Put dates on the money.
+
+A payment schedule says how much is due and what triggers it. Lancaster's developers owe twenty million dollars, split between two ten-million-dollar funds. Each fund gets two point five million dollars when a building's construction financing closes and two point five million dollars within thirty days of that building starting to operate (City of Lancaster). That's verified. In Festus, Missouri, the schedule is by year: three million dollars a year for years one through five, then five million dollars a year for years six through ten (Federation of American Scientists, September twenty twenty-six). That's verified.
+
+The best triggers are things the developer needs anyway: a permit, a financing closing, the day the power turns on. A payment tied to "profitability" may never come due. That's plausible.
+
+Three. Set the money aside.
+
+Security is money or property pledged ahead of time, so the county doesn't have to chase a company that has left. The common forms:
+
+A letter of credit: a bank's written promise to pay the county if the developer doesn't.
+
+Escrow: cash held by a neutral third party until a condition is met.
+
+A lien: a legal claim on the property itself.
+
+A bond: an insurer's guarantee, often used to pay for removing a facility at the end of its life.
+
+Lancaster holds a ten-million-dollar letter of credit tied to the developers' clean-energy commitment, and the city says it can draw on financial security if a payment is missed (Sabin Center, May twenty twenty-six; City of Lancaster). That's verified. Marysville, Ohio, uses a lien that lets it recover up to one hundred percent of taxes for the year a facility shuts down plus the two years before, if it stays closed more than a year (Federation of American Scientists, September twenty twenty-six). That's verified.
+
+Most places skip this. In a review of forty-two local data center actions, bonds for decommissioning or financial assurance appeared in four (Federation of American Scientists, September twenty twenty-six). That's verified.
+
+Four. Make someone report, in public.
+
+A promise nobody measures is a promise nobody can enforce. Lancaster's developers must report on clean-energy use at a public city council meeting every April. St. Louis requires a yearly noise report from a third party. El Paso's agreement allows one escorted inspection a year (City of Lancaster; Federation of American Scientists, September twenty twenty-six). That's verified.
+
+A report from the company about itself is a start. A reading taken by somebody the company doesn't pay is better. Rung three explains why.
+
+And the line that ties them together.
+
+The enforcement clause says what the county can do when a term is broken. It usually gives the developer written notice and a cure period, a set number of days to fix the problem; thirty to sixty days is typical in the agreements reviewed (Federation of American Scientists, September twenty twenty-six). That's verified. After that, Lancaster can ask a court to order compliance, and its strongest remedy is making the data center stop operating (City of Lancaster). That's verified. St. Louis wrote in liquidated damages, a dollar amount fixed ahead of time, for missed hiring targets (Federation of American Scientists, September twenty twenty-six). That's verified.
+
+Read that clause first. Everything else in the agreement is worth what it says.
+
+Rung three. Copies are not independence.
+
+Data centers are built by people who think hard about failure. Their vocabulary is worth borrowing, because it applies to contracts as well as to cooling.
+
+Engineers count backup equipment against what's needed. N is exactly enough. N plus one is one spare. Two N is two complete systems, each able to carry the whole load. The Uptime Institute's four Tiers, which you'll hear quoted in sales pitches, describe how much of this a building has: Tier one is basic capacity, Tier two adds redundant parts, Tier three can be maintained without a shutdown, and Tier four is built to keep running through a failure (Uptime Institute, April twenty twenty-one). That's verified.
+
+Here's the arithmetic. Take two parts that each work ninety-nine percent of the time.
+
+Wire them in a chain, so both must work: zero point nine nine times zero point nine nine equals ninety-eight point zero one percent. That's about one hundred and seventy-four hours down in a year.
+
+Wire them side by side, so either one will do: the system fails only when both fail at once, one percent of one percent of the time. That's ninety-nine point nine nine percent, under one hour down in a year.
+
+Side by side looks almost perfect. But the math has a condition hidden in it: the two parts must fail independently. If one storm, one bad software update, or one shared power feed takes out both, you never had two. You had one, twice. Engineers call that a common-mode failure, and it's why two N means two separate paths, not two copies on the same path. That's plausible.
+
+Field Test: unplug the mesh. If your house has mesh Wi-Fi, you own a small lesson in this. Run a speed test on your phone and write down the number. Unplug one of the far points from the wall and test again: you're still online, maybe slower. That's a spare doing its job. Plug it back in, wait for it to reconnect, then unplug the point that's wired to your modem. Now every point in the house is still lit and still broadcasting, and none of them can reach the internet. Three points, one path out. Speed-test apps are rough tools, so your numbers are estimates. That's plausible. Unplug at the wall only. Never open the equipment.
+
+Now read a deal the same way. Suppose a developer promises a park, a school payment, and a noise limit, and all three are owed by one company set up for this one project. That's three promises on one path. If that company is sold or runs out of money, all three fail together.
+
+Independence in a contract looks like this:
+
+The money is held by a bank, not by the company that owes it.
+
+The obligations are recorded against the land, so they bind whoever owns it next.
+
+The measurements come from a third party, not from the company being measured.
+
+The county has a remedy it can use by itself, without the developer's cooperation.
+
+One more thing about those Tier numbers. People often attach an uptime percentage to each Tier. The Uptime Institute took every "expected downtime per year" figure out of its standard in two thousand and nine, because how a building is run matters as much as how it's built (Uptime Institute, April twenty twenty-one). That's verified. A backup makes failure less likely. It doesn't make it impossible, and a contract shouldn't assume it does.
+
+Here's a picture. N plus one is a spare tire. Two N is a second truck. The spare handles the most likely trouble cheaply. The second truck handles nearly everything, at twice the price.
+
+Here's where that picture breaks. Tires go flat one at a time. Real failures often come together, like two trucks parked under the same tree in the same storm. A second truck only helps if it's parked somewhere else.
+
+Go deeper.
+
+The first three rungs give you the test for any promise. The next two follow the money and the power through the contract: what the county gives up in exchange, who pays if the customer leaves, and how a promise to use the grid gently gets written so it can be checked. They're more technical, but every term is defined. Skip them and you can still pass the self-check; read them before you sit down across the table.
+
+Rung four. What the county gives, and who holds the risk.
+
+A contract needs something of value moving in both directions. Lawyers call it consideration. The developer's side is the benefits. The community's side is usually support, or a promise not to oppose the project (Sabin Center, May twenty twenty-six). That's verified. Often the local government adds something far larger: a tax break, or a promise not to change the rules.
+
+Price what you're giving.
+
+A tax abatement is a discount on taxes the project would otherwise owe. They can be very large. El Paso granted an eighty percent property tax abatement over thirty-five years (Brookings Institution, January twenty twenty-six). That's verified. Cedar Rapids, Iowa, agreed to a seventy percent rebate over twenty years, estimated at five hundred and twenty-nine million dollars out of as much as one billion dollars in expected property taxes (Federation of American Scientists, September twenty twenty-six). That's verified.
+
+So the honest number for any deal is the net: benefits promised, minus taxes forgiven, for each taxing district. A deal can still be worth doing after that subtraction. But a county that only hears the first number hasn't heard the deal. Some agreements tie the discount to results with a clawback, a clause that takes the benefit back if a target is missed. El Paso's abatement shrinks if the project doesn't reach fifty jobs or eight hundred million dollars in investment (Federation of American Scientists, September twenty twenty-six). That's verified.
+
+A deal that didn't close: Frederick County.
+
+On September one, twenty twenty-six, Frederick County, Maryland, announced a proposed agreement with the developer of a two thousand, one hundred acre data center campus: more than one hundred and ten million dollars in benefits, including thirty million dollars to renovate an elementary school, fourteen point five million dollars for a workforce training center, and ten point five million dollars to preserve farmland. The developer also offered to build nearly twenty percent less and cut drinking-water use by eighty percent (Maryland Association of Counties, September twenty twenty-six). That's verified.
+
+In return, the county would agree not to make zoning changes that hurt the project for eight years. Residents had ten days to comment. Hundreds did. Many said the county was giving up too much local authority, and that the benefits weren't defined clearly enough. On September fourteen the county executive rejected the agreement and extended the county's pause on data center applications to July one, twenty twenty-seven (W Y P R, September twenty twenty-six). That's verified.
+
+Read the draft against Rung two and you can see both sides. It had real strengths: dated payments, obligations that bound future owners and ran with the land, and a requirement that the county approve any transfer. But in the unsigned draft that was made public, we found no bond, escrow, or letter of credit backing the benefit payments themselves. That's plausible. That grade is ours: it's our reading of one draft, not a legal opinion.
+
+Frederick isn't a story about a good deal or a bad one. It's a reminder that the largest number in the press release is one term out of many, and that ten days is not long to read the rest.
+
+The capital chain: who pays if the customer leaves.
+
+A benefit agreement covers what the developer owes the county. It doesn't cover what the developer owes the power system. That's the job of a large-load tariff, the utility rule from Module two that makes a big customer carry the cost of the equipment built for it. Ohio's regulators, for example, require large new data centers to pay for at least eighty-five percent of the power they sign up for, whether they use it or not, for up to twelve years (Brookings Institution, January twenty twenty-six). That's verified. As of May twenty twenty-six, twenty-three states had approved at least one such tariff (Columbia Sabin Center, in the Straight Talk library). That's verified.
+
+The same goes for zoning. A benefit agreement can't patch a hole in the ordinance; the two have to back each other up (Federation of American Scientists, September twenty twenty-six). That's verified. So a community's protection is three documents, each covering a different risk: the ordinance for noise, land, and water; the tariff for the power bill; the benefit agreement for everything negotiated on top. Three paths, and this time they are independent.
+
+When the name on the building changes.
+
+Data centers get sold, and the company that signs is often created just for the one project. The Federation of American Scientists found that transfers often happen without the host government's consent (September twenty twenty-six). That's verified. Two lines fix that. One says the obligations run with the land, meaning they attach to the property and bind every later owner. The other requires the county's written approval before the agreement is handed to someone else. Lancaster's agreement requires any new owner to take on every obligation (City of Lancaster). That's verified.
+
+Deals made in the dark.
+
+Many of these negotiations start under a nondisclosure agreement, a contract in which officials promise not to discuss the project. A records investigation by public radio's Gulf States Newsroom found at least fifty-four of them signed by Louisiana elected officials since early twenty twenty-four. A university researcher surveying thirty-one data center projects found nondisclosure agreements in at least twenty-five (N P R, August twenty twenty-six). That's verified.
+
+Companies say they need confidentiality for competitive and securities-law reasons, and that concern is real. So is the cost: officials who can't answer their own voters. One Louisiana parish hosting a ten-billion-dollar project used no nondisclosure agreements at all and posted the water, power, and land documents on its website. Lawmakers in Michigan, Oklahoma, Kentucky, and Ohio have introduced bills to ban the practice for data center deals (N P R, August twenty twenty-six). That's verified.
+
+Here's a picture. Security is the difference between a neighbor who says he'll pay for the fence he backed into and one who leaves the cash with the feed store until the fence is fixed.
+
+Here's where that picture breaks. The feed store is down the road and you know the owner. A letter of credit comes from a bank you've never dealt with, has an expiration date, and has to be renewed. Somebody at the county has to own that calendar.
+
+Rung five. Writing flexibility into the paper.
+
+Module one showed that the grid is built for its worst hour and has spare room most of the rest of the year. Module seven showed that a customer able to cut back during those worst hours is easier to connect. A promise to be flexible is valuable. It's also the easiest promise to make and the hardest to check.
+
+The flexibility chain, as contract language.
+
+Texas shows what the promise looks like when it's written as a rule. Under Senate Bill six, customers that connect to the high-voltage grid after December thirty-one, twenty twenty-five, must be set up so the utility can cut their power during an emergency, when the grid operator is already ordering rotating outages. They must also disclose their backup generators, which the grid operator can direct them to run. A separate program pays large customers to reduce demand with at least twenty-four hours' notice (Texas Legislature, bill analysis, August twenty twenty-five). That's verified.
+
+Look at what makes those terms enforceable. There's a size threshold. There's a named trigger. The switching equipment has to be installed before the customer connects. Nobody has to take the company's word for it.
+
+A benefit agreement can borrow that shape. Instead of "will be a good grid citizen," it can say: how many megawatts will be shed, within how many minutes, for how many hours a year, confirmed by the utility's own meter, with a fixed payment owed for each missed event. That's plausible. And it can say how the customer rides through: on batteries, or on diesel generators that the neighbors will hear and breathe. That choice belongs in the paper too.
+
+Why three.
+
+Inside a data center, groups of computers have to agree on what's true even when one of them fails. A widely used method has each change accepted once a majority of the machines have recorded it, and the group keeps working as long as a majority is still up. The paper that describes it notes that five machines is typical, which lets the group lose two (Ongaro and Ousterhout, twenty fourteen). That's verified.
+
+The smallest group that can lose a member and still have a majority is three: two of three can outvote a failure. Two can't, because one of two is not a majority.
+
+The same count may apply to whoever watches a deal. If one office holds the reports, and that office is short-staffed or friendly with the company, oversight has a single point of failure. A monitoring committee with three seats that don't answer to each other, say the county, a resident group, and a paid outside monitor, can lose one and still function. That's speculative.
+
+Here's a picture. Three people each keep a copy of the church's books. If one copy goes missing or gets changed, the other two still agree, and the congregation knows which version to trust.
+
+Here's where that picture breaks. Computers don't have friends or grudges. Three people from the same family aren't three independent copies. Rung three applies to committees too.
+
+Still open. That's speculative. Do these agreements hold up? Almost none is old enough to have been tested in court. The Federation of American Scientists calls enforcement over time an open problem, and says cleanup obligations at the end of a facility's life are largely untested. Columbia's review warns that a small community may not have the money to enforce a contract against a large company, and that some states limit what local governments can sign. Would a pooled legal fund for small counties change that? Would a public registry of signed agreements? Nobody has run the experiment.
+
+Straight Talk.
+
+"Benefit agreements are just P R."
+
+Partly right. It depends on four clauses.
+
+The skeptics have evidence. Only eight signed data center benefit agreements could be found nationwide in August twenty twenty-six, and only one was public (Federation of American Scientists). The best-known one asks for "good faith efforts" on local hiring and sets no minimum (Sabin Center, May twenty twenty-six). That's verified.
+
+But the same agreement caps water at twenty thousand gallons a day per campus, holds a ten-million-dollar letter of credit, and lets the city seek a court order shutting the site down (City of Lancaster; Sabin Center). That's verified. Those terms aren't P R. They can be collected.
+
+Ask for it in writing: numbers instead of adjectives, dates on the money, security held by a bank, public reports by a third party, and an enforcement clause the county can use.
+
+What a good deal is for.
+
+The point of all this paper isn't the paper. The opportunity is not the building. It is the leverage, and what a community does with it.
+
+Rural places are short on particular things: a hospital that can keep its doctors, broadband that reaches the last farm, a training program that lets a young person build a career without leaving. Earlier modules covered each of those. A benefit agreement is where they can be written down. Only eight percent of critical access and rural community hospitals use AI-driven predictive analytics (Becker's Hospital Review, in the Straight Talk library). That's verified. A deal that funds broadband and technology at the local hospital and schools turns a building on the edge of town into something families feel.
+
+October is National Co-op Month. If your power comes from a co-op, the tariff side of this deal is decided by a board you elect. Bring the term sheet to both tables.
+
+Ask Earl.
+
+Earl is an AI character.
+
+Can my county commissioner sign a nondisclosure agreement about a data center?
+
+"In a lot of places, yes, and plenty have. Whether it's allowed where you live is a question for your county attorney and your state's open-records law, not for me. Here's what I can tell you. A commissioner who can't talk about a project can't answer the people who elected him, and that's where a lot of the anger comes from. They're right about that part. So ask three things, in writing. Has anyone at the county signed one? What does it cover, and when does it end? And will the full agreement be public, with a hearing, before any vote? If the answer to the last one is no, you've learned something about the deal."
+
+That's Module ten. The County Kit for this module is the Benefit Agreement Term Sheet, and the five-question self-check is on the module page, free, at getruralamericadone.com. Know the wires. Set the terms.

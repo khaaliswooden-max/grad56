@@ -127,3 +127,6 @@
   .nav, .footer, .no-print { display: none !important; }
   .cert { border: 0; margin: 0; }
 }
+
+/* A paragraph after a list needs its own space. */
+.read ul + p, .read ol + p { margin-top: 16px; }
